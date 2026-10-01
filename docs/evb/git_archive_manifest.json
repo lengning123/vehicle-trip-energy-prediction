@@ -3,7 +3,7 @@
   "research_state": "D14 / R07; EV-B01 and EV-B02 complete",
   "scope": "EV-B code, longitudinal research Markdown, contracts, predictions, figures and necessary source attribution; unrelated tracked edits excluded",
   "included_file_count_without_manifest": 263,
-  "bytes_without_manifest": 27871504,
+  "bytes_without_manifest": 27871455,
   "excluded": [
     "local credentials",
     "raw ZIP/GZ",
@@ -855,8 +855,8 @@
     },
     {
       "path": "reports/energyville_study/README.md",
-      "bytes": 4072,
-      "sha256": "2d46d695db054834e94f0e21ad3791e92c75e91108fac621c192eb7f6d3b6c54"
+      "bytes": 4023,
+      "sha256": "37f1555442eea3627ced80a109d76a9f1041a93b25838619dde01d895cbc3674"
     },
     {
       "path": "reports/enhanced_reproduction/source_data/ablation_comparison.md",
