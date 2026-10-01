@@ -20,11 +20,14 @@
 | 实验知识记录 | [experiments.md](experiments.md) |
 | 为什么选择或暂缓一个方向 | [decision_log.md](decision_log.md) |
 | 实验执行方案与状态 | [todo.md](todo.md) |
+| 何时建/切分支、执行、验收及合并main | [实验与Git分支管理总则](EXPERIMENT_GIT_POLICY.md) |
 | 代码分工与依赖关系 | [代码导航](docs/evb/CODE_MAP.md) |
 | 环境、数据重建、运行与验收 | [复现指南](docs/evb/REPRODUCTION.md) |
 | 数据来源、许可与Git保管范围 | [数据说明](docs/evb/DATA.md) |
 
 每轮工作先读四个研究文件，再读todo和最近报告。汇报必须区分“做了什么、学到了什么、因此下一步做什么”。根文件是当前理解，实验目录中的协议/代码/研究快照是当时版本。
+
+后续修改从codex/分支开始，执行前冻结提交、合同与数据身份，完成相应验收后再合并main。可信负结果可以合并；替换当前基线另需通过事前效果与风险门槛。多窗口使用独立目录，运行中不切换分支。新方案与验收采用[模板](docs/evb/templates/EXPERIMENT_PLAN.md)，Agent入口见[AGENTS.md](AGENTS.md)。
 
 ## 当前进度（2026-10-01整理，研究结论截止EV-B02）
 
