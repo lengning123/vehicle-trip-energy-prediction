@@ -1,0 +1,47 @@
+{
+  "reason": "CSV float round-trip can move immutable shared/training inputs across saved tree thresholds; restore shared columns and train H exactly from original input before predicting",
+  "code_sha256": "b80212284d5aedbdcb52d432b6c8d1021167a2edb181d4f49d6e446535d6d99a",
+  "initial_outputs_archive_sha256": "ad3680cf9ace5ee16fad056e72c19aa1e7f26c5b1a7c284399baa6ddbf97fdac",
+  "no_fit": true,
+  "new_fits": 0,
+  "total_original_fits": 3,
+  "model_hashes_unchanged": {
+    "O-time": "b9c356228464988c1f7120ef183b593aba5499019f85041c329bb55ae53d8941",
+    "O-motion": "a72dbccff6e7d67f3f6d4f3b1624249a118c65f44f4e6129be09cbb58c8ded2a",
+    "O-quality": "16a0b6b0494a210388e488955391bdd98060a974af89e439848e26b942b700df"
+  },
+  "maximum_prediction_change_kwh": {
+    "train": {
+      "S-fixed": 3.552713678800501e-15,
+      "H-frozen": 7.105427357601002e-15,
+      "H-online": 0.01623627462866195,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 7.105427357601002e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    },
+    "validation": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "H-online": 1.7763568394002505e-15,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 3.552713678800501e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    },
+    "development": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "H-online": 3.552713678800501e-15,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 1.7763568394002505e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    }
+  },
+  "training_H_online_now_bitwise_identical_to_H_frozen": true,
+  "shared_route_S_all6_thermal_restored_bitwise": true,
+  "label_policy_splits_unchanged": true,
+  "replay_s": 2.288227928802371,
+  "revised_at": "2026-09-30T13:56:48.908315+00:00"
+}

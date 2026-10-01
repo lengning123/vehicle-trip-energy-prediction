@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "n": 1272,
+  "unique_files": true,
+  "master_zip_bijection": true,
+  "label_identity_max_abs_kwh": 7.105427357601002e-15,
+  "negative_remaining": 0,
+  "state_provenance_count": 6278,
+  "all_state_buckets_ended": true,
+  "history_provenance_count": 12610,
+  "training_only_completed_history": true,
+  "telemetry_provenance_count": 1272,
+  "all_telemetry_before_source_start": true,
+  "route_budget_replay": true,
+  "geometry_50m_no_temporal_density": true,
+  "overlapping_driving_targets": [],
+  "split": {
+    "boundary_dates": [
+      "2024-12-01",
+      "2025-01-24",
+      "2025-02-16"
+    ],
+    "method": "closest complete-date cumulative count at60/75/85%; ties earlier",
+    "purged": []
+  },
+  "split_summary": {
+    "calibration": {
+      "n": 125,
+      "vehicles": {
+        "BEV1": 66,
+        "BEV2": 59
+      },
+      "cut_min": "2025-01-24 07:16:26+00:00",
+      "cut_max": "2025-02-15 22:37:47+00:00",
+      "ge10km": 52,
+      "distance_quantiles": {
+        "0": 0.0025454051511295,
+        "0.5": 6.36901989829402,
+        "0.95": 63.586360955853905,
+        "1": 154.92757886393093
+      },
+      "history_fraction": 1.0,
+      "outside_training_range": 7,
+      "ambient_observed": 124,
+      "internal_consistency": 122,
+      "uncertain_charger": 5
+    },
+    "future": {
+      "n": 193,
+      "vehicles": {
+        "BEV2": 166,
+        "BEV1": 27
+      },
+      "cut_min": "2025-02-16 09:03:13+00:00",
+      "cut_max": "2025-05-27 06:21:34+00:00",
+      "ge10km": 62,
+      "distance_quantiles": {
+        "0": 0.0142001861854138,
+        "0.5": 3.532589801842512,
+        "0.95": 72.99968226809804,
+        "1": 144.13192368913354
+      },
+      "history_fraction": 1.0,
+      "outside_training_range": 4,
+      "ambient_observed": 192,
+      "internal_consistency": 189,
+      "uncertain_charger": 8
+    },
+    "train": {
+      "n": 766,
+      "vehicles": {
+        "BEV2": 584,
+        "BEV1": 182
+      },
+      "cut_min": "2024-05-16 16:04:44+00:00",
+      "cut_max": "2024-11-30 17:29:58+00:00",
+      "ge10km": 295,
+      "distance_quantiles": {
+        "0": 0.0347510410771532,
+        "0.5": 5.41888041025119,
+        "0.95": 66.73556809254994,
+        "1": 201.23654811817465
+      },
+      "history_fraction": 0.9973890339425587,
+      "outside_training_range": 0,
+      "ambient_observed": 766,
+      "internal_consistency": 741,
+      "uncertain_charger": 41
+    },
+    "validation": {
+      "n": 188,
+      "vehicles": {
+        "BEV1": 94,
+        "BEV2": 94
+      },
+      "cut_min": "2024-12-01 08:34:19+00:00",
+      "cut_max": "2025-01-23 20:59:38+00:00",
+      "ge10km": 72,
+      "distance_quantiles": {
+        "0": 0.0243770251710282,
+        "0.5": 5.8011724054059215,
+        "0.95": 67.84973098180483,
+        "1": 135.382293465423
+      },
+      "history_fraction": 1.0,
+      "outside_training_range": 1,
+      "ambient_observed": 188,
+      "internal_consistency": 181,
+      "uncertain_charger": 15
+    }
+  },
+  "history_pool_n": 706,
+  "crossing_cut_routes": 0,
+  "route_crossing_cut_max_km": 0.0,
+  "current_temperature_conflicts": [],
+  "thermal_conflict_limit": "R05 historical table deduplicated 24 conflicting mode buckets; discarded values unavailable. Current source conflicts detected where possible; no averaging.",
+  "preprocessing": "None fitted at preparation; vehicle vocabulary and tree binning fit train only",
+  "representative_sources": [
+    "BEV2_2024-12-31_drive5.csv",
+    "BEV2_2024-08-23_drive6.csv",
+    "BEV2_2024-09-17_drive1.csv"
+  ],
+  "prefix_replay_all1272": true,
+  "prefix_available_at_cut_n": 0,
+  "prefix_boundary_caveat": "R05 trapezoid prefix can use interval-end bucket at cut; that1s mean becomes available cut+1s. Prefix is NOT a learner input. Full-budget readdition is a retrospective accounting output, not certified deployable at exact cut."
+}

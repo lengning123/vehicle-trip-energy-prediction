@@ -1,0 +1,150 @@
+{
+  "source_driving_records": 1396,
+  "source_record_join": "one_to_one_by_file_with_checked_source_boundaries",
+  "master_file": "recorded_session_master.csv",
+  "label_tier_counts": {
+    "strong_internal_candidate": 1375,
+    "candidate": 21
+  },
+  "main_net_battery_route_candidates": 1359,
+  "full_source_hybrid_main_candidates": 1284,
+  "full_source_hybrid_main_ge_10km": 487,
+  "main_ge_10km": 507,
+  "confirmed_external_charging_records": 10,
+  "uncertain_charger_signal_or_mode_overlap_records": 78,
+  "main_with_uncertain_charger_signal_or_mode_overlap": 70,
+  "main_excluding_uncertain_charger_signal_sensitivity": 1289,
+  "main_by_vehicle": {
+    "BEV2": 984,
+    "BEV1": 375
+  },
+  "main_internal_consistency_checked_candidates": 1320,
+  "main_internal_consistency_and_5pct_quantization_candidates": 1295,
+  "main_internal_consistency_checked_ge_10km": 499,
+  "main_precision_5pct_candidates": 1331,
+  "main_precision_5pct_ge_10km": 507,
+  "main_with_first_source_bucket_temperature": 465,
+  "main_with_thermal_anywhere": 1359,
+  "main_thermal_cut_nonempty": 1359,
+  "main_counter_source_start_offset_s_quantiles": {
+    "0": 0.0,
+    "0.05": 0.0,
+    "0.5": 1.0,
+    "0.95": 3.0,
+    "1": 5.0
+  },
+  "main_counter_source_end_offset_s_quantiles": {
+    "0": 0.0,
+    "0.05": 0.0,
+    "0.5": 1.0,
+    "0.95": 1.0,
+    "1": 1.0
+  },
+  "main_route_source_distance_minus_window_distance_km_quantiles": {
+    "0": -1.4210854715202004e-14,
+    "0.05": -4.440892098500626e-16,
+    "0.5": 0.0,
+    "0.95": 0.00011119508005021927,
+    "1": 0.035666160628082366
+  },
+  "main_iv_counter_difference_kwh_quantiles": {
+    "0": -0.0113198601131458,
+    "0.05": -0.00133540491515572,
+    "0.5": 0.00271558413828615,
+    "0.95": 0.0243979932634322,
+    "1": 0.1435732895601376
+  },
+  "main_counter_iv_ge_99pct_records": 1320,
+  "main_view_reason_counts": {
+    "included": 1359,
+    "no_movement_or_insufficient_aligned_route": 13,
+    "counter_window_not_strong_internal_candidate": 11,
+    "counter_window_not_strong_internal_candidate;external_charging_evidence": 8,
+    "conflicting_cross_mode_IV": 2,
+    "counter_window_not_strong_internal_candidate;external_charging_evidence;conflicting_cross_mode_IV": 2,
+    "no_movement_or_insufficient_aligned_route;conflicting_cross_mode_IV": 1
+  },
+  "main_recovered_despite_no_first_temperature": 894,
+  "main_gap_gt_2s_records": 65,
+  "cross_mode_duplicate_owner": "Driving task uses driving source intervals once; overlapping parking/charging copies never become extra training targets.",
+  "counter_route_views_ready": true,
+  "model_training_ready": false,
+  "missing_training_contract": "Legitimate SOC/ambient snapshots, route mapping, temporal/route split and train-only preprocessing must be frozen.",
+  "candidate_label_manifest": {
+    "battery_net": {
+      "records": 1396,
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "route_geometry_aligned": true
+    },
+    "battery_discharge": {
+      "records": 1396,
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "route_geometry_aligned": false
+    },
+    "battery_charge": {
+      "records": 1396,
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "route_geometry_aligned": false
+    },
+    "bms_drive_gross": {
+      "records": 1396,
+      "tier_counts": {
+        "candidate": 1147,
+        "strong_internal_candidate": 245,
+        "missing": 4
+      },
+      "route_geometry_aligned": false
+    },
+    "bms_regen": {
+      "records": 1396,
+      "tier_counts": {
+        "candidate": 1150,
+        "strong_internal_candidate": 243,
+        "missing": 3
+      },
+      "route_geometry_aligned": false
+    },
+    "bms_drive_net": {
+      "records": 1396,
+      "tier_counts": {
+        "candidate": 1392,
+        "missing": 4
+      },
+      "route_geometry_aligned": false
+    },
+    "non_drive_residual": {
+      "records": 1396,
+      "tier_counts": {
+        "candidate": 1147,
+        "strong_internal_candidate": 245,
+        "missing": 4
+      },
+      "route_geometry_aligned": false
+    },
+    "external_charge_balance": {
+      "records": 1396,
+      "tier_counts": {
+        "candidate": 1150,
+        "strong_internal_candidate": 243,
+        "missing": 3
+      },
+      "route_geometry_aligned": false
+    }
+  },
+  "temperature_cut_remaining_net_main_candidates": 1272,
+  "temperature_cut_remaining_net_main_ge_10km": 481,
+  "temperature_cut_remaining_accounting_identity_max_abs_kwh": 0.0,
+  "possible_stale_charger_field_records": 70,
+  "main_excluding_uncertain_charger_ge_10km": 480,
+  "remaining_net_label_is_IV_edge_approximation": true,
+  "timestamp_timezone_contract": "Explicit source suffix retained per record. Parsed UTC is computational normalization; naive logger timezone not certified, no historical-weather joins."
+}

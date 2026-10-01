@@ -1,0 +1,93 @@
+{
+  "started_at": "2026-09-30T13:46:21.597953+00:00",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "sklearn": "1.9.1",
+  "pandas": "3.0.5",
+  "numpy": "2.3.2",
+  "threads": 4,
+  "cpu_count": 128,
+  "groups": {
+    "S-fixed": {
+      "train_predict_s": 0.025763558223843575,
+      "validation_predict_s": 0.014530143700540066,
+      "development_predict_s": 0.01800781860947609
+    },
+    "H-frozen": {
+      "train_predict_s": 0.02508900873363018,
+      "validation_predict_s": 0.013006805442273617,
+      "development_predict_s": 0.01640284340828657
+    },
+    "O-combined": {
+      "train_predict_s": 0.026841871440410614,
+      "validation_predict_s": 0.01411509606987238,
+      "development_predict_s": 0.01327399630099535
+    },
+    "H-online": {
+      "train_predict_s": 0.024966880679130554,
+      "validation_predict_s": 0.013063311576843262,
+      "development_predict_s": 0.012994684278964996
+    },
+    "O-time": {
+      "fit_s": 2.20122155174613,
+      "feature_count": 72,
+      "n_iter": 500,
+      "new_fit": true,
+      "train_predict_s": 0.040263742208480835,
+      "validation_predict_s": 0.013011230155825615,
+      "development_predict_s": 0.01287681795656681
+    },
+    "O-motion": {
+      "fit_s": 2.2972809094935656,
+      "feature_count": 75,
+      "n_iter": 500,
+      "new_fit": true,
+      "train_predict_s": 0.03673099260777235,
+      "validation_predict_s": 0.012387980706989765,
+      "development_predict_s": 0.012128296308219433
+    },
+    "O-quality": {
+      "fit_s": 2.1423749597743154,
+      "feature_count": 73,
+      "n_iter": 500,
+      "new_fit": true,
+      "train_predict_s": 0.035480862483382225,
+      "validation_predict_s": 0.012384365312755108,
+      "development_predict_s": 0.012157718650996685
+    }
+  },
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-8fb3d286.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "formal_fit_calls": 3,
+  "total_s_before_report": 16.81981758121401,
+  "finished_at": "2026-09-30T13:46:38.417779+00:00",
+  "max_rss_kib": 195244
+}

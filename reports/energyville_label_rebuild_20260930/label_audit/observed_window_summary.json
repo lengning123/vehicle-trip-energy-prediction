@@ -1,0 +1,136 @@
+{
+  "driving_files": 1396,
+  "observed_counter_window_count": {
+    "battery_discharge": 1396,
+    "battery_charge": 1396,
+    "bms_drive_gross": 1392,
+    "bms_regen": 1393,
+    "battery_net": 1396,
+    "bms_drive_net": 1392,
+    "non_drive_residual": 1392,
+    "external_charge_balance": 1393
+  },
+  "same_window_non_drive": {
+    "valid_files": 1392,
+    "T_over_D_quantiles": {
+      "0.0": 0.0555555555667838,
+      "0.05": 0.8842401249017027,
+      "0.5": 0.9944264873457754,
+      "0.95": 1.0000000000029385,
+      "1.0": 1.1666666667171903
+    },
+    "exact_equal_tol_1e_8_count": 153,
+    "within_4wh_count": 424,
+    "within_10wh_count": 615,
+    "positive_gt_20wh_count": 566,
+    "negative_lt_minus_4wh_count": 0,
+    "residual_kwh_quantiles": {
+      "0.0": -0.0040000000008149,
+      "0.05": -3.637978807091713e-12,
+      "0.5": 0.0139999999992141,
+      "0.95": 0.15000000000045474,
+      "1.0": 0.8580000000001746
+    },
+    "endpoint_asynchrony_quantiles": {
+      "0.0": 0.0,
+      "0.05": 0.0,
+      "0.5": 0.0,
+      "0.95": 0.0,
+      "1.0": 11.0
+    }
+  },
+  "drive_net_asynchrony_quantiles": {
+    "0.0": 1.0,
+    "0.05": 1.0,
+    "0.5": 11.0,
+    "0.95": 11.0,
+    "1.0": 23.0
+  },
+  "drive_net_actual_start_missing_seconds_quantiles": {
+    "0.0": 1.0,
+    "0.05": 2.0,
+    "0.5": 8.0,
+    "0.95": 13.0,
+    "1.0": 1325.0
+  },
+  "drive_net_actual_end_missing_seconds_quantiles": {
+    "0.0": 12.0,
+    "0.05": 12.0,
+    "0.5": 17.0,
+    "0.95": 22.0,
+    "1.0": 192.0
+  },
+  "drive_net_visible_edge_iv_quantiles": {
+    "0.0": 0.0006527406664756,
+    "0.05": 0.001145540990115095,
+    "0.5": 0.00496567281235685,
+    "0.95": 0.031341513199676235,
+    "1.0": 0.2262681650892304
+  },
+  "battery_net": {
+    "strong_internal_candidate_count": 1375,
+    "counter_and_IV_screen_count": 1335,
+    "strong_with_5pct_quantization_count": 1336,
+    "strong_ge_10km_count": 509,
+    "per_vehicle": {
+      "BEV1": {
+        "strong_count": 378,
+        "counter_and_IV_count": 368,
+        "strong_ge_10km_count": 207
+      },
+      "BEV2": {
+        "strong_count": 997,
+        "counter_and_IV_count": 967,
+        "strong_ge_10km_count": 302
+      }
+    }
+  },
+  "IV_crosscheck_threshold": {
+    "absolute_kwh": 0.02,
+    "relative_to_abs_counter": 0.03,
+    "coverage": 0.99,
+    "meaning": "engineering consistency screen, not physical measurement error bound"
+  },
+  "near_zero_counts": {
+    "battery_discharge": {
+      "abs_le_4wh": 1,
+      "abs_le_10wh": 4,
+      "negative_lt_minus_4wh": 0
+    },
+    "battery_charge": {
+      "abs_le_4wh": 51,
+      "abs_le_10wh": 62,
+      "negative_lt_minus_4wh": 0
+    },
+    "bms_drive_gross": {
+      "abs_le_4wh": 3,
+      "abs_le_10wh": 5,
+      "negative_lt_minus_4wh": 0
+    },
+    "bms_regen": {
+      "abs_le_4wh": 43,
+      "abs_le_10wh": 61,
+      "negative_lt_minus_4wh": 0
+    },
+    "battery_net": {
+      "abs_le_4wh": 3,
+      "abs_le_10wh": 5,
+      "negative_lt_minus_4wh": 10
+    },
+    "bms_drive_net": {
+      "abs_le_4wh": 5,
+      "abs_le_10wh": 10,
+      "negative_lt_minus_4wh": 1
+    },
+    "non_drive_residual": {
+      "abs_le_4wh": 424,
+      "abs_le_10wh": 615,
+      "negative_lt_minus_4wh": 0
+    },
+    "external_charge_balance": {
+      "abs_le_4wh": 1381,
+      "abs_le_10wh": 1382,
+      "negative_lt_minus_4wh": 0
+    }
+  }
+}

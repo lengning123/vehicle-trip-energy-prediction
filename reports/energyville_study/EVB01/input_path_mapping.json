@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "files": [
+    {
+      "name": "temperature_cut_remaining_net_candidates.csv",
+      "local_path": "D:\\python\\homework\\POC\\reports\\energyville_label_rebuild_20260930\\data_pipeline\\temperature_cut_remaining_net_candidates.csv",
+      "cloud_path": "/root/autodl-tmp/data/energyville_evb01_r05/temperature_cut_remaining_net_candidates.csv",
+      "sha256": "9cb8aa27ee4875e512e340a24ead1b54e45d7c2a3da82848b7a05f4093f27d10",
+      "bytes": 8791943
+    },
+    {
+      "name": "recorded_session_master.csv",
+      "local_path": "D:\\python\\homework\\POC\\reports\\energyville_label_rebuild_20260930\\data_pipeline\\recorded_session_master.csv",
+      "cloud_path": "/root/autodl-tmp/data/energyville_evb01_r05/recorded_session_master.csv",
+      "sha256": "5f3b78b6fb7f9b4b785f6bc5c048a4e0c7b4919f6956db03d91d958c087e33dd",
+      "bytes": 9648436
+    },
+    {
+      "name": "driving_signal_views_1s.zip",
+      "local_path": "D:\\python\\homework\\POC\\reports\\energyville_label_rebuild_20260930\\data_pipeline\\driving_signal_views_1s.zip",
+      "cloud_path": "/root/autodl-tmp/data/energyville_evb01_r05/driving_signal_views_1s.zip",
+      "sha256": "80d1c34d4901811eeb69dad1e254e111557d2f2978532af765631ece6db91120",
+      "bytes": 116843046
+    },
+    {
+      "name": "observed_thermal_history.csv.gz",
+      "local_path": "D:\\python\\homework\\POC\\reports\\energyville_label_rebuild_20260930\\data_pipeline\\observed_thermal_history.csv.gz",
+      "cloud_path": "/root/autodl-tmp/data/energyville_evb01_r05/observed_thermal_history.csv.gz",
+      "sha256": "4ac1b062be80353f61663a4e9c4c9d4eca7c42d67ef2a393b7c8c53eb2cab706",
+      "bytes": 17605702
+    },
+    {
+      "name": "integrated_dataset_summary.json",
+      "local_path": "D:\\python\\homework\\POC\\reports\\energyville_label_rebuild_20260930\\data_pipeline\\integrated_dataset_summary.json",
+      "cloud_path": "/root/autodl-tmp/data/energyville_evb01_r05/integrated_dataset_summary.json",
+      "sha256": "df161c153f20ada77570da3cb41921ad86d7fbd422585062bb6faf18674be254",
+      "bytes": 5068
+    }
+  ],
+  "cloud_project_root": "/root/autodl-tmp",
+  "local_project_root": "D:\\python\\homework\\POC"
+}

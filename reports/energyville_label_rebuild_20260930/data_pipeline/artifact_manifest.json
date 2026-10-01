@@ -1,0 +1,160 @@
+{
+  "files": [
+    {
+      "name": "all_session_inventory.csv",
+      "bytes": 2579601,
+      "sha256": "933911fc38e6d227e35b1b8602bfd65f3ed5d505ddc2c369e7680102e6a8a553"
+    },
+    {
+      "name": "battery_charge_candidate_view.csv",
+      "bytes": 858888,
+      "sha256": "efadd1be81fb28c9c6d2c85aff3562427d21574d30f9fc7eafb16679acf8a8b1"
+    },
+    {
+      "name": "battery_discharge_candidate_view.csv",
+      "bytes": 859152,
+      "sha256": "44da9ec0db5d361515571a2cb5e783707bbc82124c8b361dd7599aec13b909c9"
+    },
+    {
+      "name": "battery_net_candidate_view.csv",
+      "bytes": 1094858,
+      "sha256": "cdfc8283d022b454a9e95da1e21527c4c1cb8865e4df66fb5cf0d342355577c8"
+    },
+    {
+      "name": "bms_drive_gross_candidate_view.csv",
+      "bytes": 812583,
+      "sha256": "56951599296191bad09d88f046e1a9af1586929bc6b90d673c834db6dac3e50e"
+    },
+    {
+      "name": "bms_drive_net_candidate_view.csv",
+      "bytes": 1026680,
+      "sha256": "9eb1f00ed63427b740241bc4290fd024ba1553cc27ca1ef346ae911c05476c71"
+    },
+    {
+      "name": "bms_regen_candidate_view.csv",
+      "bytes": 811714,
+      "sha256": "b01a45a50f81756b0f1a8b42902789824a943c7adb3ce98d05279072e4eb5c51"
+    },
+    {
+      "name": "charger_field_recheck.csv",
+      "bytes": 4639,
+      "sha256": "94d2b16ab89f37f1d8f11e3ba2b04e2bc241da907e7f84009b35ae37ccb4eed8"
+    },
+    {
+      "name": "driving_signal_views_1s.zip",
+      "bytes": 116843046,
+      "sha256": "80d1c34d4901811eeb69dad1e254e111557d2f2978532af765631ece6db91120"
+    },
+    {
+      "name": "driving_source_records.csv",
+      "bytes": 1954491,
+      "sha256": "bf2070c206519f388bd2006bb6bf05ac5cbf16e2405bd81e0adb57b4a9c837fc"
+    },
+    {
+      "name": "external_charge_balance_candidate_view.csv",
+      "bytes": 1028099,
+      "sha256": "f353eb84d824b0c081e495038c631f8df561eb387f14dfd818a7e56b638e04d8"
+    },
+    {
+      "name": "finalize_views.py",
+      "bytes": 11764,
+      "sha256": "258f79ca4fd1df76649da342db7d03b0caa14670aa17f3543dc9dff8b4bd9351"
+    },
+    {
+      "name": "full_source_hybrid_net_candidates.csv",
+      "bytes": 8874302,
+      "sha256": "c3d59735ac856df2826f9a016c8599474c4e3cb91bf75138524f1200f3edffd1"
+    },
+    {
+      "name": "integrate_labels_and_routes.py",
+      "bytes": 14707,
+      "sha256": "59dafe4e4d78ff11d7dec705ca4a5546d6fba94533fcb8da64b96aecd7345f6d"
+    },
+    {
+      "name": "integrated_dataset_summary.json",
+      "bytes": 5068,
+      "sha256": "df161c153f20ada77570da3cb41921ad86d7fbd422585062bb6faf18674be254"
+    },
+    {
+      "name": "main_net_battery_counter_precision_5pct.csv",
+      "bytes": 9206404,
+      "sha256": "e70a6988b7afc3c33377946d6cdf5b0645a75ed6f64725631f514d4cd1222ef9"
+    },
+    {
+      "name": "main_net_battery_excluding_uncertain_charge_sensitivity.csv",
+      "bytes": 8907099,
+      "sha256": "136d7c0d09c9f840a35e28cfe5dd7fa5f05810cfc508f42a9ab4de546e3ab289"
+    },
+    {
+      "name": "main_net_battery_internal_consistency_checked.csv",
+      "bytes": 9115131,
+      "sha256": "5b31932db98173f8e1d7a4131face1ea9ef767215b01c466d072c0ebe9e3754c"
+    },
+    {
+      "name": "main_net_battery_route_candidates.csv",
+      "bytes": 9394227,
+      "sha256": "0e639996f4fcdc038ac952182d0d4ea0af4e3b24b449b432fa038ddc13b5321b"
+    },
+    {
+      "name": "net_battery_route_views_1s.zip",
+      "bytes": 23993518,
+      "sha256": "4d471fe9c22dba6de600cec4f16caf1adf4c6755af897a2f710bd156f7791334"
+    },
+    {
+      "name": "non_drive_residual_candidate_view.csv",
+      "bytes": 1056757,
+      "sha256": "6f624efd1188fdd71963caeb4227879294e01520e8b1752a242cf3d4c69122d1"
+    },
+    {
+      "name": "observed_thermal_history.csv.gz",
+      "bytes": 17605702,
+      "sha256": "4ac1b062be80353f61663a4e9c4c9d4eca7c42d67ef2a393b7c8c53eb2cab706"
+    },
+    {
+      "name": "rebuild_recorded_sessions.py",
+      "bytes": 18694,
+      "sha256": "e6494a0d315e941b999f9256ff210f78c7b5b400c4e55d3f28e2ae5f9468650f"
+    },
+    {
+      "name": "recheck_charger_fields.py",
+      "bytes": 1193,
+      "sha256": "fb98cfbf9d26604d47666471eb08ae569b670ca7b366724bbe1fcadd8f57ec19"
+    },
+    {
+      "name": "recorded_session_master.csv",
+      "bytes": 9648436,
+      "sha256": "5f3b78b6fb7f9b4b785f6bc5c048a4e0c7b4919f6956db03d91d958c087e33dd"
+    },
+    {
+      "name": "strict_start_input_snapshots.csv",
+      "bytes": 311100,
+      "sha256": "52b55b8b11a156c2de756c4f9a4c87d5017b901fdc39659e743e2fce0b7ab176"
+    },
+    {
+      "name": "summary.json",
+      "bytes": 3652,
+      "sha256": "f905d3455efba35ab402c4b1f80ca025f214ca785e20b71576489b05b4c49b25"
+    },
+    {
+      "name": "temperature_cut_remaining_net_candidates.csv",
+      "bytes": 8791943,
+      "sha256": "9cb8aa27ee4875e512e340a24ead1b54e45d7c2a3da82848b7a05f4093f27d10"
+    },
+    {
+      "name": "temperature_truncation_views.csv",
+      "bytes": 604290,
+      "sha256": "414d0ba0f5d3b0d852ecebbcd132be183c7dcf66cd00ac48dc18473e9d0941da"
+    },
+    {
+      "name": "validate_delivery.py",
+      "bytes": 1290,
+      "sha256": "65f55bf888238878f46018c68275f5d01d861301fb06a3df3b54c005aec8c247"
+    },
+    {
+      "name": "数据处理说明.md",
+      "bytes": 5763,
+      "sha256": "a0961f3597ba45be324a30f22549758bf58b2617232685d7b338c8b0003fc172"
+    }
+  ],
+  "schema": "all source CSV records retained; candidate views distinct from frozen training set"
+}

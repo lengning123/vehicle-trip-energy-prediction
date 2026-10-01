@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "new_fit_count": 3,
+  "original_EV_B01_inputs_unchanged": true,
+  "calibration_target_queries_or_scores": 0,
+  "checked_predictions": {
+    "train": 766,
+    "validation": 188,
+    "development": 193
+  },
+  "saved_model_replay_max_abs_kwh": {
+    "train": {
+      "S-fixed": 3.552713678800501e-15,
+      "H-frozen": 7.105427357601002e-15,
+      "H-online": 7.105427357601002e-15,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 7.105427357601002e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    },
+    "validation": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "H-online": 1.7763568394002505e-15,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 3.552713678800501e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    },
+    "development": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "H-online": 3.552713678800501e-15,
+      "O-combined": 3.552713678800501e-15,
+      "O-time": 1.7763568394002505e-15,
+      "O-motion": 3.552713678800501e-15,
+      "O-quality": 3.552713678800501e-15
+    }
+  },
+  "event_permission_and_quality_valid": true,
+  "latest10_preserved": true,
+  "unchanged_route_S_and_all6_thermal": true,
+  "train_history_unchanged": true,
+  "energy_conservation_and_independent_metric_recalculation": true,
+  "conditional_cells_complete": true,
+  "route_pairs_causal": true,
+  "E5": "shelved_not_started",
+  "no_refitting_in_verification": true
+}

@@ -1,0 +1,22 @@
+{
+  "train": [
+    "train"
+  ],
+  "validation": [
+    "train",
+    "validation"
+  ],
+  "development": [
+    "train",
+    "validation",
+    "earlier_completed_development"
+  ],
+  "calibration": "never query, release, fit, select or score its terminal energy/statistics",
+  "release": "source_end_ns+1e9<=query_cut_ns, same vehicle, different ID, same quality as EVB01",
+  "history_limit": 10,
+  "same_od": "inside same latest10 only",
+  "past_thermal": "all original six thermal columns unchanged",
+  "feature_cutoff": "t_cut",
+  "budget_output": "t_cut+1s; suffix still starts at original t_cut",
+  "weights": "original S/H, rates, vocabulary and order frozen"
+}

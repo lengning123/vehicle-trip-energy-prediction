@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tolerance_kwh": 1e-08,
+  "maximum_absolute_differences": {
+    "train": {
+      "S-fixed": 3.552713678800501e-15,
+      "H-frozen": 7.105427357601002e-15,
+      "O-combined": 3.552713678800501e-15
+    },
+    "validation": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "O-combined": 3.552713678800501e-15
+    },
+    "development": {
+      "S-fixed": 1.7763568394002505e-15,
+      "H-frozen": 1.7763568394002505e-15,
+      "O-combined": 3.552713678800501e-15
+    }
+  }
+}

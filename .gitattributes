@@ -1,0 +1,37 @@
+* text=auto
+
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.xls binary
+*.zip binary
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.onnx binary
+
+# Preserve frozen EV-B artifacts and executable snapshots byte-for-byte
+reports/energyville_study/** -text
+reports/energyville_label_rebuild_20260930/** -text
+scripts/*energyville*.py -text
+scripts/*evb*.py -text
+tests/test_energyville_evb*.py -text
+reports/public_dataset_audit_20260930/sources/energyville_metadata.json -text
+reports/public_dataset_audit_20260930/sources/energyville_readme.txt -text

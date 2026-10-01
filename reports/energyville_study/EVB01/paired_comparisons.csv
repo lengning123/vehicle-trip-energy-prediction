@@ -1,0 +1,9 @@
+left,right,n,week_blocks,mae_improvement_right_kwh,ci95_low_kwh,ci95_high_kwh,bootstrap_repetitions,seed,unit,interpretation
+R,S,193,14,0.006221839842404715,-0.024104530162411937,0.03183773454219531,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+S,H,193,14,-0.014028286731170674,-0.043834744701684,0.017461770572122007,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+H,O,193,14,0.11432828291891105,0.06269584418599093,0.18179135603761382,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+S,O,193,14,0.10029999618774038,0.05201175099326746,0.17063742333965481,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+B0,R,193,14,0.12282787540845018,0.08688130485618274,0.16016104197543646,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+B0,S,193,14,0.1290497152508549,0.07984584582380107,0.17214327404906124,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+B0,H,193,14,0.11502142851968424,0.08030950842409829,0.14622546213615725,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim
+B0,O,193,14,0.22934971143859528,0.1706145582986966,0.3124096870810005,1000,42,whole ISO calendar week; both vehicles sampled together,positive means right has lower MAE; <8 weeks no robust interval claim

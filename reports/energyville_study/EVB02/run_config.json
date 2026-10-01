@@ -1,0 +1,114 @@
+{
+  "experiment": "EV-B02",
+  "frozen_at": "2026-09-30T13:28:46.732901+00:00",
+  "tree": {
+    "loss": "absolute_error",
+    "learning_rate": 0.05,
+    "max_iter": 500,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "threads": 4,
+  "formal_fit_limit": 3,
+  "calibration_n": 125,
+  "eval_identity": "validation188 + previously seen development193; no new independent test",
+  "oracle_additions": {
+    "O-time": [
+      "actual_remaining_duration_s"
+    ],
+    "O-motion": [
+      "actual_gps_distance_weighted_v2",
+      "actual_observed_stop_fraction",
+      "actual_v2_missing",
+      "actual_stop_missing"
+    ],
+    "O-quality": [
+      "actual_motion_coverage",
+      "actual_motion_missing"
+    ]
+  },
+  "refreshed_columns": [
+    "history_count",
+    "history_missing",
+    "history_recent_age_s",
+    "history_net_wh_per_km",
+    "history_wh_per_km_median",
+    "history_distance_mean",
+    "history_duration_mean",
+    "history_mean_speed_kph",
+    "history_ambient_mean",
+    "history_pack_min_mean",
+    "history_pack_max_mean",
+    "od_history_count",
+    "od_history_net_wh_per_km",
+    "od_history_duration_mean",
+    "history_recent_age_s_missing",
+    "history_net_wh_per_km_missing",
+    "history_wh_per_km_median_missing",
+    "history_distance_mean_missing",
+    "history_duration_mean_missing",
+    "history_mean_speed_kph_missing",
+    "history_ambient_mean_missing",
+    "history_pack_min_mean_missing",
+    "history_pack_max_mean_missing",
+    "od_history_net_wh_per_km_missing",
+    "od_history_duration_mean_missing"
+  ],
+  "condition_cells": "2 vehicles x4 original distance bins x4 original ambient bins; n<10 descriptive",
+  "reweight": "common nonempty train/val/development cells; additionally report n>=10 common cells; validation means weighted by development cell count",
+  "repeated_route": {
+    "window_days": 90,
+    "all_completed_history_not_latest10": true,
+    "spatial_step_m": 50,
+    "mean_distance_max_m": 50,
+    "p95_max_m": 100,
+    "length_ratio": [
+      0.8,
+      1.25
+    ],
+    "diagnostic_only": true
+  },
+  "geometry": {
+    "unfiltered_gt_budget_ratio": 1.01,
+    "space_only_chord_thresholds_m": [
+      250,
+      1000
+    ],
+    "no_speed_cleaning": true
+  },
+  "bootstrap": {
+    "repetitions": 1000,
+    "seed": 42,
+    "unit": "same ISO week both vehicles together; fixed online errors, no history reshuffle"
+  },
+  "oracle_concentration": {
+    "top_fraction": 0.05,
+    "high_concentration_threshold": 0.5,
+    "good_motion_coverage": 0.95
+  },
+  "history_policy": {
+    "train": [
+      "train"
+    ],
+    "validation": [
+      "train",
+      "validation"
+    ],
+    "development": [
+      "train",
+      "validation",
+      "earlier_completed_development"
+    ],
+    "calibration": "never query, release, fit, select or score its terminal energy/statistics",
+    "release": "source_end_ns+1e9<=query_cut_ns, same vehicle, different ID, same quality as EVB01",
+    "history_limit": 10,
+    "same_od": "inside same latest10 only",
+    "past_thermal": "all original six thermal columns unchanged",
+    "feature_cutoff": "t_cut",
+    "budget_output": "t_cut+1s; suffix still starts at original t_cut",
+    "weights": "original S/H, rates, vocabulary and order frozen"
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "archive_sha256": "97bcf4b914cd7312a08be49d53ae704a2450d39faa64d0c94d1294cd8eb92016",
+  "session_count": 2310,
+  "driving_count": 1396,
+  "errors": [],
+  "thresholds": {
+    "endpoint_limit_s": 5,
+    "long_gap_s": 60,
+    "external_balance_limit_kwh": 0.02
+  },
+  "modes": {
+    "driving sessions": {
+      "files": 1396,
+      "drive_positive_gt_0_01_kwh": 1387,
+      "regen_positive_gt_0_01_kwh": 1334,
+      "drive_kwh_quantiles": {
+        "0.0": 0.0020000000004074536,
+        "0.05": 0.1540000000004511,
+        "0.5": 1.6479999999992287,
+        "0.95": 16.85180000000019,
+        "1.0": 55.36800000000039
+      },
+      "drive_sum_kwh": 6327.423999999986,
+      "discharge_sum_kwh": 6388.231000000009,
+      "external_charge_evidence": 10
+    },
+    "fast charging sessions": {
+      "files": 25,
+      "drive_positive_gt_0_01_kwh": 0,
+      "regen_positive_gt_0_01_kwh": 0,
+      "drive_kwh_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      },
+      "drive_sum_kwh": 0.0,
+      "discharge_sum_kwh": 0.023999999997613486,
+      "external_charge_evidence": 25
+    },
+    "parking sessions": {
+      "files": 780,
+      "drive_positive_gt_0_01_kwh": 2,
+      "regen_positive_gt_0_01_kwh": 1,
+      "drive_kwh_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.02599999999983993
+      },
+      "drive_sum_kwh": 0.046000000003914465,
+      "discharge_sum_kwh": 298.284000000016,
+      "external_charge_evidence": 16
+    },
+    "slow charging sessions": {
+      "files": 109,
+      "drive_positive_gt_0_01_kwh": 0,
+      "regen_positive_gt_0_01_kwh": 0,
+      "drive_kwh_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      },
+      "drive_sum_kwh": 0.0,
+      "discharge_sum_kwh": 22.897999999990134,
+      "external_charge_evidence": 109
+    }
+  },
+  "driving": {
+    "external_charge_counter_evidence": 10,
+    "external_charge_direct_evidence": 0,
+    "long_gap_files": 18,
+    "discharge": {
+      "valid_any_files": 1396,
+      "negative_step_files": 0,
+      "large_negative_step_files": 0,
+      "start_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 1.0,
+        "0.95": 3.0,
+        "1.0": 6.0
+      },
+      "end_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 177.0
+      },
+      "published_non_grid_median_fraction": 0.0
+    },
+    "charge": {
+      "valid_any_files": 1396,
+      "negative_step_files": 0,
+      "large_negative_step_files": 0,
+      "start_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 1.0,
+        "0.95": 3.0,
+        "1.0": 6.0
+      },
+      "end_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 177.0
+      },
+      "published_non_grid_median_fraction": 0.0
+    },
+    "drive": {
+      "valid_any_files": 1396,
+      "negative_step_files": 0,
+      "large_negative_step_files": 0,
+      "start_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 1.0,
+        "0.5": 7.0,
+        "0.95": 12.0,
+        "1.0": 1325.0
+      },
+      "end_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 1.0,
+        "0.5": 6.0,
+        "0.95": 11.0,
+        "1.0": 180.0
+      },
+      "published_non_grid_median_fraction": 0.0
+    },
+    "regen": {
+      "valid_any_files": 1396,
+      "negative_step_files": 0,
+      "large_negative_step_files": 0,
+      "start_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 1.0,
+        "0.5": 7.0,
+        "0.95": 12.0,
+        "1.0": 1324.0
+      },
+      "end_offset_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 6.0,
+        "0.95": 11.0,
+        "1.0": 181.0
+      },
+      "published_non_grid_median_fraction": 0.0
+    },
+    "battery_discharge": {
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "reasons": {
+        "counter_boundary_screen_pass": 1375,
+        "long_gap_breaks_trip_attribution": 17,
+        "endpoint_unobserved_gt_5s": 3,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 1
+      },
+      "kwh_quantiles_all": {
+        "0.0": 0.004000000000814907,
+        "0.05": 0.17600000000084037,
+        "0.5": 1.6749999999992724,
+        "0.95": 16.870500000000902,
+        "1.0": 55.373999999999796
+      },
+      "zero_or_near_zero_le_0_01_count": 3,
+      "negative_lt_minus_0_004_count": 0,
+      "A_quant_precision_ge_95pct": 1357,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 1.71759798611079e-05,
+        "0.05": 6.7589873012463e-05,
+        "0.5": 0.00023640709007235588,
+        "0.95": 0.0015776910241139274,
+        "1.0": 0.016389593257371025
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      },
+      "A_iv_coverage_ge_99pct_count": 1335,
+      "A_iv_minus_counter_quantiles": {
+        "0.0": -1.1815688427773665,
+        "0.05": -0.12025087018968977,
+        "0.5": -0.021115714772691696,
+        "0.95": -0.0017888105441236232,
+        "1.0": 0.002331330854843522
+      }
+    },
+    "battery_charge": {
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "reasons": {
+        "counter_boundary_screen_pass": 1375,
+        "long_gap_breaks_trip_attribution": 17,
+        "endpoint_unobserved_gt_5s": 3,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 1
+      },
+      "kwh_quantiles_all": {
+        "0.0": 0.0,
+        "0.05": 0.02349999999978536,
+        "0.5": 0.5620000000008076,
+        "0.95": 3.1745000000023538,
+        "1.0": 41.393999999996595
+      },
+      "zero_or_near_zero_le_0_01_count": 60,
+      "negative_lt_minus_0_004_count": 0,
+      "A_quant_precision_ge_95pct": 1291,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 1.71759798611079e-05,
+        "0.05": 6.7589873012463e-05,
+        "0.5": 0.00023640709007235588,
+        "0.95": 0.0015776910241139274,
+        "1.0": 0.016389593257371025
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      },
+      "A_iv_coverage_ge_99pct_count": 1335,
+      "A_iv_minus_counter_quantiles": {
+        "0.0": -1.3251421323375006,
+        "0.05": -0.13913616348397168,
+        "0.5": -0.022641049132729463,
+        "0.95": -0.001816735826947365,
+        "1.0": 0.002326821072968133
+      }
+    },
+    "bms_drive_gross": {
+      "tier_counts": {
+        "candidate": 1147,
+        "strong_internal_candidate": 245,
+        "missing": 4
+      },
+      "reasons": {
+        "endpoint_unobserved_gt_5s": 1129,
+        "counter_boundary_screen_pass": 245,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 12,
+        "long_gap_breaks_trip_attribution": 6,
+        "missing_counter_or_fewer_than_two_observations": 4
+      },
+      "kwh_quantiles_all": {
+        "0.0": 0.0020000000004074536,
+        "0.05": 0.1540000000004511,
+        "0.5": 1.6479999999992287,
+        "0.95": 16.85180000000019,
+        "1.0": 55.36800000000039
+      },
+      "zero_or_near_zero_le_0_01_count": 5,
+      "negative_lt_minus_0_004_count": 0,
+      "A_quant_precision_ge_95pct": 240,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 4.926295636398787e-05,
+        "0.05": 0.00020207430828875905,
+        "0.5": 0.00083793149185783,
+        "0.95": 0.007648079308525665,
+        "1.0": 0.0357239104122389
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      }
+    },
+    "bms_regen": {
+      "tier_counts": {
+        "candidate": 1150,
+        "strong_internal_candidate": 243,
+        "missing": 3
+      },
+      "reasons": {
+        "endpoint_unobserved_gt_5s": 1132,
+        "counter_boundary_screen_pass": 243,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 11,
+        "long_gap_breaks_trip_attribution": 7,
+        "missing_counter_or_fewer_than_two_observations": 3
+      },
+      "kwh_quantiles_all": {
+        "0.0": 0.0,
+        "0.05": 0.02660000000014407,
+        "0.5": 0.5599999999999454,
+        "0.95": 3.0829999999999913,
+        "1.0": 14.097999999999956
+      },
+      "zero_or_near_zero_le_0_01_count": 59,
+      "negative_lt_minus_0_004_count": 0,
+      "A_quant_precision_ge_95pct": 230,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 4.983186408534505e-05,
+        "0.05": 0.00019558849468685058,
+        "0.5": 0.0008799756437730399,
+        "0.95": 0.009207425055833322,
+        "1.0": 0.04221078363044621
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      }
+    },
+    "battery_net": {
+      "tier_counts": {
+        "strong_internal_candidate": 1375,
+        "candidate": 21
+      },
+      "reasons": {
+        "counter_boundary_screen_pass": 1375,
+        "long_gap_breaks_trip_attribution": 17,
+        "endpoint_unobserved_gt_5s": 3,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 1
+      },
+      "kwh_quantiles_all": {
+        "0.0": -33.04200000000128,
+        "0.05": 0.11350000000084037,
+        "0.5": 1.0880000000006476,
+        "0.95": 13.800499999999374,
+        "1.0": 48.16599999999926
+      },
+      "zero_or_near_zero_le_0_01_count": 5,
+      "negative_lt_minus_0_004_count": 10,
+      "A_quant_precision_ge_95pct": 1336,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 1.71759798611079e-05,
+        "0.05": 6.7589873012463e-05,
+        "0.5": 0.00023640709007235588,
+        "0.95": 0.0015776910241139274,
+        "1.0": 0.016389593257371025
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      },
+      "A_iv_coverage_ge_99pct_count": 1335,
+      "A_iv_minus_counter_quantiles": {
+        "0.0": -0.011319860113145896,
+        "0.05": -0.0013882732548384346,
+        "0.5": 0.0026863888852606266,
+        "0.95": 0.02409790279621669,
+        "1.0": 0.1435732895601376
+      }
+    },
+    "bms_drive_net": {
+      "tier_counts": {
+        "candidate": 1392,
+        "missing": 4
+      },
+      "reasons": {
+        "endpoint_unobserved_gt_5s": 1374,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 18,
+        "missing_counter_or_fewer_than_two_observations": 4
+      },
+      "kwh_quantiles_all": {
+        "0.0": -0.005999999999858119,
+        "0.05": 0.10510000000019772,
+        "0.5": 1.0775000000010095,
+        "0.95": 13.895599999998968,
+        "1.0": 48.08400000000029
+      },
+      "zero_or_near_zero_le_0_01_count": 10,
+      "negative_lt_minus_0_004_count": 1,
+      "A_quant_precision_ge_95pct": 0,
+      "A_visible_edge_kwh_quantiles": {},
+      "A_endpoint_asynchrony_quantiles": {}
+    },
+    "non_drive_residual": {
+      "tier_counts": {
+        "candidate": 1147,
+        "strong_internal_candidate": 245,
+        "missing": 4
+      },
+      "reasons": {
+        "endpoint_unobserved_gt_5s": 1129,
+        "counter_boundary_screen_pass": 245,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 12,
+        "long_gap_breaks_trip_attribution": 6,
+        "missing_counter_or_fewer_than_two_observations": 4
+      },
+      "kwh_quantiles_all": {
+        "0.0": -0.004000000000814907,
+        "0.05": -3.637978807091713e-12,
+        "0.5": 0.013999999999214197,
+        "0.95": 0.15000000000045474,
+        "1.0": 0.8580000000001746
+      },
+      "zero_or_near_zero_le_0_01_count": 585,
+      "negative_lt_minus_0_004_count": 2,
+      "A_quant_precision_ge_95pct": 29,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 4.926295636398787e-05,
+        "0.05": 0.00020207430828875905,
+        "0.5": 0.00083793149185783,
+        "0.95": 0.007648079308525665,
+        "1.0": 0.0357239104122389
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      }
+    },
+    "external_charge_balance": {
+      "tier_counts": {
+        "candidate": 1150,
+        "strong_internal_candidate": 243,
+        "missing": 3
+      },
+      "reasons": {
+        "endpoint_unobserved_gt_5s": 1132,
+        "counter_boundary_screen_pass": 243,
+        "long_gap_breaks_trip_attribution;endpoint_unobserved_gt_5s": 11,
+        "long_gap_breaks_trip_attribution": 7,
+        "missing_counter_or_fewer_than_two_observations": 3
+      },
+      "kwh_quantiles_all": {
+        "0.0": -0.004000000002633897,
+        "0.05": -0.0020000000004074536,
+        "0.5": 0.0,
+        "0.95": 0.0020000000004074536,
+        "1.0": 38.46999999999662
+      },
+      "zero_or_near_zero_le_0_01_count": 1382,
+      "negative_lt_minus_0_004_count": 2,
+      "A_quant_precision_ge_95pct": 0,
+      "A_visible_edge_kwh_quantiles": {
+        "0.0": 4.983186408534505e-05,
+        "0.05": 0.00019558849468685058,
+        "0.5": 0.0008799756437730399,
+        "0.95": 0.009207425055833322,
+        "1.0": 0.04221078363044621
+      },
+      "A_endpoint_asynchrony_quantiles": {
+        "0.0": 0.0,
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0,
+        "1.0": 0.0
+      }
+    },
+    "per_vehicle": {
+      "BEV1": {
+        "files": 382,
+        "ge_10km_files": 210,
+        "labels": {
+          "battery_discharge": {
+            "A": 378,
+            "A_ge_10km": 207
+          },
+          "battery_charge": {
+            "A": 378,
+            "A_ge_10km": 207
+          },
+          "bms_drive_gross": {
+            "A": 74,
+            "A_ge_10km": 39
+          },
+          "bms_regen": {
+            "A": 70,
+            "A_ge_10km": 38
+          },
+          "battery_net": {
+            "A": 378,
+            "A_ge_10km": 207
+          },
+          "bms_drive_net": {
+            "A": 0,
+            "A_ge_10km": 0
+          },
+          "non_drive_residual": {
+            "A": 74,
+            "A_ge_10km": 39
+          },
+          "external_charge_balance": {
+            "A": 70,
+            "A_ge_10km": 38
+          }
+        }
+      },
+      "BEV2": {
+        "files": 1014,
+        "ge_10km_files": 313,
+        "labels": {
+          "battery_discharge": {
+            "A": 997,
+            "A_ge_10km": 302
+          },
+          "battery_charge": {
+            "A": 997,
+            "A_ge_10km": 302
+          },
+          "bms_drive_gross": {
+            "A": 171,
+            "A_ge_10km": 46
+          },
+          "bms_regen": {
+            "A": 173,
+            "A_ge_10km": 47
+          },
+          "battery_net": {
+            "A": 997,
+            "A_ge_10km": 302
+          },
+          "bms_drive_net": {
+            "A": 0,
+            "A_ge_10km": 0
+          },
+          "non_drive_residual": {
+            "A": 171,
+            "A_ge_10km": 46
+          },
+          "external_charge_balance": {
+            "A": 173,
+            "A_ge_10km": 47
+          }
+        }
+      }
+    },
+    "drive_over_discharge_quantiles": {
+      "0.0": 0.05405405406468365,
+      "0.05": 0.8513543394155524,
+      "0.5": 0.9908508002418452,
+      "0.95": 0.9994136234652438,
+      "1.0": 1.1666666666919303
+    },
+    "non_drive_residual_abs_le_0_004_count": 368,
+    "non_drive_residual_abs_le_0_01_count": 585,
+    "non_drive_residual_positive_gt_0_02_count": 590
+  }
+}

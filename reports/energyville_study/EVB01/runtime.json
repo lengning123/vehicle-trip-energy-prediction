@@ -1,0 +1,75 @@
+{
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "sklearn": "1.9.1",
+  "numpy": "2.3.2",
+  "pandas": "3.0.5",
+  "threads": 4,
+  "cpu_count": 128,
+  "started_at": "2026-09-30T12:02:00.333111+00:00",
+  "groups": {
+    "R": {
+      "fit_s": 1.9088441990315914,
+      "train_validation_predict_s": 0.029562611132860184,
+      "features": 17,
+      "n_iter": 500,
+      "future_inference_s": 0.019085741601884365
+    },
+    "S": {
+      "fit_s": 2.0251424964517355,
+      "train_validation_predict_s": 0.03072304744273424,
+      "features": 40,
+      "n_iter": 500,
+      "future_inference_s": 0.021861406043171883
+    },
+    "H": {
+      "fit_s": 2.5091400677338243,
+      "train_validation_predict_s": 0.029340672306716442,
+      "features": 71,
+      "n_iter": 500,
+      "future_inference_s": 0.014207913540303707
+    },
+    "O": {
+      "fit_s": 2.5378319965675473,
+      "train_validation_predict_s": 0.029643909074366093,
+      "features": 78,
+      "n_iter": 500,
+      "future_inference_s": 0.010112007148563862
+    }
+  },
+  "runner_sha256": "6560d2ab80de82b6c561d9dd440f7bc1646d21ec2e83dbfa816694b4cdb156b7",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-8fb3d286.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "filepath": "/root/miniconda3/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "total_s_before_report": 10.020440015941858,
+  "finished_at": "2026-09-30T12:02:10.354421+00:00",
+  "max_rss_kib": 180108,
+  "git_head": "cloud copy; no git metadata"
+}

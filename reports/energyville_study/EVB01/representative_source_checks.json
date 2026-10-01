@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "source": "independent raw ZIP reread; nearest1/10/100km selected before fit",
+  "examples": [
+    {
+      "file": "BEV2_2024-12-31_drive5.csv",
+      "distance_km": 1.005738818755292,
+      "t_cut": "2024-12-31 15:43:44+00:00",
+      "first_valid_temp_bucket_ns": 1735659823000000000,
+      "state_first_temp_bucket_completed": true,
+      "prefix_recomputed_kwh": 0.005509334184509252,
+      "prefix_stored_kwh": 0.0055093341845092,
+      "remaining_stored_kwh": 0.097984160486879,
+      "full_stored_kwh": 0.1034934946713882,
+      "identity_abs_error_kwh": 4.7704895589362195e-17,
+      "units": "voltage V * current A /1000 => kW; trapezoid seconds /3600 => kWh; signed positive discharge",
+      "route_first_offset_s": 0.0,
+      "route_tail_offset_s": 0.0,
+      "prefix_availability_caveat": "interval-end bucket at cut becomes available at cut+1s; not learner input"
+    },
+    {
+      "file": "BEV2_2024-08-23_drive6.csv",
+      "distance_km": 9.983961337140675,
+      "t_cut": "2024-08-23 16:40:07+00:00",
+      "first_valid_temp_bucket_ns": 1724431206000000000,
+      "state_first_temp_bucket_completed": true,
+      "prefix_recomputed_kwh": 0.0002874570734596074,
+      "prefix_stored_kwh": 0.0002874570734596,
+      "remaining_stored_kwh": 1.447913336115387,
+      "full_stored_kwh": 1.4482007931888468,
+      "identity_abs_error_kwh": 6.635317295611287e-17,
+      "units": "voltage V * current A /1000 => kW; trapezoid seconds /3600 => kWh; signed positive discharge",
+      "route_first_offset_s": 0.0,
+      "route_tail_offset_s": 1.0,
+      "prefix_availability_caveat": "interval-end bucket at cut becomes available at cut+1s; not learner input"
+    },
+    {
+      "file": "BEV2_2024-09-17_drive1.csv",
+      "distance_km": 99.33884016464066,
+      "t_cut": "2024-09-17 10:17:18+00:00",
+      "first_valid_temp_bucket_ns": 1726568237000000000,
+      "state_first_temp_bucket_completed": true,
+      "prefix_recomputed_kwh": 0.0007796486010734509,
+      "prefix_stored_kwh": 0.0007796486010734,
+      "remaining_stored_kwh": 18.811731817995245,
+      "full_stored_kwh": 18.81251146659632,
+      "identity_abs_error_kwh": 1.2608187063833931e-15,
+      "units": "voltage V * current A /1000 => kW; trapezoid seconds /3600 => kWh; signed positive discharge",
+      "route_first_offset_s": 0.0,
+      "route_tail_offset_s": 0.0,
+      "prefix_availability_caveat": "interval-end bucket at cut becomes available at cut+1s; not learner input"
+    }
+  ]
+}

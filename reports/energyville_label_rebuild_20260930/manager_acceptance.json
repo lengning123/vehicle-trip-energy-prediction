@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "checks": {
+    "all1396_unique_and_joined": true,
+    "main_count_matches_summary": true,
+    "no_temperature_gate": true,
+    "all_temperature_available_within_6s": true,
+    "temperature_cut_bucket_finished": true,
+    "positive_source_elapsed_real_seconds": true,
+    "source_historical_temperature_is_past": true,
+    "counter_historical_temperature_is_past": true,
+    "net_label_identity_all": true,
+    "main_no_external_evidence": true,
+    "main_no_conflicting_iv_overlap": true,
+    "main_route_counter_boundaries_equal": true,
+    "hybrid_count_matches": true,
+    "hybrid_accounting": true,
+    "hybrid_ends_observed_and_counters_synchronous": true,
+    "original_zip_unmodified": true,
+    "all1396_signal_csvs": true,
+    "all1396_route_csvs": true,
+    "raw_counter_BEV2_2024-10-06_drive3.csv": true,
+    "retained_original_columns_BEV2_2024-10-06_drive3.csv": true,
+    "route_bounds_BEV2_2024-10-06_drive3.csv": true,
+    "raw_counter_BEV2_2024-08-07_drive7.csv": true,
+    "retained_original_columns_BEV2_2024-08-07_drive7.csv": true,
+    "route_bounds_BEV2_2024-08-07_drive7.csv": true,
+    "raw_counter_BEV1_2024-08-10_drive4.csv": true,
+    "retained_original_columns_BEV1_2024-08-10_drive4.csv": true,
+    "route_bounds_BEV1_2024-08-10_drive4.csv": true,
+    "view_main_net_battery_route_candidates.csv": true,
+    "view_main_net_battery_internal_consistency_checked.csv": true,
+    "view_full_source_hybrid_net_candidates.csv": true,
+    "remaining_count_matches": true,
+    "remaining_prefix_covered": true,
+    "remaining_accounting_identity": true,
+    "remaining_new_cut_is_observed_temp_end": true,
+    "remaining_not_mislabeled_predeparture": true,
+    "remaining_export_matches": true
+  },
+  "samples": [
+    {
+      "file": "BEV2_2024-10-06_drive3.csv",
+      "source_duration_s": 78.0,
+      "counter_net_kwh": 0.001999999996769475,
+      "label_net_kwh": 0.0019999999967694,
+      "route_rows": 78
+    },
+    {
+      "file": "BEV2_2024-08-07_drive7.csv",
+      "source_duration_s": 1713.0,
+      "counter_net_kwh": 1.1080000000001746,
+      "label_net_kwh": 1.1080000000001746,
+      "route_rows": 1713
+    },
+    {
+      "file": "BEV1_2024-08-10_drive4.csv",
+      "source_duration_s": 11161.0,
+      "counter_net_kwh": 48.16599999999926,
+      "label_net_kwh": 48.16599999999926,
+      "route_rows": 11162
+    }
+  ],
+  "main_count": 1359,
+  "full_source_hybrid_count": 1284,
+  "scope": "source integrity, independent endpoint recalculation and data contract; no prediction accuracy tested"
+}

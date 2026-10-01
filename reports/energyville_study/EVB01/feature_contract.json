@@ -1,0 +1,609 @@
+{
+  "distance_km": {
+    "block": "R",
+    "oracle": false,
+    "formula": "R05 sum plausible GPS chords whose end timestamp > cut; full crossing chord retained",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "start_lat": {
+    "block": "R",
+    "oracle": false,
+    "formula": "first valid remaining GPS latitude",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "start_lon": {
+    "block": "R",
+    "oracle": false,
+    "formula": "first valid remaining GPS longitude",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "end_lat": {
+    "block": "R",
+    "oracle": false,
+    "formula": "last valid remaining GPS latitude",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "end_lon": {
+    "block": "R",
+    "oracle": false,
+    "formula": "last valid remaining GPS longitude",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "straight_km": {
+    "block": "R",
+    "oracle": false,
+    "formula": "endpoint haversine, Earth radius6371.0088km",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "route_to_straight_ratio": {
+    "block": "R",
+    "oracle": false,
+    "formula": "D/straight_km if straight>1e-6km else NaN",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "ratio_undefined": {
+    "block": "R",
+    "oracle": false,
+    "formula": "straight_km<=1e-6",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "direction_sin": {
+    "block": "R",
+    "oracle": false,
+    "formula": "sin(endpoint atan2(delta_lon*cos(mean_lat),delta_lat))",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "direction_cos": {
+    "block": "R",
+    "oracle": false,
+    "formula": "cos(endpoint atan2(delta_lon*cos(mean_lat),delta_lat))",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "turn_abs_mean": {
+    "block": "R",
+    "oracle": false,
+    "formula": "mean of absolute unwrapped heading differences on50m equal-spatial route samples (endpoint also included)",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "turn_abs_std": {
+    "block": "R",
+    "oracle": false,
+    "formula": "std of absolute unwrapped heading differences on50m equal-spatial route samples (endpoint also included)",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "turn_abs_p90": {
+    "block": "R",
+    "oracle": false,
+    "formula": "p90 of absolute unwrapped heading differences on50m equal-spatial route samples (endpoint also included)",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "turn_abs_sum": {
+    "block": "R",
+    "oracle": false,
+    "formula": "sum of absolute unwrapped heading differences on50m equal-spatial route samples (endpoint also included)",
+    "source": "remaining source GPS; frozen budget D",
+    "available": "given planned-route offline geometry proxy",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "soc": {
+    "block": "S",
+    "oracle": false,
+    "formula": "latest valid value whose bucket+1s<=cut; source in state_provenance.csv",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "soc_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(soc)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "soc_age_s": {
+    "block": "S",
+    "oracle": false,
+    "formula": "(cut-last_valid_soc_bucket-1s)/1s",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "ambient_c": {
+    "block": "S",
+    "oracle": false,
+    "formula": "latest valid value whose bucket+1s<=cut; source in state_provenance.csv",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "ambient_c_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(ambient_c)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "ambient_c_age_s": {
+    "block": "S",
+    "oracle": false,
+    "formula": "(cut-last_valid_ambient_c_bucket-1s)/1s",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "ambient_vcfront_source": {
+    "block": "S",
+    "oracle": false,
+    "formula": "1 if primary ambient has no valid ended bucket and fallback is used",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_min_c": {
+    "block": "S",
+    "oracle": false,
+    "formula": "latest valid value whose bucket+1s<=cut; source in state_provenance.csv",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_min_c_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(pack_min_c)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_min_c_age_s": {
+    "block": "S",
+    "oracle": false,
+    "formula": "(cut-last_valid_pack_min_c_bucket-1s)/1s",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_max_c": {
+    "block": "S",
+    "oracle": false,
+    "formula": "latest valid value whose bucket+1s<=cut; source in state_provenance.csv",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_max_c_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(pack_max_c)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_max_c_age_s": {
+    "block": "S",
+    "oracle": false,
+    "formula": "(cut-last_valid_pack_max_c_bucket-1s)/1s",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_range_c": {
+    "block": "S",
+    "oracle": false,
+    "formula": "pack_max_c-pack_min_c",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "pack_range_c_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(pack_range_c)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "preconditioning_request": {
+    "block": "S",
+    "oracle": false,
+    "formula": "latest valid value whose bucket+1s<=cut; source in state_provenance.csv",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "preconditioning_request_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(preconditioning_request)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "preconditioning_request_age_s": {
+    "block": "S",
+    "oracle": false,
+    "formula": "(cut-last_valid_preconditioning_request_bucket-1s)/1s",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "soc_times_pack_min": {
+    "block": "S",
+    "oracle": false,
+    "formula": "soc*pack_min_c",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "soc_times_pack_min_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(soc_times_pack_min)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "observed_cross_mode_temperature_conflict": {
+    "block": "S",
+    "oracle": false,
+    "formula": "own ended pack temperature differs from deduplicated same completed thermal bucket; own value preferred",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "distance_times_ambient_minus20": {
+    "block": "S",
+    "oracle": false,
+    "formula": "D*(ambient_c-20)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "distance_times_ambient_minus20_missing": {
+    "block": "S",
+    "oracle": false,
+    "formula": "is_not_finite(distance_times_ambient_minus20)",
+    "source": "latest valid ended own-source bucket",
+    "available": "bucket+1s<=cut",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_count": {
+    "block": "H",
+    "oracle": false,
+    "formula": "number of eligible latest<=10 same-vehicle train records completed by cut",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "history_count==0",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_recent_age_s": {
+    "block": "H",
+    "oracle": false,
+    "formula": "(cut-last_history_end-1s)/1s",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_net_wh_per_km": {
+    "block": "H",
+    "oracle": false,
+    "formula": "1000*sum(full_source_hybrid_net_kwh)/sum(full_source_gps_path_plausible_km)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_wh_per_km_median": {
+    "block": "H",
+    "oracle": false,
+    "formula": "median(1000*full_source_energy/full_source_distance), distance>0",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_distance_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean full source distance of eligible latest10",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_duration_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean completed(source_end-source_start) seconds",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_mean_speed_kph": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean(3600*full_source_distance/completed_source_duration)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_ambient_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean of completed source ambient means, primary/fallback per bucket",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_pack_min_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean of completed source valid pack-min means",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_pack_max_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean of completed source valid pack-max means",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "od_history_count": {
+    "block": "H",
+    "oracle": false,
+    "formula": "same directed250m start/end cells +1km length bin within latest10 history",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "od_history_net_wh_per_km": {
+    "block": "H",
+    "oracle": false,
+    "formula": "1000*sum(sameOD full-source energy)/sum(sameOD full-source distance)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "od_history_duration_mean": {
+    "block": "H",
+    "oracle": false,
+    "formula": "mean completed sameOD source duration",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_min": {
+    "block": "H",
+    "oracle": false,
+    "formula": "most recent valid telemetry min before source start",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_max": {
+    "block": "H",
+    "oracle": false,
+    "formula": "most recent valid telemetry max before source start",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_age_s": {
+    "block": "H",
+    "oracle": false,
+    "formula": "(cut-last_thermal_bucket-1s)/1s",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_recent_age_s_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_recent_age_s)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_net_wh_per_km_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_net_wh_per_km)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_wh_per_km_median_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_wh_per_km_median)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_distance_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_distance_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_duration_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_duration_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_mean_speed_kph_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_mean_speed_kph)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_ambient_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_ambient_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_pack_min_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_pack_min_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "history_pack_max_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(history_pack_max_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "od_history_net_wh_per_km_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(od_history_net_wh_per_km)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "od_history_duration_mean_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(od_history_duration_mean)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_min_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(past_thermal_min)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_max_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(past_thermal_max)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "past_thermal_age_s_missing": {
+    "block": "H",
+    "oracle": false,
+    "formula": "is_not_finite(past_thermal_age_s)",
+    "source": "quality completed training sources; separate thermal telemetry before source start",
+    "available": "label train ID and end+1s<=cut; telemetry bucket+1s<=source start",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_remaining_duration_s": {
+    "block": "O",
+    "oracle": true,
+    "formula": "(source_end-cut) seconds",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_gps_distance_weighted_v2": {
+    "block": "O",
+    "oracle": true,
+    "formula": "sum(valid_gps_chord_m*gps_speed_mps**2)/sum(valid_gps_chord_m)",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_observed_stop_fraction": {
+    "block": "O",
+    "oracle": true,
+    "formula": "sum(valid_dt where speed<0.5m/s)/sum(valid_dt)",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_motion_coverage": {
+    "block": "O",
+    "oracle": true,
+    "formula": "sum(valid_dt)/remaining_duration; dt<=2s and speed<=200km/h",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_motion_missing": {
+    "block": "O",
+    "oracle": true,
+    "formula": "no valid remaining GPS time intervals",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_v2_missing": {
+    "block": "O",
+    "oracle": true,
+    "formula": "no positive valid motion distance",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "actual_stop_missing": {
+    "block": "O",
+    "oracle": true,
+    "formula": "no valid motion intervals",
+    "source": "actual remaining GPS time and duration",
+    "available": "after source end; diagnostic only",
+    "missing": "NaN and fixed missing flags; native HistGBR routing"
+  },
+  "vehicle": {
+    "block": "R",
+    "source": "known vehicle",
+    "formula": "train-only one-hot + unknown",
+    "available": "at cut",
+    "oracle": false
+  }
+}

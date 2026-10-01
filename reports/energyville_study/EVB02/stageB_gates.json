@@ -1,0 +1,62 @@
+{
+  "O-time": {
+    "passed": false,
+    "checks": {
+      "validation": {
+        "vs_H_improve10pct": false,
+        "top5pct_positive_gain_share": 0.25905881646439394,
+        "low_coverage_positive_gain_share": 0.04016100985746702,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": 0.014032990127031297
+      },
+      "development": {
+        "vs_H_improve10pct": false,
+        "top5pct_positive_gain_share": 0.33987917661019834,
+        "low_coverage_positive_gain_share": 0.022491002237000346,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": 0.005960538355347664
+      }
+    },
+    "caveat": "concentration screen is descriptive; correlated proxies and interactions are not isolated causes"
+  },
+  "O-motion": {
+    "passed": false,
+    "checks": {
+      "validation": {
+        "vs_H_improve10pct": false,
+        "top5pct_positive_gain_share": 0.3893327004471192,
+        "low_coverage_positive_gain_share": 0.06896917131275246,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": -0.004638547922212341
+      },
+      "development": {
+        "vs_H_improve10pct": false,
+        "top5pct_positive_gain_share": 0.3369163297337416,
+        "low_coverage_positive_gain_share": 0.021417565633590853,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": 0.054285023967139426
+      }
+    },
+    "caveat": "concentration screen is descriptive; correlated proxies and interactions are not isolated causes"
+  },
+  "O-quality": {
+    "passed": false,
+    "checks": {
+      "validation": {
+        "vs_H_improve10pct": false,
+        "top5pct_positive_gain_share": 0.41858236405474386,
+        "low_coverage_positive_gain_share": 0.13000552860261053,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": 0.02328992318823821
+      },
+      "development": {
+        "vs_H_improve10pct": true,
+        "top5pct_positive_gain_share": 0.3409938503109518,
+        "low_coverage_positive_gain_share": 0.043826785511739165,
+        "not_few_or_bad_coverage_dominated": true,
+        "good_coverage_mae_improvement_vs_H": 0.09768785708155397
+      }
+    },
+    "caveat": "concentration screen is descriptive; correlated proxies and interactions are not isolated causes"
+  }
+}

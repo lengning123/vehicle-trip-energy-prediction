@@ -1,0 +1,115 @@
+{
+  "60s_blocks": 1964,
+  "source_files": 512,
+  "drive_positive_ge_5wh_blocks": 1917,
+  "examples": [
+    {
+      "file": "BEV1_2024-07-25_drive1.csv",
+      "start_utc": "2024-07-25 07:41:43+00:00",
+      "end_utc": "2024-07-25 07:42:42+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.007999999999810825,
+      "drive_delta_kwh": 0.0059999999994033715,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-27_drive3.csv",
+      "start_utc": "2024-07-27 12:17:12+00:00",
+      "end_utc": "2024-07-27 12:18:11+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.02199999999902502,
+      "drive_delta_kwh": 0.018000000000029104,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-27_drive3.csv",
+      "start_utc": "2024-07-27 12:18:12+00:00",
+      "end_utc": "2024-07-27 12:19:11+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.020000000000436557,
+      "drive_delta_kwh": 0.018000000000029104,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-27_drive3.csv",
+      "start_utc": "2024-07-27 12:56:12+00:00",
+      "end_utc": "2024-07-27 12:57:11+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.018000000000029104,
+      "drive_delta_kwh": 0.013999999999214197,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-27_drive4.csv",
+      "start_utc": "2024-07-27 14:39:39+00:00",
+      "end_utc": "2024-07-27 14:40:38+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.006000000001222361,
+      "drive_delta_kwh": 0.0059999999994033715,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-31_drive2.csv",
+      "start_utc": "2024-07-31 15:32:04+00:00",
+      "end_utc": "2024-07-31 15:33:03+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.007999999999810825,
+      "drive_delta_kwh": 0.0059999999994033715,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-31_drive2.csv",
+      "start_utc": "2024-07-31 16:15:04+00:00",
+      "end_utc": "2024-07-31 16:16:03+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.023999999999432475,
+      "drive_delta_kwh": 0.018000000000029104,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-07-31_drive2.csv",
+      "start_utc": "2024-07-31 16:16:04+00:00",
+      "end_utc": "2024-07-31 16:17:03+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.02200000000084401,
+      "drive_delta_kwh": 0.019999999998617568,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-08-08_drive1.csv",
+      "start_utc": "2024-08-08 05:43:36+00:00",
+      "end_utc": "2024-08-08 05:44:35+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.007999999999810825,
+      "drive_delta_kwh": 0.0059999999994033715,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-08-10_drive4.csv",
+      "start_utc": "2024-08-10 19:34:13+00:00",
+      "end_utc": "2024-08-10 19:35:12+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.02599999999983993,
+      "drive_delta_kwh": 0.02200000000084401,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-08-10_drive4.csv",
+      "start_utc": "2024-08-10 19:37:13+00:00",
+      "end_utc": "2024-08-10 19:38:12+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.02599999999983993,
+      "drive_delta_kwh": 0.02199999999902502,
+      "regen_delta_kwh": 0.0
+    },
+    {
+      "file": "BEV1_2024-08-10_drive4.csv",
+      "start_utc": "2024-08-10 19:38:13+00:00",
+      "end_utc": "2024-08-10 19:39:12+00:00",
+      "rows": 60,
+      "discharge_delta_kwh": 0.02599999999983993,
+      "drive_delta_kwh": 0.02199999999902502,
+      "regen_delta_kwh": 0.0
+    }
+  ]
+}

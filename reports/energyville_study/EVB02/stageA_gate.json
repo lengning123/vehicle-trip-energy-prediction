@@ -1,0 +1,94 @@
+{
+  "passed": false,
+  "partitions": {
+    "validation": {
+      "vs_H_improve10pct": {
+        "passed": true,
+        "ratio": 0.8921289987033911,
+        "allowed_max_ratio": 0.9,
+        "absolute_difference": -0.04199369696193983
+      },
+      "vs_S_improve5pct": {
+        "passed": false,
+        "ratio": 0.978793632945538,
+        "allowed_max_ratio": 0.95,
+        "absolute_difference": -0.007524578803906223
+      },
+      "vs_S_rmse_guard": {
+        "passed": true,
+        "ratio": 0.9803714227857995,
+        "allowed_max_ratio": 1.05,
+        "absolute_difference": -0.01722930642869258
+      },
+      "vs_S_under_guard": {
+        "passed": true,
+        "ratio": 1.0214302449858317,
+        "allowed_max_ratio": 1.05,
+        "absolute_difference": 0.0049258567148462995
+      },
+      "vehicle_BEV1": {
+        "passed": true,
+        "ratio": 0.9552786234315922,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": -0.020362906897805677
+      },
+      "vehicle_BEV2": {
+        "passed": true,
+        "ratio": 1.0208935778967476,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": 0.005313749289993286
+      },
+      "ge10km": {
+        "passed": true,
+        "ratio": 0.9744486803974478,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": -0.018197386950572825
+      }
+    },
+    "development": {
+      "vs_H_improve10pct": {
+        "passed": false,
+        "ratio": 0.9937869743882242,
+        "allowed_max_ratio": 0.9,
+        "absolute_difference": -0.0035121175400816274
+      },
+      "vs_S_improve5pct": {
+        "passed": false,
+        "ratio": 1.0190767890118622,
+        "allowed_max_ratio": 0.95,
+        "absolute_difference": 0.01051616919108922
+      },
+      "vs_S_rmse_guard": {
+        "passed": true,
+        "ratio": 1.0346079661434504,
+        "allowed_max_ratio": 1.05,
+        "absolute_difference": 0.035292819592793956
+      },
+      "vs_S_under_guard": {
+        "passed": false,
+        "ratio": 1.0576417965228426,
+        "allowed_max_ratio": 1.05,
+        "absolute_difference": 0.003239794987715733
+      },
+      "vehicle_BEV1": {
+        "passed": true,
+        "ratio": 0.9071230588002124,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": -0.041327136701436895
+      },
+      "vehicle_BEV2": {
+        "passed": true,
+        "ratio": 1.0333282281940421,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": 0.01894851412541576
+      },
+      "ge10km": {
+        "passed": true,
+        "ratio": 1.0290673658914826,
+        "allowed_max_ratio": 1.1,
+        "absolute_difference": 0.04318125825464225
+      }
+    }
+  },
+  "interpretation": "predeclared investment gate, not business acceptance or independent statistical confirmation"
+}

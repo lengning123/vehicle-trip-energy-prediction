@@ -1,0 +1,52 @@
+{
+  "version": "2026-09-30",
+  "primary": {
+    "name": "recorded_trip_battery_net_energy",
+    "column": "battery_net_kwh",
+    "formula": "Delta(TotalDischargeKWh3D2) - Delta(TotalChargeKWh3D2)",
+    "unit": "kWh",
+    "signed": true,
+    "clip": false,
+    "temperature_required_for_label": false,
+    "boundary": "declared source recorded driving session; actual common/as-of counter window retained separately",
+    "strong_tier": "strong_internal_candidate",
+    "independent_meter_validated": false,
+    "complete_physical_on_off_trip_proven": false
+  },
+  "auxiliary": [
+    "battery_discharge_kwh",
+    "battery_charge_kwh"
+  ],
+  "mechanism_candidates": [
+    "bms_drive_gross_kwh",
+    "bms_regen_kwh",
+    "bms_drive_net_kwh",
+    "non_drive_residual_kwh"
+  ],
+  "prohibited_semantic_upgrades": [
+    "bms_drive equals independently measured pure traction",
+    "non_drive residual equals separately measured HVAC",
+    "CAN-IV agreement establishes absolute meter accuracy"
+  ],
+  "thresholds": {
+    "endpoint_omission_s": 5,
+    "long_gap_s": 60,
+    "external_charge_balance_kwh": 0.02,
+    "iv_window_coverage": 0.99,
+    "iv_consistency_formula": "abs(E_IV-E_counter) <= 0.02 kWh + 0.03*abs(E_counter)",
+    "threshold_type": "engineering screening, not natural or physical accuracy bound"
+  },
+  "quantization": {
+    "dbc_step_kwh": 0.001,
+    "single_difference_conservative_kwh": 0.002,
+    "double_difference_conservative_kwh": 0.004,
+    "relative_denominator": "abs(label_kwh), undefined at zero",
+    "contains_asynchrony_or_calibration_error": false
+  },
+  "source_clock": "_utc columns are a computational axis, source logger actual timezone unverified",
+  "reproduce": [
+    "audit_labels.py",
+    "build_observed_window_views.py",
+    "check_stationary_drive.py"
+  ]
+}

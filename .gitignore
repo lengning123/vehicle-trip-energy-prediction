@@ -1,0 +1,73 @@
+# Local datasets and generated experiment artifacts
+/data/
+/runs/
+/outputs/
+/checkpoints/
+/wandb/
+/mlruns/
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+/configs/autodl_ssh.local.json
+/scripts/autodl_askpass.cmd
+
+# Logs and temporary files
+*.log
+*.tmp
+~$*.docx
+
+# Operating-system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# EV-B local binaries and raw reconstructed tables
+*.joblib
+/reports/energyville_study/**/*.zip
+/reports/energyville_label_rebuild_20260930/**/*.zip
+/reports/energyville_label_rebuild_20260930/**/*.gz
+/reports/energyville_label_rebuild_20260930/**/*.csv
+
+# Third-party downloads; keep only dataset attribution metadata
+/reports/literature_review_20260930/sources/
+/reports/paper_sources/
+/reports/public_dataset_audit_20260930/sources/*
+!/reports/public_dataset_audit_20260930/sources/energyville_metadata.json
+!/reports/public_dataset_audit_20260930/sources/energyville_readme.txt
+!/reports/public_dataset_audit_20260930/sources/file_checks.json
+/docs/evb/*.local.py
+
+# Isolated publication checkout and local organization helpers
+/exports/
+/docs/evb/*.local.*

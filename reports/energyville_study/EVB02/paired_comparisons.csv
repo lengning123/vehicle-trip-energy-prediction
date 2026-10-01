@@ -1,0 +1,14 @@
+left,right,n,week_blocks,mae_improvement_right_kwh,ci95_low_kwh,ci95_high_kwh,repetitions,seed,unit
+H-frozen,H-online,193,14,0.0035121175400815515,-0.01195699314288157,0.01651623523654797,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+S-fixed,H-online,193,14,-0.010516169191089128,-0.0399135951670724,0.018865327388114212,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+H-frozen,O-combined,193,14,0.11432828291891105,0.06269584418599093,0.18179135603761382,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+S-fixed,O-combined,193,14,0.10029999618774038,0.05201175099326746,0.17063742333965481,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+H-frozen,O-time,193,14,0.006024572019599261,-0.004760311870117668,0.01828701102759604,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+S-fixed,O-time,193,14,-0.008003714711571415,-0.037534593454380136,0.02468679777249043,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+O-time,O-combined,193,14,0.1083037108993118,0.06164147376488122,0.17682307712912024,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+H-frozen,O-motion,193,14,0.04988347177882078,0.00947747196739679,0.10005538027588656,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+S-fixed,O-motion,193,14,0.0358551850476501,-0.00209359443888125,0.09160613324877644,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+O-motion,O-combined,193,14,0.06444481114009028,0.02809174750053971,0.11060297094582126,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+H-frozen,O-quality,193,14,0.09141580859718093,0.04625629434467998,0.14695835872435992,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+S-fixed,O-quality,193,14,0.07738752186601026,0.0347981488086071,0.13271972431088988,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle
+O-quality,O-combined,193,14,0.022912474321730127,0.005822413682582611,0.04972473509490174,1000,42,fixed online errors; whole ISO week with both cars; no temporal history reshuffle

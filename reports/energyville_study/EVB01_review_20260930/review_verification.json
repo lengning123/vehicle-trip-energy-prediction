@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "summary_and_links": [
+    {
+      "file": "problem.md",
+      "summary_characters": 168,
+      "missing_new_links": []
+    },
+    {
+      "file": "hypotheses.md",
+      "summary_characters": 143,
+      "missing_new_links": []
+    },
+    {
+      "file": "experiments.md",
+      "summary_characters": 147,
+      "missing_new_links": []
+    },
+    {
+      "file": "decision_log.md",
+      "summary_characters": 159,
+      "missing_new_links": []
+    },
+    {
+      "file": "todo.md",
+      "summary_characters": 168,
+      "missing_new_links": []
+    },
+    {
+      "file": "报告充分性与下一阶段判断.md",
+      "summary_characters": 165,
+      "missing_new_links": []
+    }
+  ],
+  "D13_unique": true,
+  "R06_unique": true,
+  "source_prediction_hashes_unchanged": true,
+  "new_model_fits": 0,
+  "calibration_scored": false
+}

@@ -1,0 +1,1332 @@
+{
+  "date": "2026-10-01",
+  "research_state": "D14 / R07; EV-B01 and EV-B02 complete",
+  "scope": "EV-B code, longitudinal research Markdown, contracts, predictions, figures and necessary source attribution; unrelated tracked edits excluded",
+  "included_file_count_without_manifest": 263,
+  "bytes_without_manifest": 27870951,
+  "excluded": [
+    "local credentials",
+    "raw ZIP/GZ",
+    "model joblib",
+    "R05 bulk CSV",
+    "third-party paper fulltexts and cloned sources",
+    "unrelated tracked work"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 826,
+      "sha256": "9e21a76936c93af951dcc4d3839d44381f7c274f4f655df03eea9ae35bc07236"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1383,
+      "sha256": "d3c2ce6cbb5aa3494972439ddd5b1ac82017ae5ada9825f925c49660f6d14515"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5197,
+      "sha256": "5143d3e941cd54311fc04874c1fb61026e4b1082088dd36a429b5abe6c6a61ae"
+    },
+    {
+      "path": "decision_log.md",
+      "bytes": 38028,
+      "sha256": "d1cc55cbcb8393dbe75d4c2729f27e4b5477056933b80018a918b7d2763b9835"
+    },
+    {
+      "path": "docs/evb/CODE_MAP.md",
+      "bytes": 3173,
+      "sha256": "818356d8c126ca1573f821f72eccf69cc97fd6b0bbfde7d5cdb48db99729f5fb"
+    },
+    {
+      "path": "docs/evb/DATA.md",
+      "bytes": 3547,
+      "sha256": "37e38f89ee316faf5282495718fddb7c17e41a74d02989fda60fbcb4c2bb0fa3"
+    },
+    {
+      "path": "docs/evb/README.md",
+      "bytes": 561,
+      "sha256": "2b22117d4a40a5f36b8c8df18155e1d4714ec797dedbf2b7657db0abe76d6bc8"
+    },
+    {
+      "path": "docs/evb/REPRODUCTION.md",
+      "bytes": 4848,
+      "sha256": "7015fd671c27efd8c89e8d3faf370918748ca145e140c7dbec2f474a22977f34"
+    },
+    {
+      "path": "docs/history/README_before_EVB_20261001.md",
+      "bytes": 7016,
+      "sha256": "4ff3eae0c3d9dc446ee1e9067909421c5522a3f1dee958adc8a9a11646c72946"
+    },
+    {
+      "path": "experiments.md",
+      "bytes": 47819,
+      "sha256": "653a8cbfdbf8aea995c9fbe8bb14853dd028f274a5630711f66cd4849a74aa5e"
+    },
+    {
+      "path": "hypotheses.md",
+      "bytes": 22846,
+      "sha256": "94fbc2e34602b35e82b23e07d02f6b69525b18d5b62511b3de3127569e0ada44"
+    },
+    {
+      "path": "problem.md",
+      "bytes": 21006,
+      "sha256": "57e0e5163cced6f09d9c1b2e73547a20b2b086f35d4ec25e8f94df5e69c51492"
+    },
+    {
+      "path": "reports/a2_diagnosis_and_enhanced_design.md",
+      "bytes": 3707,
+      "sha256": "db94f25419e74aa73869cc752ae65d271d36c50da2bae383c01be9f556832813"
+    },
+    {
+      "path": "reports/cleanup_20260925/清理结果与保留清单.md",
+      "bytes": 3029,
+      "sha256": "6f3555c48b957f69f39d1ed4b001aad1fe9c58a3ebf2629bea222e078c42a332"
+    },
+    {
+      "path": "reports/dual_path_v1/双路径个性化模型V1实验报告.md",
+      "bytes": 14108,
+      "sha256": "7841373050e2fef629df5731e96324c802f7fd113a52fdb69855e3d3c40d5061"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/decision_log.md",
+      "bytes": 26736,
+      "sha256": "75076915b2689268e340daa62d22ae9c022b17fec2438518c0c972fc8eeb1c15"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/experiments.md",
+      "bytes": 35826,
+      "sha256": "e20e20d7ef13559364c38e8a6813378a872cfd8a28feca04f33c3b8b042837ec"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/hypotheses.md",
+      "bytes": 15118,
+      "sha256": "d166f165dd3057d5b4714cc7bf295c8372dac34b294b69618da1fbea09a31bd9"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/problem.md",
+      "bytes": 16616,
+      "sha256": "bbde4c2fe37106a029967b46daa82dc1c6a12b4a80170e6ee0868d06f62b2053"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/公开数据路线与UPECT验收.md",
+      "bytes": 19674,
+      "sha256": "e07e0ce2b0de6c9f1e9fe6350cae106ef3a5ced949ad9f5eb8e3969d98634c8b"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/电动汽车全程行程能耗预测_近三年文献调研报告.md",
+      "bytes": 12915,
+      "sha256": "7f656895b0fe4ec72b9bbaead6ce0880fbde7bd6531546d455e9201ea71872e4"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/before_label_rebuild/论文证据表.md",
+      "bytes": 29589,
+      "sha256": "bc362c54f791beabf575680d901b48b7892726994a9548541e3ab82d1ad9b5c6"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/check_context.py",
+      "bytes": 3266,
+      "sha256": "c993c569a9e14149dd1916b34d52259a948ced3282003389a4be40058afb59d2"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/artifact_manifest.json",
+      "bytes": 5508,
+      "sha256": "6df3765cd1423b826ec92d462758ae33203a89c630abf0533806b592625526ae"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/finalize_views.py",
+      "bytes": 11764,
+      "sha256": "258f79ca4fd1df76649da342db7d03b0caa14670aa17f3543dc9dff8b4bd9351"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/integrate_labels_and_routes.py",
+      "bytes": 14707,
+      "sha256": "59dafe4e4d78ff11d7dec705ca4a5546d6fba94533fcb8da64b96aecd7345f6d"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/integrated_dataset_summary.json",
+      "bytes": 5068,
+      "sha256": "df161c153f20ada77570da3cb41921ad86d7fbd422585062bb6faf18674be254"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/rebuild_recorded_sessions.py",
+      "bytes": 18694,
+      "sha256": "e6494a0d315e941b999f9256ff210f78c7b5b400c4e55d3f28e2ae5f9468650f"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/recheck_charger_fields.py",
+      "bytes": 1193,
+      "sha256": "fb98cfbf9d26604d47666471eb08ae569b670ca7b366724bbe1fcadd8f57ec19"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/summary.json",
+      "bytes": 3652,
+      "sha256": "f905d3455efba35ab402c4b1f80ca025f214ca785e20b71576489b05b4c49b25"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/validate_delivery.py",
+      "bytes": 1290,
+      "sha256": "65f55bf888238878f46018c68275f5d01d861301fb06a3df3b54c005aec8c247"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/data_pipeline/数据处理说明.md",
+      "bytes": 5763,
+      "sha256": "a0961f3597ba45be324a30f22549758bf58b2617232685d7b338c8b0003fc172"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/acceptance_checks.json",
+      "bytes": 358,
+      "sha256": "2f56cf14f02dfe452b61bcf9af2a4cce1ea56f4133952c0a176d54cb5e9153c8"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/audit_labels.py",
+      "bytes": 12635,
+      "sha256": "233a1dc57bf2ecc2931e2bd8ffb45c3df567033877cf5e03961d99152e5deca1"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/build_observed_window_views.py",
+      "bytes": 5315,
+      "sha256": "6d90633468c1c8ec92e272c2569b2a18d2e583115c2b4415fe38591c59ab10bf"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/check_stationary_drive.py",
+      "bytes": 1753,
+      "sha256": "0295a076e0c7fc52e368e6ce2d4d3e8e292a6150d7a8152b1a5f096552ec8398"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/label_audit_summary.json",
+      "bytes": 16184,
+      "sha256": "d52952556ecd9f1f0b6d5cf28a1bf786284a8a90c6ae6c808f8b378b53618c1c"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/label_contract.json",
+      "bytes": 1849,
+      "sha256": "e5c6759dfa357cf7a35c48dd83e580360fb7a495007a43c90a7394fa61cc5a3a"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/observed_window_summary.json",
+      "bytes": 3461,
+      "sha256": "bce02fa87fc5e53cfb548fdd6bb8e6091887f626939cd0b4448fcc6f0a138bb7"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/stationary_driving_blocks_summary.json",
+      "bytes": 3769,
+      "sha256": "52e07eef21f7de6baf5d299077197f269685da207fad4f7db40c818bde387f37"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/label_audit/推荐标签契约.md",
+      "bytes": 11442,
+      "sha256": "6456be03fc41bba74d5d2ac4ffe120e380a1c06b1c8e89a310f8e4cd9c361242"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/literature/整程分量标签的价值与文献依据.md",
+      "bytes": 17085,
+      "sha256": "b5e91984d3690435cdf69c7e59f8d00dae3e6c2dd0f7c1c8fe8c7e7ae8e2e7ed"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/manager_acceptance.json",
+      "bytes": 2619,
+      "sha256": "c4502a9aaccd150668f4dec9e0708961b27e58b074ec5b92e56b0125123d01f3"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/manager_acceptance.py",
+      "bytes": 6365,
+      "sha256": "71eacd761bff7a5645232d0338d925d634c9c56d4f50699728aadc708fbc3196"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/update_research_context.py",
+      "bytes": 27917,
+      "sha256": "6a08c61d1077b118880b766224a943af8a93b783da476b14597d2380693f828a"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/文档核查.json",
+      "bytes": 575,
+      "sha256": "b06bfcbe0697ddec5d3e414c6cdf4ae539613698a0c5e5ca64933e553d0706b8"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/研究经理验收与方向.md",
+      "bytes": 10428,
+      "sha256": "915109d2ef647e27dd3cff211c06b57cd8ebfa87c4a5c2779f114e0c341e3147"
+    },
+    {
+      "path": "reports/energyville_label_rebuild_20260930/验收规则.md",
+      "bytes": 1957,
+      "sha256": "38cf8eb1ce7ec52112380fa89c5a5cf6196fceec40c4311a1274bfcd3842a3f1"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/EVB01_实验报告.md",
+      "bytes": 12434,
+      "sha256": "263bdbc80295970fa519c6b0578e14b73bbe4491327dfd67444faa3acbf0a90b"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/EVB01_训练时自动报告.md",
+      "bytes": 8293,
+      "sha256": "f5d04f11758c3797628eeaa02dc67e6e9c2465513d433ccfb033201ef63347bb"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/cohort_manifest.csv",
+      "bytes": 482536,
+      "sha256": "0e5c6e21640b7d928c58b3e1cc5e81e87489924e47a1fbdfa3e7b3c260a22f09"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/completion.json",
+      "bytes": 3497,
+      "sha256": "b776dd82bb0ca42f7dae60390efa624d32ac5e756c9f596aef19c2f175625769"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/delivery_manifest.json",
+      "bytes": 8764,
+      "sha256": "5d81617623d57aefad1def216e2542c0b3253c725e378211b603322f6c1cf807"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/execution_manifest.json",
+      "bytes": 2305,
+      "sha256": "66c86ad130eacc23d960e4ba65149c4e441711f6965b1de9b23b7e755d25eef8"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/feature_columns.json",
+      "bytes": 8065,
+      "sha256": "a3f2307f262336d958010f9f3abef97bf357628d02d57d06db72516116d0f2d4"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/feature_contract.json",
+      "bytes": 25922,
+      "sha256": "89cd40970e596cf6444a1ce7477f940bc7ebd9088f6bdce9c37367577e5abb86"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/features.csv",
+      "bytes": 853302,
+      "sha256": "43a56d8422a03d6fdb7581bb6adfc9f64964aa73b803244975d67aa8ec304488"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/future_error_structure.png",
+      "bytes": 98922,
+      "sha256": "e54854763297cf07c0b6c0f4ef07ff16214b9cadb046c3dad92c22d1f5ca9a56"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/future_evaluation_started.json",
+      "bytes": 207,
+      "sha256": "7471a0f87b4718c65f75b9d2798e75a44e7e9df65a8474e84a4d1cf9d061edfa"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/future_mae.png",
+      "bytes": 41072,
+      "sha256": "0f990782dfdb057e925de2613e04ba495787b2d661a54e19fe16e3a19d6b15c6"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/history_pool_manifest.csv",
+      "bytes": 81201,
+      "sha256": "b4749a94ad4b5561ea3d2fd123138899715898c00486ebc1ea94d06b55ef54df"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/history_provenance.csv",
+      "bytes": 1513227,
+      "sha256": "b168b11833f71592dc033977b1717ffe28949857a78c86e31fd2c3414edfaf00"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/input_manifest.json",
+      "bytes": 1699,
+      "sha256": "7a50549b9f2cdecdce7eac6e454b1525776857bf0b6079905e4fe1014bf54294"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/input_path_mapping.json",
+      "bytes": 2242,
+      "sha256": "c68a72bd05c01446c07315ce3307dbeb5022657e64a170231c3fa9014ed17b43"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/metrics.json",
+      "bytes": 314038,
+      "sha256": "4214c445afde439347c1f01849232e881331aab52169eb1e07ea62c28baaad19"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/paired_comparisons.csv",
+      "bytes": 1771,
+      "sha256": "e01feb918f7d664806ac0c5edee8ac624f065cb2937ae656db1e6fdd43f1a6dc"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/predictions_future.csv",
+      "bytes": 110335,
+      "sha256": "2aab65209a753350b35dd5a5840f31b1dd462d845ae9595f07192246a9d22058"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/predictions_train.csv",
+      "bytes": 434250,
+      "sha256": "876bdfc543385941f352e3292a15b7dffb03554685cae5eb2fc82dc0eb90fe96"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/predictions_validation.csv",
+      "bytes": 107590,
+      "sha256": "a4fadab3e08f7d97fc1b43d1fc9e1cfb52c14e7430bc956d41d655c2bce01491"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/prefix_audit.csv",
+      "bytes": 145710,
+      "sha256": "98a0d5b1ec9a001ffd875c61b68ef2fa0178518673da419057bfbc97e134ca3e"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/preflight_checks.json",
+      "bytes": 3863,
+      "sha256": "61fdcd6291a219f368881d01aea96c54b1e9ee3dc00a5e51ebd7a15617a7bf84"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/preprocessing_manifest.json",
+      "bytes": 32138,
+      "sha256": "453c90ad5d449d1aa5bfa01df1ff881d89d3b63c0605bd1cc9611f962fdd8fdb"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/protocol_frozen.md",
+      "bytes": 25261,
+      "sha256": "4ecb7300f8add5b77b3680dc5a0b7cda0c5d66a2c7f4a2a9462c40e8f9109202"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/report_revision.json",
+      "bytes": 426,
+      "sha256": "46aac974af5be97757603b0d8e2d547825cba68dc54c30618fcf4d7aa52ac4ce"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/representative_source_checks.json",
+      "bytes": 2542,
+      "sha256": "04ebd6a9589b5068380753d30d1ff50d684a7bc59911cb976a560593a34eb744"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/research_context_snapshot/decision_log.md",
+      "bytes": 32551,
+      "sha256": "735050503dd190c7ec7743e45ca845187e7194d12cae48d430a6d7d8f3006cfe"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/research_context_snapshot/experiments.md",
+      "bytes": 42498,
+      "sha256": "2f94c03024d90cf75bf6db5ffab3abe344d40ef66c550da2e2c2d98bb5a5c0f5"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/research_context_snapshot/hypotheses.md",
+      "bytes": 18446,
+      "sha256": "b67a0d2166acdf6fc7479bd36f30c681da6d3610aefb65ad83bd8e16c0d8ca90"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/research_context_snapshot/problem.md",
+      "bytes": 16722,
+      "sha256": "75282f12faaf17dd8d33be603c73e09d9d05b1f69f986335ca167c0b9adfc905"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/research_context_snapshot/todo.md",
+      "bytes": 27734,
+      "sha256": "3c87af00acfb89d9354ef834151982fa8f67156d2a2e303b177546a3809d2a6e"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/route_audit.csv",
+      "bytes": 230017,
+      "sha256": "4df996c8c3224751bfe495e61ce0fff19cc4231d03c9a7a82eab96db811f85b2"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/run_config.json",
+      "bytes": 4025,
+      "sha256": "6acbd88c8b06a185e610c2c9d9e864dbbfe50f37eaa9497920472ae219eef77d"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/runtime.json",
+      "bytes": 2289,
+      "sha256": "209accbebcd5cbea6c28d99a7058ae161a1d60dfee30f507848552f25540b2b8"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/split_manifest.csv",
+      "bytes": 203749,
+      "sha256": "14e908bdaf3d96619e095719bc6b55b696d2780b0745aa4837b54de6a36fc5e6"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/state_provenance.csv",
+      "bytes": 757908,
+      "sha256": "29801eef885510bd8129870301d328c59440ee2ced666118619aa33538193e8e"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/thermal_provenance.csv",
+      "bytes": 166341,
+      "sha256": "21a8c8b5b576dfbeb12bc1a1f1ac1e524cc66dd76714de56045cfbce0027fed4"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/todo_input_snapshot.md",
+      "bytes": 25102,
+      "sha256": "87b615d9661bf009449c8e4d539d17d766ffd409504224878a12d17615d590a6"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/validation_decision.json",
+      "bytes": 4228,
+      "sha256": "100229789281271eada7e3936ff03529a488cc686c17ddc7193a94f95fd92d2c"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/validation_lock.json",
+      "bytes": 2111,
+      "sha256": "044ea1c2257a02e92b2032663d117c950f1e880471d86f059d3dfc7d19f661cc"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/verification_cloud.json",
+      "bytes": 5079,
+      "sha256": "1c71b7a177a1daa8e2975405cd282fa8907c497ac12d91a409490af6f723e3d7"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/verification_local.json",
+      "bytes": 5201,
+      "sha256": "4d8a4384b1882b4c9fbb43682cefb8a352313f7c61c47093fc71b308b9182ab0"
+    },
+    {
+      "path": "reports/energyville_study/EVB01/运行与交付说明.md",
+      "bytes": 2575,
+      "sha256": "c1dba3ba9f42cfa0708a69cd2837076d914fed44b858eeff9faf566762ab2b11"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/research_context_before_D13/decision_log.md",
+      "bytes": 32551,
+      "sha256": "735050503dd190c7ec7743e45ca845187e7194d12cae48d430a6d7d8f3006cfe"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/research_context_before_D13/experiments.md",
+      "bytes": 42498,
+      "sha256": "2f94c03024d90cf75bf6db5ffab3abe344d40ef66c550da2e2c2d98bb5a5c0f5"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/research_context_before_D13/hypotheses.md",
+      "bytes": 18446,
+      "sha256": "b67a0d2166acdf6fc7479bd36f30c681da6d3610aefb65ad83bd8e16c0d8ca90"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/research_context_before_D13/problem.md",
+      "bytes": 16722,
+      "sha256": "75282f12faaf17dd8d33be603c73e09d9d05b1f69f986335ca167c0b9adfc905"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/review_predictions.py",
+      "bytes": 6396,
+      "sha256": "2dc893ae3a63173961e71f4d6e8838f2dd618d46883077eb66d865f40f380ae1"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/review_verification.json",
+      "bytes": 894,
+      "sha256": "ac8afa8dc6395188688b17e87eb841e2ca06cc95cf0e1d7eebeacb5738901137"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/supplemental_diagnostics.json",
+      "bytes": 40961,
+      "sha256": "a0dd25b18def3d75b10119236f43d198ad99f04a55c9510df0e71e8f04fa6a81"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/todo_EVB01_completed_snapshot.md",
+      "bytes": 27734,
+      "sha256": "3c87af00acfb89d9354ef834151982fa8f67156d2a2e303b177546a3809d2a6e"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/update_research_review.py",
+      "bytes": 13907,
+      "sha256": "967e4e6bd44bd641ec27beac5e2a85a53e0956ea895f92b5e0a83a7b968dc42a"
+    },
+    {
+      "path": "reports/energyville_study/EVB01_review_20260930/报告充分性与下一阶段判断.md",
+      "bytes": 8267,
+      "sha256": "033f272909acea14438bf79e0310f1fd16069241252e3acb19f4a718d4ba15db"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/EVB02_实验报告.md",
+      "bytes": 14460,
+      "sha256": "25fe3d3f315c1043134934506bdbf22605a4de319df35c310128d67dd530572d"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/EVB02_研究结论与下一步.md",
+      "bytes": 7172,
+      "sha256": "79ac75c574d925a3bbec071aff15b1d5049999b22b7226a1d6db999408ef0af3"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/README.md",
+      "bytes": 2770,
+      "sha256": "ab5f784a76e1e9f32919563c2adcf215bd4d47282ffd64688b7d0704076dcea0"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/budget_mae.png",
+      "bytes": 47380,
+      "sha256": "b4e5d089dda58c123ffd0c2469dddcd047a83d33b954917cee8cc1d98bacd7b5"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/causal_audit.json",
+      "bytes": 562,
+      "sha256": "3d2bdfe9d997e6ac45b785a71e365b44ead013b7055b36a345d8ba29382114f4"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/energyville_evb01_data.py",
+      "bytes": 29749,
+      "sha256": "fcc55a648ee6f5e9e90eb4b9f3db09943c8a25b468861eddc7cac4a0a5665e72"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/energyville_evb02_data.py",
+      "bytes": 18506,
+      "sha256": "7d80365d9d6bf519797d80d67853d3b30c658d6a5b91bc6db1d5a2188bc34322"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/energyville_evb02_report.py",
+      "bytes": 16483,
+      "sha256": "e6c8a6081c40acc89cde4bf24c92e4019d3527d4be2d316d254db81d719fd746"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/repair_energyville_evb02_replay.py",
+      "bytes": 5271,
+      "sha256": "b80212284d5aedbdcb52d432b6c8d1021167a2edb181d4f49d6e446535d6d99a"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/run_energyville_evb01.py",
+      "bytes": 24680,
+      "sha256": "6560d2ab80de82b6c561d9dd440f7bc1646d21ec2e83dbfa816694b4cdb156b7"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/run_energyville_evb02.py",
+      "bytes": 21329,
+      "sha256": "b7bb245531f194139bd926914017b6e98eeb802f1c267f04ab5af80013473abc"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/test_energyville_evb02.py",
+      "bytes": 3511,
+      "sha256": "68ba31099612ca94de1afa1e01da1c25aaad48d0ba2c1cfa5b510bf29c10b56b"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/code_snapshot/verify_energyville_evb02.py",
+      "bytes": 7958,
+      "sha256": "baf3e5e711d5599fec74a1b741db4153dee8911e125a9a210f748a6bf3499a5d"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/cohort_reference.csv",
+      "bytes": 372662,
+      "sha256": "8dbeb4049ef7606f33037b77e2c5681ef8d602b4912b6ca587e966c16d74e904"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/completion.json",
+      "bytes": 4690,
+      "sha256": "e13820b045c85d261c7ddf6a4e52ab9d6d44df9e2455ac0a9ed3cc653d45b04d"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/conditional_support.csv",
+      "bytes": 68488,
+      "sha256": "34a4503f324ec3725288de608b986df9b115007faae2c90ad27926532777b4fc"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/control_replay_checks.json",
+      "bytes": 536,
+      "sha256": "35ee5353a7709db7daaf948ceba0f51d354feb5d757b608fafc4e126a9594bb8"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/delivery_manifest.json",
+      "bytes": 7215,
+      "sha256": "b88e67106c5b56f7c121e1b4f0ba24a18fa5274e39236cd58b063b03362ec612"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/delivery_verified.json",
+      "bytes": 221,
+      "sha256": "ae7924db4049bcd69a248f583f37cc31b0936ff3bbc9eab918375380f9668fed"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/execution_manifest.json",
+      "bytes": 2463,
+      "sha256": "c3ffe07803041f92ece8ab8c109af0174401bd274e9d0636cbbbcb5d315511ad"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/features_online.csv",
+      "bytes": 762807,
+      "sha256": "e3c8f522abf9794781df091c76fc823d4848662d09fd568e5e762f396cb7abb9"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/fit_progress.json",
+      "bytes": 194,
+      "sha256": "12f6fd56e4cb4ad3ce6bf9d8c85783f5e244c7e5f21621760d621586f69fc998"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/gain_concentration.csv",
+      "bytes": 1551,
+      "sha256": "4e9948775dcccfa7293deefa012e6348afd9881261fd9500a3b39574f345b044"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/geometry_diagnostics.csv",
+      "bytes": 113422,
+      "sha256": "8eb2b1437d3eff5c14a1336ceb22ee87cfc3f90b95a8c26572815e9319e17504"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/geometry_source_diagnostics.csv",
+      "bytes": 186187,
+      "sha256": "5afa031d8f5a4f0a3eed623fab3349b4ca9bd66e53683b9696ab1343c1170dac"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/history_error_structure.png",
+      "bytes": 116884,
+      "sha256": "1cf4e0aa2b6968d3a44de6112dbf2660ddc5b40ea02e15961b28ed5a57fdb295"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/history_feature_manifest.csv",
+      "bytes": 10899181,
+      "sha256": "27e822783d7f6d9f499249cdb5a19302d80a80c333c757a83f9c7762b2a8354a"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/history_policy.json",
+      "bytes": 662,
+      "sha256": "b16f131f357b57fe1d07da55152b2da877f05898c767a98a9554da4d85a482c2"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/history_query_manifest.csv",
+      "bytes": 2437363,
+      "sha256": "f11006c55d217742a806afbd22c8857173b2d297b2fb4d47e4f68f995268d47c"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/history_query_snapshots.csv",
+      "bytes": 594604,
+      "sha256": "80787de9b1a24921370d4ca044cdbc808dec5519eb6fbc6961e6084ee6e53027"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/input_manifest.json",
+      "bytes": 4491,
+      "sha256": "995575eb370c7f1906e4fdaa4b7acc4f216b637b665ab4f5482ebe66cdd93434"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/metrics.json",
+      "bytes": 614749,
+      "sha256": "648155cf9a1d7814a2d362b2559a027420386bde00f8a7c7a1224d7aaa3853ac"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/paired_comparisons.csv",
+      "bytes": 2390,
+      "sha256": "0d2a31cb8ae9703de365bb7ae4e77eed117bdef9a46408ef21a15d80a16b0615"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_development.csv",
+      "bytes": 125807,
+      "sha256": "b604ee4b2ae25f146ddb12e0516b548469f0ac27e3a486b7427cedc8477a0b98"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_stageA_development.csv",
+      "bytes": 103814,
+      "sha256": "230b695ba0aef46fd3c8c747776cdc199370a258089177e3bcf3ea3eda7a3835"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_stageA_train.csv",
+      "bytes": 410151,
+      "sha256": "7198d77ebac51864c8abe7dffffe8b14100ea060d2edda04b19143d1346df021"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_stageA_validation.csv",
+      "bytes": 101452,
+      "sha256": "395f487ba461065dd415a58f1b72642d350d14f9d8ef754eef7f74ef194e346e"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_train.csv",
+      "bytes": 496735,
+      "sha256": "7568f1eeea844d19c309feab5e312d35a26134fce987c5258cc9e51e55045a60"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/predictions_validation.csv",
+      "bytes": 122735,
+      "sha256": "37390f7c029977e4e763aaed8fdd8bcdf2a38fda05fed894ebd726c039c95d82"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/preflight_checks.json",
+      "bytes": 1021,
+      "sha256": "81443b878c0ae88528e9752e15c276a106097f92429907a552d56e6d4ed7182c"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/prepared_hashes.json",
+      "bytes": 1452,
+      "sha256": "8ac7c44743f1eb6d589f6f282088ce3a4ab54fafced202cb675538b16cf6a71b"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/protocol_frozen.md",
+      "bytes": 17346,
+      "sha256": "8fdff3c39dab2f9c15be4c7d6553f87e01a3cc3aee04066e24f155d037aed87f"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/released_history_records.json",
+      "bytes": 678500,
+      "sha256": "1504a53df19b0191b54b77ee7533a89b4793e7893e0244f212cf0bb4aa9557c9"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/replay_numerical_revision.json",
+      "bytes": 1953,
+      "sha256": "bf0b5318a011b60f8e4e42369727ee95dff0545e341ffecf71fb0f850b78d9d0"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_after_execution/decision_log.md",
+      "bytes": 38028,
+      "sha256": "d1cc55cbcb8393dbe75d4c2729f27e4b5477056933b80018a918b7d2763b9835"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_after_execution/experiments.md",
+      "bytes": 47819,
+      "sha256": "653a8cbfdbf8aea995c9fbe8bb14853dd028f274a5630711f66cd4849a74aa5e"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_after_execution/hypotheses.md",
+      "bytes": 22846,
+      "sha256": "94fbc2e34602b35e82b23e07d02f6b69525b18d5b62511b3de3127569e0ada44"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_after_execution/problem.md",
+      "bytes": 21006,
+      "sha256": "57e0e5163cced6f09d9c1b2e73547a20b2b086f35d4ec25e8f94df5e69c51492"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_after_execution/todo.md",
+      "bytes": 18118,
+      "sha256": "5ddc462ea85bb1957561e6714e280244a51d1eb693050b28f1a21c30b206412c"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_before_execution/decision_log.md",
+      "bytes": 35274,
+      "sha256": "2164f4fd51f38c0d52dab8c3cea0e676331429345dd170a051565ec02a7a54cc"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_before_execution/experiments.md",
+      "bytes": 44390,
+      "sha256": "22e3502fda837cfd3e63983be62d9650d365b58a785024e244c3f44a23a721b9"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_before_execution/hypotheses.md",
+      "bytes": 20513,
+      "sha256": "da0a2b1720359e5f389845c1783ee84366dc90a947cc6c6daca0ab3636c8ae96"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_before_execution/problem.md",
+      "bytes": 18888,
+      "sha256": "0867f4340735179e3c196d409ea1409ba63136f1d9b18e94f2d48d023f16d011"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/research_before_execution/todo.md",
+      "bytes": 17309,
+      "sha256": "c7b85483205dd073596242c3fe6f3fdb83205fabdfba7c14075245dc0515c1f6"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/reweighted_description.csv",
+      "bytes": 2600,
+      "sha256": "d9ce0c96689e92f1ff85c02496cba235fb8ebe5eeb86f0ef149034e9b028bf4d"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/reweighted_description.json",
+      "bytes": 8020,
+      "sha256": "b5b32af329e2ece2a75c9ec9d9ff39e98b23be5a83669519b36b725f2b795d8d"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/route_history_coverage.csv",
+      "bytes": 99421,
+      "sha256": "f0eb48d55a729bb8d360bd5489ed0430aebbccb880b845f991ab44eca7e5d5f8"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/route_history_pairs.csv",
+      "bytes": 413640,
+      "sha256": "42cd78e291ae5960a0da2b5cb08df94a1c391171fe9a0a6f6ac0466f60c6998b"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/run_config.json",
+      "bytes": 3332,
+      "sha256": "b050e83b28138060c4b181bf11644a2f4efee6917d01e874b362111dccd95acc"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/runtime.json",
+      "bytes": 2911,
+      "sha256": "0493b8ec50f6d773ee4bf88410bdfdf1240c72bdbb292b8a3d9d8bc681490a02"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/split_reference.csv",
+      "bytes": 101135,
+      "sha256": "9da869a2e03d6e36a6950925f519de5c9fa25a7460d758d08b17a5a6cc637baf"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/stageA_gate.json",
+      "bytes": 2765,
+      "sha256": "85f4d4b61618a14a5819e8fa706b7c0281701823c7c626d1aed3acaad4775d84"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/stageA_metrics.json",
+      "bytes": 351150,
+      "sha256": "6eac55dde199d32ec69fc7238d1113cdb5b79851f88082d5d89c7e3ca69c6059"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/stageB_gates.json",
+      "bytes": 2393,
+      "sha256": "c280229668503488f677a30eae91f03c40cd8e17b235e0213ef8deb02a8bb7e4"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/verification_cloud.json",
+      "bytes": 1574,
+      "sha256": "a361badf06e089ed9a60263f75453ba13740ef8b4cbf87075e1a02e9f7266750"
+    },
+    {
+      "path": "reports/energyville_study/EVB02/verification_local.json",
+      "bytes": 438,
+      "sha256": "20a519e8fc482c1d0e74c94400f70888dd431bb4d3f95910d1a71bfd03c04185"
+    },
+    {
+      "path": "reports/energyville_study/README.md",
+      "bytes": 4024,
+      "sha256": "33db5e48ac83073d85e92183236117b283ca225324bd0a8cc3841f82c7301614"
+    },
+    {
+      "path": "reports/enhanced_reproduction/source_data/ablation_comparison.md",
+      "bytes": 753,
+      "sha256": "f5481c07c930fb17f8d1781ae48fb87f91f2171298e040d87f4667d7caaf2a75"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/decision_log.md",
+      "bytes": 19460,
+      "sha256": "0186d097c046f62dd356dc036b6deddaac0dac16511ee436f7f25f6f7e7f0f7e"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/experiments.md",
+      "bytes": 28824,
+      "sha256": "942e0f3bfaf6256234a99b887cbf43baee2971c26e33d2f39e895e9b2624a1f9"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/hypotheses.md",
+      "bytes": 12739,
+      "sha256": "599c5a37b9e3e3e01df813fb2034a5f615c6afb4822d68a36ec6f9bda31987b9"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/problem.md",
+      "bytes": 17525,
+      "sha256": "0db7b1f47127a360e8f89a19e4cdde1429cea6fef6b277d2b801d5b4cc896dc1"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/待下载论文.md",
+      "bytes": 2763,
+      "sha256": "f5101dcc16c6b680d640461311f3e0bd0277996cb5735a7368223a8e8f1d2761"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/电动汽车全程行程能耗预测_近三年文献调研报告.md",
+      "bytes": 20626,
+      "sha256": "e5d39a4213458dfa2e3cdc1184738b63e4074d7bfc5a846289fed65289dff689"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/研究结论与数据路线.md",
+      "bytes": 16209,
+      "sha256": "32c1ee47c27087d425ab32704ef570adaaf4422f3364ba379822775f848a5a11"
+    },
+    {
+      "path": "reports/literature_review_20260930/before_six_fulltexts/论文证据表.md",
+      "bytes": 21104,
+      "sha256": "ca189d795c9d79caa35e9bd1307bffcd75931831b6346e1a379e3644824dc8ec"
+    },
+    {
+      "path": "reports/literature_review_20260930/research_context_before/decision_log.md",
+      "bytes": 16483,
+      "sha256": "2172c32e33c9df454bb5e818a9f31ccae0f94ded88e9650f57a6ead0d15ae5f7"
+    },
+    {
+      "path": "reports/literature_review_20260930/research_context_before/experiments.md",
+      "bytes": 25431,
+      "sha256": "3ceccb9a774cc9c071d3ef5234091a7ce8a62253d9ae0100fe70c8dc3012e87e"
+    },
+    {
+      "path": "reports/literature_review_20260930/research_context_before/hypotheses.md",
+      "bytes": 12524,
+      "sha256": "7cabcd3a087f29ff2b183354a5b006ffeead7dcf8587358d0978bd646d22a30e"
+    },
+    {
+      "path": "reports/literature_review_20260930/research_context_before/problem.md",
+      "bytes": 15640,
+      "sha256": "1d9cb5c8069c48244ece92437d7e4c239417f4016fc9f216307e01d1b2ddeb2a"
+    },
+    {
+      "path": "reports/literature_review_20260930/六篇全文深读与决策修订.md",
+      "bytes": 21329,
+      "sha256": "789ac77b2928ddaa2208ab470b7e55b9543a931f47bc9c8e45b1cb7d081c94e9"
+    },
+    {
+      "path": "reports/literature_review_20260930/原综述_校订前.md",
+      "bytes": 14995,
+      "sha256": "0c822f64bc5011b14b25e93c9235315a5d34b2b6f46eb5575c10df1f0e4ec112"
+    },
+    {
+      "path": "reports/literature_review_20260930/待下载论文.md",
+      "bytes": 3029,
+      "sha256": "03151c04e28d6f3b649e458c3ffdca5a6da9770bc7385c46882448f63ee180f6"
+    },
+    {
+      "path": "reports/literature_review_20260930/研究结论与数据路线.md",
+      "bytes": 13026,
+      "sha256": "48c1dc6a6c281ecc9e02aef654781d6e1d699a7d14f51dbd79d24cc7b3eb92ba"
+    },
+    {
+      "path": "reports/literature_review_20260930/论文证据表.md",
+      "bytes": 29953,
+      "sha256": "03ca4793ceb527a87d622c391ab00faa4472b32cab9b3a475435130a70cc796b"
+    },
+    {
+      "path": "reports/p0_p4/P0-P4_完整实验报告.md",
+      "bytes": 8592,
+      "sha256": "d5347e3f3d478a2b0c5f8ca610d24f43dcdfe610ecc3be5f4a082592eaf2e8a1"
+    },
+    {
+      "path": "reports/p0_p4/execution_checklist.md",
+      "bytes": 3463,
+      "sha256": "381aa5aead896bc0602706bfed89a17d05a2db874d86ccece86117f6f01763a1"
+    },
+    {
+      "path": "reports/paper_v3_comparison/K-shot论文模型配对比较.md",
+      "bytes": 1739,
+      "sha256": "951ee332c42cfe9f62e40de6dc0c2f9a34137866b6cee53abf6f701b3e6fb4e0"
+    },
+    {
+      "path": "reports/paper_v3_comparison/个性化三种子确认.md",
+      "bytes": 962,
+      "sha256": "cf55677fc818bf2301483359b37e697580cf3a8318c48b105c5e00387cd14758"
+    },
+    {
+      "path": "reports/paper_v3_comparison/时长校准审计.md",
+      "bytes": 1109,
+      "sha256": "651388830a1945947c3e2f3cf2963897f498c5966999c512f58683e83705b43b"
+    },
+    {
+      "path": "reports/paper_v3_comparison/最终结论与下一步.md",
+      "bytes": 4154,
+      "sha256": "099ef1132d4074906b4605bfb75325613218d7568ed949ce3bd7d9b5ea668b52"
+    },
+    {
+      "path": "reports/paper_v3_comparison/论文模型公平对照报告.md",
+      "bytes": 10537,
+      "sha256": "488a6b14bcb157b5e6cfbbee0a77dfff672d41405f2c7a0a59a234f662f8a5f5"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/audit_energyville.py",
+      "bytes": 8056,
+      "sha256": "2473454c8889d96814b84457aeba0d2926a05d3fd8e7f45f18f30cd9528e8821"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/decision_log.md",
+      "bytes": 23129,
+      "sha256": "46bf33dad503b5f45747a0f1cb05f60111327e4dc88a03b495bbd5fd6c58c631"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/experiments.md",
+      "bytes": 32307,
+      "sha256": "fdf1016729d36ab6da6e7af020422e32886d00db27d8c974ed3354174fc6ed6f"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/hypotheses.md",
+      "bytes": 14255,
+      "sha256": "df6790770a70279d1f375437acf2c8463feaba5724d8cbcaa89476b12e1cfc48"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/problem.md",
+      "bytes": 18624,
+      "sha256": "2c4d1c2afcfaf870243d5f680ca889cb713a77eee037ce1282c599df187f3941"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/电动汽车全程行程能耗预测_近三年文献调研报告.md",
+      "bytes": 11779,
+      "sha256": "5e76ebb2be713844dbf0835b2d5f5b292f48a31f5a4d88ed65faeae7361b00f7"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/研究结论与数据路线.md",
+      "bytes": 12669,
+      "sha256": "87029f290f9850c98c15b46e1cd0a5c7db68c7913b870fca5501fc7217653251"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/before_public_only/论文证据表.md",
+      "bytes": 27118,
+      "sha256": "50bed82cc18cb5dc8c24bd6cc69a28ea72c5bc274a0b662de5e43dee2f3b7634"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/download_sources.py",
+      "bytes": 1699,
+      "sha256": "e510a88c6719de378f54c68ea349952b1ca67ca151f8e20bb3894973ebf2e2ed"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/energyville_actual_data_audit.json",
+      "bytes": 167148,
+      "sha256": "2c0fd46d215277e3007491027eb1f69a0df590456e17cfec3f63d58a6e25179a"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/energyville_archive_inventory.json",
+      "bytes": 404271,
+      "sha256": "0433a558d39a5d5faf130f29221bd9937a1a12313202d4cf54c1adfbfb893333"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/safe_pickle_inspect.py",
+      "bytes": 6103,
+      "sha256": "a77913df1928f036bfdc1cc70d50eabe54e1d39b478d491273266e196b7249f6"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/sources/energyville_metadata.json",
+      "bytes": 7998,
+      "sha256": "954837742178321b4754318d2add6dcd66a11891ff466af73ab140ef249425ff"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/sources/energyville_readme.txt",
+      "bytes": 2004,
+      "sha256": "fcd84aa6fc26f31f753889ba323b7a92d532426fbe5b06f174d51a5936206c46"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/sources/file_checks.json",
+      "bytes": 1064,
+      "sha256": "ef0c93dcf724b330dd13c2e70dfc77834a988cda5eae4d9e201cac5ff39a0350"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/update_research_context.py",
+      "bytes": 18742,
+      "sha256": "31d3e5ee9254711fa784b290a7932ad063925dbc0fb60ea10f8711925d618d6b"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/upect_actual_data_audit.json",
+      "bytes": 35852,
+      "sha256": "28bbb37226561a7af74ab7dd01897137c41eb322f7e2e3852ab8d8353dbfe9a7"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/upect_integrity_checks.json",
+      "bytes": 1640,
+      "sha256": "076e0ec8528f8aad0d75fb734b416db1a494d26e793539e51fcf7ab26c8d9f80"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/公开数据路线与UPECT验收.md",
+      "bytes": 19904,
+      "sha256": "a6ccc6562a515ea612b57c6238e60211398e32f1b9a3b09299bb0c63824ec80c"
+    },
+    {
+      "path": "reports/public_dataset_audit_20260930/文档与数据核查.json",
+      "bytes": 603,
+      "sha256": "1107d0f972107ef266d099ccb17c0900517f456c9a3d464be24374af13dc258b"
+    },
+    {
+      "path": "reports/route_baselines/A12_G10_G04_eVED复现报告.md",
+      "bytes": 19668,
+      "sha256": "efda286fa98a4288dc06d3e8d3573d06413aa10f3e2ff9800f173f6ba82d7491"
+    },
+    {
+      "path": "reports/runs_retention_plan.md",
+      "bytes": 5751,
+      "sha256": "722624a4b50298ef0fb8d83834683f3d3bc20b723314163ab0e4b7776a171825"
+    },
+    {
+      "path": "reports/segment_energy_v3/五组分段能耗实验报告.md",
+      "bytes": 23114,
+      "sha256": "20d19755dde29de2e0e0db3b53200e23aea995c9058ebe5990b85d020cacc27d"
+    },
+    {
+      "path": "reports/segment_energy_v3/冻结实验协议.md",
+      "bytes": 7823,
+      "sha256": "67dd5223433dea239b25bb049cdbde6f53bf21264601b728bb29ea32db3c45fb"
+    },
+    {
+      "path": "reports/segment_energy_v3/执行验收记录.md",
+      "bytes": 3000,
+      "sha256": "e2e1a89f7c7990942487c0a4b8841631af15c9fa38baf14c82acd7972cff4eb0"
+    },
+    {
+      "path": "reports/state_rollout_v3/三组状态递推对照报告.md",
+      "bytes": 2069,
+      "sha256": "696eaf33eaa832cc4013ae216d9d264e29cd312093b5b7227a619aeab1131a03"
+    },
+    {
+      "path": "reports/state_rollout_v3/分组与误差结构分析.md",
+      "bytes": 2381,
+      "sha256": "60fea677113be300dba98e5ba4f6ec07a524b49228d3c0290c1ea20fc7f9c8c8"
+    },
+    {
+      "path": "reports/state_rollout_v3/实验协议与启动记录.md",
+      "bytes": 3791,
+      "sha256": "2c0b49a0e814ff427b47eda66607708afd887c180188ed0a809d75dceb60f6c4"
+    },
+    {
+      "path": "reports/state_rollout_v3/实验结论与后续设计.md",
+      "bytes": 7026,
+      "sha256": "3af22302866bb2e2bdd1190cdb07d4d5769811fef2a734f6756e6e51ced20005"
+    },
+    {
+      "path": "reports/state_rollout_v3/状态反馈诊断.md",
+      "bytes": 1235,
+      "sha256": "9668c12c00ea40a7fb0a41e491620939959f01c8b292d3702871e687b428d8ba"
+    },
+    {
+      "path": "reports/total_energy_v3/README.md",
+      "bytes": 948,
+      "sha256": "52b6cfe71dc890c202972b630cc1f5fde12cd065f86d78a3529631186eccf006"
+    },
+    {
+      "path": "reports/total_energy_v3/results/T0_T1总能耗实验报告.md",
+      "bytes": 20570,
+      "sha256": "aad6689cef9e28dac968c81b5bbdff652d765b2315ef0b68c639d497ee2aa8e8"
+    },
+    {
+      "path": "reports/total_energy_v3/results/结果解读与完成清单.md",
+      "bytes": 8992,
+      "sha256": "6e4f6bb3c2839d1337e5107b89ba92220a5056d8d75fd0f635d59bd283741ef6"
+    },
+    {
+      "path": "reports/total_energy_v3/冻结实验协议.md",
+      "bytes": 5823,
+      "sha256": "aa547d09ed208c57a4200b54ec8add927b240add91a380bc7defad74d3263a32"
+    },
+    {
+      "path": "reports/total_energy_v3/标签构造与待冻结协议.md",
+      "bytes": 4312,
+      "sha256": "815cd15d9a2386a017eab6896eeaab8a21a646ed008a8215ac4e61d91231ee7b"
+    },
+    {
+      "path": "reports/v3_audit/V3执行记录.md",
+      "bytes": 3825,
+      "sha256": "fc40269ceb46f18b2559af00fb62fa8c996293cab4652cb8faa1447dcbd36c22"
+    },
+    {
+      "path": "reports/v3_audit/执行审计与研究边界.md",
+      "bytes": 5494,
+      "sha256": "b10a70a8a9b5e9bacaeea81f0fe74c1c7cf1df4b3c738bc077ac7f3e53fcf1a3"
+    },
+    {
+      "path": "reports/v3_study/V3全量实验报告.md",
+      "bytes": 10913,
+      "sha256": "fa2a0926d5640923f9dd0aec0a2feb95921f3626ef4be904bf7c719009d22a49"
+    },
+    {
+      "path": "reports/v3_study/论文模型公平对照执行记录.md",
+      "bytes": 7149,
+      "sha256": "026ac3c9e3f5204c18c7b5cfb7a0a7491c0d33ffeb1daa35e6a034bd03099ea4"
+    },
+    {
+      "path": "reports/v4_study/E2冻结协议.md",
+      "bytes": 4333,
+      "sha256": "193610e8bd652c1a7aeec73922ce32009d186f5a31ab6af9e89152de67e57960"
+    },
+    {
+      "path": "reports/v4_study/E3冻结协议.md",
+      "bytes": 5398,
+      "sha256": "0f634d9221a455e33b27cb5423faa2900713629fc0056943c523a57e33150c21"
+    },
+    {
+      "path": "reports/v4_study/E4冻结协议.md",
+      "bytes": 2142,
+      "sha256": "d3129732b95f87621cd707633cc265675179ec7caeaef376432397f2b339b6d9"
+    },
+    {
+      "path": "reports/v4_study/E5学习曲线冻结协议.md",
+      "bytes": 2469,
+      "sha256": "7506c931f94ac319a80000228935f0706b44b0c205547fa5ec56253b9e075346"
+    },
+    {
+      "path": "reports/v4_study/e1/E1信息诊断报告.md",
+      "bytes": 5070,
+      "sha256": "9e7d0c400a7fdb0780dce41f0ccfd1a4679e0781360a61db1d3f5225556432b3"
+    },
+    {
+      "path": "reports/v4_study/e1/E1结果解读与E2接续.md",
+      "bytes": 3232,
+      "sha256": "47c4fffec5ec2ba1cd9a001a2b0b62e15e93831cabd3b1791f30cfe07d21f4e8"
+    },
+    {
+      "path": "reports/v4_study/e2/E2历史对照报告.md",
+      "bytes": 8084,
+      "sha256": "b06ab22777790aaafc4de78f4eea69810fbce95738fc3bc335ada8e72ff0c699"
+    },
+    {
+      "path": "reports/v4_study/e2/E2结果解读与E3接续.md",
+      "bytes": 2264,
+      "sha256": "703609f069f0829d993d0584f738bf7dfb104d0bd74208dee83393160b7ec33f"
+    },
+    {
+      "path": "reports/v4_study/e3/E3结果解读与E4接续.md",
+      "bytes": 2410,
+      "sha256": "d0b11779ba6e562deee44285625a6dc2aaf7c2cd722b66e72c47c95fafc4ad31"
+    },
+    {
+      "path": "reports/v4_study/e3/E3能量分解报告.md",
+      "bytes": 16196,
+      "sha256": "537ca71597ea92aa8a683d5a5999c2ecd2a90d2d02bf6df04a85704a7ee5d413"
+    },
+    {
+      "path": "reports/v4_study/e4/E4目标对齐报告.md",
+      "bytes": 10530,
+      "sha256": "cd19b36ca7874bf1d7efa2b0a5d48cc7b2a1b80aaed1688689b29e2bed37fd5b"
+    },
+    {
+      "path": "reports/v4_study/e5_data_audit/E5排除行程初审.md",
+      "bytes": 2123,
+      "sha256": "a012869c80ec04e7e21666c0f814d6517b336cf56491b3b98296a5078767da18"
+    },
+    {
+      "path": "reports/v4_study/实验计划与冻结协议.md",
+      "bytes": 8392,
+      "sha256": "b48de9fe25b6e77d0f988427b0609b2e56944a3171227e7dcd9173f572066a17"
+    },
+    {
+      "path": "reports/v4_study/执行记录.md",
+      "bytes": 2499,
+      "sha256": "d39ddc950c3863e5bf464d61e4f5df8d0be6e6a9118eda6393498c3dbd18b7b8"
+    },
+    {
+      "path": "reports/week1_data_audit.md",
+      "bytes": 1454,
+      "sha256": "0e5cec890fa371e152f20164393d971574548550fc62eec8154b4b1862a4bcb0"
+    },
+    {
+      "path": "reports/week2_baselines.md",
+      "bytes": 921,
+      "sha256": "241475cc48f20c823d6f33e78b24d97f8de52f6549a1646dc3bfb60de723febb"
+    },
+    {
+      "path": "reports/week2_protocol.md",
+      "bytes": 964,
+      "sha256": "7348802f9f83e217877b373d23519d4385722e44c100344560d1eafaf240c70b"
+    },
+    {
+      "path": "requirements/evb.txt",
+      "bytes": 261,
+      "sha256": "fb3d7461f689ec631393a6097b1c1a4f561aead99faab659eb88ed23a5264f97"
+    },
+    {
+      "path": "scripts/energyville_evb01_data.py",
+      "bytes": 29749,
+      "sha256": "fcc55a648ee6f5e9e90eb4b9f3db09943c8a25b468861eddc7cac4a0a5665e72"
+    },
+    {
+      "path": "scripts/energyville_evb02_data.py",
+      "bytes": 18506,
+      "sha256": "7d80365d9d6bf519797d80d67853d3b30c658d6a5b91bc6db1d5a2188bc34322"
+    },
+    {
+      "path": "scripts/energyville_evb02_report.py",
+      "bytes": 16483,
+      "sha256": "e6c8a6081c40acc89cde4bf24c92e4019d3527d4be2d316d254db81d719fd746"
+    },
+    {
+      "path": "scripts/repair_energyville_evb02_replay.py",
+      "bytes": 5271,
+      "sha256": "b80212284d5aedbdcb52d432b6c8d1021167a2edb181d4f49d6e446535d6d99a"
+    },
+    {
+      "path": "scripts/run_energyville_evb01.py",
+      "bytes": 24680,
+      "sha256": "6560d2ab80de82b6c561d9dd440f7bc1646d21ec2e83dbfa816694b4cdb156b7"
+    },
+    {
+      "path": "scripts/run_energyville_evb02.py",
+      "bytes": 21329,
+      "sha256": "b7bb245531f194139bd926914017b6e98eeb802f1c267f04ab5af80013473abc"
+    },
+    {
+      "path": "scripts/verify_energyville_evb01.py",
+      "bytes": 12980,
+      "sha256": "df8cd91b6a039f92409f3e7a604238d6fb63329028651e49f9da5deeda3eb5ab"
+    },
+    {
+      "path": "scripts/verify_energyville_evb02.py",
+      "bytes": 7958,
+      "sha256": "baf3e5e711d5599fec74a1b741db4153dee8911e125a9a210f748a6bf3499a5d"
+    },
+    {
+      "path": "tests/test_energyville_evb01.py",
+      "bytes": 4306,
+      "sha256": "6f768af2687835b1176db0e6e385ca958b152b8f9946ae587299a383ed48ab5e"
+    },
+    {
+      "path": "tests/test_energyville_evb02.py",
+      "bytes": 3511,
+      "sha256": "68ba31099612ca94de1afa1e01da1c25aaad48d0ba2c1cfa5b510bf29c10b56b"
+    },
+    {
+      "path": "todo.md",
+      "bytes": 18118,
+      "sha256": "5ddc462ea85bb1957561e6714e280244a51d1eb693050b28f1a21c30b206412c"
+    },
+    {
+      "path": "电动汽车全程行程能耗预测_近三年文献调研报告.md",
+      "bytes": 13600,
+      "sha256": "71466a35829484cf3e3688b970a75782abdcdb2d18de19e939af8bb2c802d886"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "reference": "R",
+  "legal_candidate": "S",
+  "chosen_legal": "S",
+  "rule": "pairwise validation MAE; <=1% difference selects simpler. Oracle excluded.",
+  "investment_gate_passed": true,
+  "gates": {
+    "mae_at_least10pct": {
+      "passed": true,
+      "ratio": 0.7981703004897226,
+      "allowed_max_ratio": 0.9,
+      "absolute_difference": -0.08972333965765028
+    },
+    "rmse_not_worse5pct": {
+      "passed": true,
+      "ratio": 0.953591015105937,
+      "allowed_max_ratio": 1.05,
+      "absolute_difference": -0.04271878510852045
+    },
+    "underestimate_not_worse5pct": {
+      "passed": true,
+      "ratio": 0.6194326142873989,
+      "allowed_max_ratio": 1.05,
+      "absolute_difference": -0.14121867676570177
+    },
+    "vehicle_BEV1": {
+      "passed": true,
+      "ratio": 0.7883687952879598,
+      "allowed_max_ratio": 1.1,
+      "absolute_difference": -0.12222917788477294
+    },
+    "vehicle_BEV2": {
+      "passed": true,
+      "ratio": 0.8163409863293674,
+      "allowed_max_ratio": 1.1,
+      "absolute_difference": -0.05721750143052745
+    },
+    "ge10km": {
+      "passed": true,
+      "ratio": 0.8531717094775182,
+      "allowed_max_ratio": 1.1,
+      "absolute_difference": -0.12256571190570265
+    }
+  },
+  "validation_scores": {
+    "B0": {
+      "n": 188,
+      "mae_kwh": 0.4519453918353307,
+      "rmse_kwh": 1.0512519124204698,
+      "bias_kwh": -0.18509994230988833,
+      "wape_pct": 12.8327982214176,
+      "vehicle_macro_mae_kwh": 0.45194539183533067,
+      "vehicle_mae_kwh": {
+        "BEV1": 0.5237111815576356,
+        "BEV2": 0.38017960211302576
+      },
+      "underestimate_mean_kwh": 0.3185226670726095,
+      "underestimate_p95_kwh": 0.9567661127563876,
+      "mape_threshold_kwh": 0.1,
+      "mape_pct": 20.740824407800392,
+      "mape_n": 181,
+      "mape_coverage": 0.9627659574468085
+    },
+    "R": {
+      "n": 188,
+      "mae_kwh": 0.4445497361159251,
+      "rmse_kwh": 0.9204852294449871,
+      "bias_kwh": -0.2975983410309067,
+      "wape_pct": 12.622801705739471,
+      "vehicle_macro_mae_kwh": 0.44454973611592496,
+      "vehicle_mae_kwh": {
+        "BEV1": 0.5775574450425979,
+        "BEV2": 0.3115420271892521
+      },
+      "underestimate_mean_kwh": 0.37107403857341587,
+      "underestimate_p95_kwh": 1.3377627562146903,
+      "mape_threshold_kwh": 0.1,
+      "mape_pct": 19.8202757831017,
+      "mape_n": 181,
+      "mape_coverage": 0.9627659574468085
+    },
+    "S": {
+      "n": 188,
+      "mae_kwh": 0.3548263964582748,
+      "rmse_kwh": 0.8777664443364667,
+      "bias_kwh": -0.10488432715715339,
+      "wape_pct": 10.075145430492258,
+      "vehicle_macro_mae_kwh": 0.3548263964582748,
+      "vehicle_mae_kwh": {
+        "BEV1": 0.45532826715782493,
+        "BEV2": 0.25432452575872466
+      },
+      "underestimate_mean_kwh": 0.2298553618077141,
+      "underestimate_p95_kwh": 0.94985822833451,
+      "mape_threshold_kwh": 0.1,
+      "mape_pct": 15.963412903821233,
+      "mape_n": 181,
+      "mape_coverage": 0.9627659574468085
+    },
+    "H": {
+      "n": 188,
+      "mae_kwh": 0.3892955146163084,
+      "rmse_kwh": 0.9348761468977042,
+      "bias_kwh": -0.18300440109072105,
+      "wape_pct": 11.053881459630517,
+      "vehicle_macro_mae_kwh": 0.3892955146163085,
+      "vehicle_mae_kwh": {
+        "BEV1": 0.5242487940017563,
+        "BEV2": 0.2543422352308607
+      },
+      "underestimate_mean_kwh": 0.2861499578535147,
+      "underestimate_p95_kwh": 1.037403941180179,
+      "mape_threshold_kwh": 0.1,
+      "mape_pct": 17.059700250508605,
+      "mape_n": 181,
+      "mape_coverage": 0.9627659574468085
+    },
+    "O": {
+      "n": 188,
+      "mae_kwh": 0.3641063123819137,
+      "rmse_kwh": 0.8705414259176363,
+      "bias_kwh": -0.20784397746829014,
+      "wape_pct": 10.33864471759898,
+      "vehicle_macro_mae_kwh": 0.3641063123819137,
+      "vehicle_mae_kwh": {
+        "BEV1": 0.5014415139554755,
+        "BEV2": 0.2267711108083519
+      },
+      "underestimate_mean_kwh": 0.2859751449251019,
+      "underestimate_p95_kwh": 1.0688632840889036,
+      "mape_threshold_kwh": 0.1,
+      "mape_pct": 17.434121569539787,
+      "mape_n": 181,
+      "mape_coverage": 0.9627659574468085
+    }
+  },
+  "decided_at": "2026-09-30T12:02:09.875655+00:00"
+}

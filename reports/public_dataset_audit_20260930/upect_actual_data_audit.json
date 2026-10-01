@@ -1,0 +1,1420 @@
+{
+  "BHD": {
+    "serialized_globals": [
+      [
+        "builtins",
+        "slice"
+      ],
+      [
+        "numpy",
+        "dtype"
+      ],
+      [
+        "numpy",
+        "ndarray"
+      ],
+      [
+        "numpy.core.multiarray",
+        "_reconstruct"
+      ],
+      [
+        "pandas._libs.arrays",
+        "__pyx_unpickle_NDArrayBacked"
+      ],
+      [
+        "pandas._libs.internals",
+        "_unpickle_block"
+      ],
+      [
+        "pandas.core.arrays.datetimes",
+        "DatetimeArray"
+      ],
+      [
+        "pandas.core.frame",
+        "DataFrame"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "Index"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "_new_Index"
+      ],
+      [
+        "pandas.core.indexes.range",
+        "RangeIndex"
+      ],
+      [
+        "pandas.core.internals.managers",
+        "BlockManager"
+      ]
+    ],
+    "groups": [
+      {
+        "rows": 69,
+        "columns": [
+          "行程能耗",
+          "Date",
+          "Distance [km]",
+          "Duration [min]",
+          "Battery Temperature (Start) [°C]",
+          "Battery State of Charge (Start)",
+          "Ambient Temperature (Start) [°C]",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点",
+          "Target Cabin Temperature"
+        ],
+        "dtypes": {
+          "行程能耗": "float64",
+          "Date": "datetime64[ns]",
+          "Distance [km]": "float64",
+          "Duration [min]": "float64",
+          "Battery Temperature (Start) [°C]": "float64",
+          "Battery State of Charge (Start)": "float64",
+          "Ambient Temperature (Start) [°C]": "float64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "float64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str",
+          "Target Cabin Temperature": "float64"
+        },
+        "missing": {
+          "行程能耗": 0,
+          "Date": 0,
+          "Distance [km]": 0,
+          "Duration [min]": 0,
+          "Battery Temperature (Start) [°C]": 0,
+          "Battery State of Charge (Start)": 0,
+          "Ambient Temperature (Start) [°C]": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0,
+          "Target Cabin Temperature": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "行程能耗": {
+            "unique": 63,
+            "min": 0.35719999999999824,
+            "median": 2.2936000000000005,
+            "max": 13.5172
+          },
+          "Date": {
+            "unique": 68,
+            "min": "2019-06-25 13:21:14",
+            "max": "2020-02-07 09:32:02",
+            "midnight": 0
+          },
+          "Distance [km]": {
+            "unique": 69,
+            "min": 2.7823,
+            "median": 16.4252,
+            "max": 60.9747
+          },
+          "Duration [min]": {
+            "unique": 69,
+            "min": 5.906666666666666,
+            "median": 23.38,
+            "max": 93.50166666666668
+          },
+          "Battery Temperature (Start) [°C]": {
+            "unique": 30,
+            "min": -1.0,
+            "median": 14.0,
+            "max": 30.0
+          },
+          "Battery State of Charge (Start)": {
+            "unique": 60,
+            "min": 0.315,
+            "median": 0.755,
+            "max": 0.885
+          },
+          "Ambient Temperature (Start) [°C]": {
+            "unique": 39,
+            "min": -3.0,
+            "median": 7.5,
+            "max": 33.5
+          },
+          "出行季节": {
+            "unique": 2,
+            "top": {
+              "winter": 37,
+              "summer": 32
+            }
+          },
+          "出行日期": {
+            "unique": 7,
+            "top": {
+              "Tuesday": 18,
+              "Friday": 17,
+              "Monday": 11,
+              "Wednesday": 6,
+              "Thursday": 6,
+              "Saturday": 6,
+              "Sunday": 5
+            }
+          },
+          "出行时段": {
+            "unique": 3,
+            "top": {
+              "other time": 37,
+              "morning peak": 20,
+              "night peak": 12
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 18.8,
+            "median": 18.8,
+            "max": 18.8
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 69
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 2029.0,
+            "median": 2029.0,
+            "max": 2029.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "German": 69
+            }
+          },
+          "Target Cabin Temperature": {
+            "unique": 12,
+            "min": 21.0,
+            "median": 22.0,
+            "max": 33.0
+          }
+        },
+        "distance_ge_10km": 60
+      }
+    ],
+    "total_rows": 69
+  },
+  "ChargeCar": {
+    "serialized_globals": [
+      [
+        "builtins",
+        "slice"
+      ],
+      [
+        "numpy",
+        "dtype"
+      ],
+      [
+        "numpy",
+        "ndarray"
+      ],
+      [
+        "numpy.core.multiarray",
+        "_reconstruct"
+      ],
+      [
+        "pandas._libs.internals",
+        "_unpickle_block"
+      ],
+      [
+        "pandas.core.frame",
+        "DataFrame"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "Index"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "_new_Index"
+      ],
+      [
+        "pandas.core.indexes.range",
+        "RangeIndex"
+      ],
+      [
+        "pandas.core.internals.managers",
+        "BlockManager"
+      ]
+    ],
+    "groups": [
+      {
+        "rows": 132,
+        "columns": [
+          "行程能耗",
+          "行程时间",
+          "行程距离",
+          "行程平均速度"
+        ],
+        "dtypes": {
+          "行程能耗": "float64",
+          "行程时间": "float64",
+          "行程距离": "float64",
+          "行程平均速度": "float64"
+        },
+        "missing": {
+          "行程能耗": 0,
+          "行程时间": 0,
+          "行程距离": 0,
+          "行程平均速度": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "行程能耗": {
+            "unique": 132,
+            "min": 0.009445599999999998,
+            "median": 1.2380763972222222,
+            "max": 17.663019122222224
+          },
+          "行程时间": {
+            "unique": 127,
+            "min": 0.7,
+            "median": 16.516666666666666,
+            "max": 109.2
+          },
+          "行程距离": {
+            "unique": 132,
+            "min": 0.036930277000000004,
+            "median": 7.375691301,
+            "max": 91.350144176
+          },
+          "行程平均速度": {
+            "unique": 132,
+            "min": 0.9750326769230772,
+            "median": 30.577677164883706,
+            "max": 85.30685148128342
+          }
+        },
+        "distance_ge_10km": 56
+      }
+    ],
+    "total_rows": 132
+  },
+  "SpritMonitor": {
+    "serialized_globals": [
+      [
+        "builtins",
+        "slice"
+      ],
+      [
+        "numpy",
+        "dtype"
+      ],
+      [
+        "numpy",
+        "ndarray"
+      ],
+      [
+        "numpy.core.multiarray",
+        "_reconstruct"
+      ],
+      [
+        "pandas._libs.arrays",
+        "__pyx_unpickle_NDArrayBacked"
+      ],
+      [
+        "pandas._libs.internals",
+        "_unpickle_block"
+      ],
+      [
+        "pandas.core.arrays.datetimes",
+        "DatetimeArray"
+      ],
+      [
+        "pandas.core.frame",
+        "DataFrame"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "Index"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "_new_Index"
+      ],
+      [
+        "pandas.core.indexes.numeric",
+        "Int64Index"
+      ],
+      [
+        "pandas.core.internals.managers",
+        "BlockManager"
+      ]
+    ],
+    "groups": [
+      {
+        "rows": 1285,
+        "columns": [
+          "quantity(kWh)",
+          "fuel_date",
+          "trip_distance(km)",
+          "odometer",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点",
+          "tire_type",
+          "city",
+          "motor_way",
+          "country_roads",
+          "driving_style"
+        ],
+        "dtypes": {
+          "quantity(kWh)": "float64",
+          "fuel_date": "datetime64[ns]",
+          "trip_distance(km)": "float64",
+          "odometer": "int64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "int64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str",
+          "tire_type": "str",
+          "city": "int64",
+          "motor_way": "int64",
+          "country_roads": "int64",
+          "driving_style": "str"
+        },
+        "missing": {
+          "quantity(kWh)": 0,
+          "fuel_date": 0,
+          "trip_distance(km)": 0,
+          "odometer": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0,
+          "tire_type": 0,
+          "city": 0,
+          "motor_way": 0,
+          "country_roads": 0,
+          "driving_style": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "quantity(kWh)": {
+            "unique": 624,
+            "min": 0.1,
+            "median": 6.07,
+            "max": 13.63
+          },
+          "fuel_date": {
+            "unique": 732,
+            "min": "2016-08-23 00:00:00",
+            "max": "2019-02-07 00:00:00",
+            "midnight": 1285
+          },
+          "trip_distance(km)": {
+            "unique": 564,
+            "min": 0.2,
+            "median": 48.9,
+            "max": 154.9
+          },
+          "odometer": {
+            "unique": 1279,
+            "min": 114952.0,
+            "median": 149003.0,
+            "max": 176977.0
+          },
+          "出行季节": {
+            "unique": 4,
+            "top": {
+              "autumn": 430,
+              "summer": 309,
+              "spring": 299,
+              "winter": 247
+            }
+          },
+          "出行日期": {
+            "unique": 7,
+            "top": {
+              "Saturday": 222,
+              "Friday": 201,
+              "Thursday": 188,
+              "Wednesday": 188,
+              "Monday": 184,
+              "Sunday": 153,
+              "Tuesday": 149
+            }
+          },
+          "出行时段": {
+            "unique": 1,
+            "top": {
+              "nighttime": 1285
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 16.0,
+            "median": 16.0,
+            "max": 16.0
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 1285
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 1080.0,
+            "median": 1080.0,
+            "max": 1080.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "German": 1285
+            }
+          },
+          "tire_type": {
+            "unique": 2,
+            "top": {
+              "Summer tires": 937,
+              "Winter tires": 348
+            }
+          },
+          "city": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 1.0
+          },
+          "motor_way": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 1.0
+          },
+          "country_roads": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 1.0
+          },
+          "driving_style": {
+            "unique": 3,
+            "top": {
+              "Normal": 1212,
+              "Fast": 44,
+              "Moderate": 29
+            }
+          }
+        }
+      },
+      {
+        "rows": 3314,
+        "columns": [
+          "quantity(kWh)",
+          "fuel_date",
+          "trip_distance(km)",
+          "avg_speed(km/h)",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点",
+          "tire_type",
+          "city",
+          "motor_way",
+          "country_roads",
+          "driving_style"
+        ],
+        "dtypes": {
+          "quantity(kWh)": "float64",
+          "fuel_date": "datetime64[ns]",
+          "trip_distance(km)": "float64",
+          "avg_speed(km/h)": "float64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "float64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str",
+          "tire_type": "str",
+          "city": "int64",
+          "motor_way": "int64",
+          "country_roads": "int64",
+          "driving_style": "str"
+        },
+        "missing": {
+          "quantity(kWh)": 0,
+          "fuel_date": 0,
+          "trip_distance(km)": 0,
+          "avg_speed(km/h)": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0,
+          "tire_type": 0,
+          "city": 0,
+          "motor_way": 0,
+          "country_roads": 0,
+          "driving_style": 0
+        },
+        "duplicates": 2,
+        "fields": {
+          "quantity(kWh)": {
+            "unique": 1034,
+            "min": 0.01,
+            "median": 3.52,
+            "max": 35.6
+          },
+          "fuel_date": {
+            "unique": 1290,
+            "min": "2014-12-18 00:00:00",
+            "max": "2019-02-08 00:00:00",
+            "midnight": 3314
+          },
+          "trip_distance(km)": {
+            "unique": 194,
+            "min": 0.5,
+            "median": 20.0,
+            "max": 323.0
+          },
+          "avg_speed(km/h)": {
+            "unique": 93,
+            "min": 2.0,
+            "median": 47.0,
+            "max": 100.0
+          },
+          "出行季节": {
+            "unique": 4,
+            "top": {
+              "autumn": 965,
+              "summer": 839,
+              "spring": 770,
+              "winter": 740
+            }
+          },
+          "出行日期": {
+            "unique": 7,
+            "top": {
+              "Tuesday": 555,
+              "Wednesday": 543,
+              "Friday": 511,
+              "Thursday": 499,
+              "Monday": 486,
+              "Saturday": 376,
+              "Sunday": 344
+            }
+          },
+          "出行时段": {
+            "unique": 1,
+            "top": {
+              "nighttime": 3314
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 35.8,
+            "median": 35.8,
+            "max": 35.8
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 3314
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 1573.0,
+            "median": 1573.0,
+            "max": 1573.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "German": 3314
+            }
+          },
+          "tire_type": {
+            "unique": 2,
+            "top": {
+              "Summer tires": 1815,
+              "Winter tires": 1499
+            }
+          },
+          "city": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 1.0
+          },
+          "motor_way": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 1.0
+          },
+          "country_roads": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 1.0,
+            "max": 1.0
+          },
+          "driving_style": {
+            "unique": 3,
+            "top": {
+              "Moderate": 2309,
+              "Normal": 910,
+              "Fast": 95
+            }
+          }
+        }
+      }
+    ],
+    "total_rows": 4599
+  },
+  "VED": {
+    "serialized_globals": [
+      [
+        "builtins",
+        "slice"
+      ],
+      [
+        "numpy",
+        "dtype"
+      ],
+      [
+        "numpy",
+        "ndarray"
+      ],
+      [
+        "numpy.core.multiarray",
+        "_reconstruct"
+      ],
+      [
+        "pandas._libs.arrays",
+        "__pyx_unpickle_NDArrayBacked"
+      ],
+      [
+        "pandas._libs.internals",
+        "_unpickle_block"
+      ],
+      [
+        "pandas.core.arrays.datetimes",
+        "DatetimeArray"
+      ],
+      [
+        "pandas.core.frame",
+        "DataFrame"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "Index"
+      ],
+      [
+        "pandas.core.indexes.base",
+        "_new_Index"
+      ],
+      [
+        "pandas.core.indexes.range",
+        "RangeIndex"
+      ],
+      [
+        "pandas.core.internals.managers",
+        "BlockManager"
+      ]
+    ],
+    "groups": [
+      {
+        "rows": 195,
+        "columns": [
+          "行程能耗",
+          "出行时间",
+          "行程时间",
+          "行程距离",
+          "行程平均速度",
+          "当前SOC",
+          "温度",
+          "空调功率",
+          "加热器功率",
+          "降雨",
+          "湿度",
+          "可见度",
+          "风向",
+          "风速",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点"
+        ],
+        "dtypes": {
+          "行程能耗": "float64",
+          "出行时间": "datetime64[ns]",
+          "行程时间": "float64",
+          "行程距离": "float64",
+          "行程平均速度": "float64",
+          "当前SOC": "float64",
+          "温度": "float64",
+          "空调功率": "float64",
+          "加热器功率": "float64",
+          "降雨": "object",
+          "湿度": "float64",
+          "可见度": "object",
+          "风向": "object",
+          "风速": "float64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "int64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str"
+        },
+        "missing": {
+          "行程能耗": 0,
+          "出行时间": 0,
+          "行程时间": 0,
+          "行程距离": 0,
+          "行程平均速度": 0,
+          "当前SOC": 0,
+          "温度": 0,
+          "空调功率": 0,
+          "加热器功率": 0,
+          "降雨": 0,
+          "湿度": 0,
+          "可见度": 0,
+          "风向": 0,
+          "风速": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "行程能耗": {
+            "unique": 195,
+            "min": 0.03736469444444444,
+            "median": 0.589420625,
+            "max": 3.2549024861111113
+          },
+          "出行时间": {
+            "unique": 195,
+            "min": "2017-11-02 17:16:00",
+            "max": "2018-11-10 11:59:00",
+            "midnight": 0
+          },
+          "行程时间": {
+            "unique": 195,
+            "min": 0.3383333333333333,
+            "median": 6.713333333333333,
+            "max": 78.72
+          },
+          "行程距离": {
+            "unique": 195,
+            "min": 0.04340021153462026,
+            "median": 3.2484599877826086,
+            "max": 12.758157065317322
+          },
+          "行程平均速度": {
+            "unique": 195,
+            "min": 11.340414752603488,
+            "median": 35.944789646627186,
+            "max": 66.7261729168125
+          },
+          "当前SOC": {
+            "unique": 130,
+            "min": 33.658538818400004,
+            "median": 88.2926864624,
+            "max": 100.0
+          },
+          "温度": {
+            "unique": 79,
+            "min": -11.5,
+            "median": 12.0,
+            "max": 36.0
+          },
+          "空调功率": {
+            "unique": 25,
+            "min": 0.0,
+            "median": 350.0,
+            "max": 1800.0
+          },
+          "加热器功率": {
+            "unique": 17,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 4250.0
+          },
+          "降雨": {
+            "unique": 10,
+            "top": {
+              "0.00": 96,
+              "0.0": 53,
+              "0": 37,
+              "0.02": 2,
+              "0.11": 1,
+              "0.01": 1,
+              "0.22": 1
+            }
+          },
+          "湿度": {
+            "unique": 64,
+            "min": 21.0,
+            "median": 71.0,
+            "max": 100.0
+          },
+          "可见度": {
+            "unique": 20,
+            "top": {
+              "10.0": 140,
+              "10.00": 15,
+              "9.0": 7,
+              "7.0": 4,
+              "4.0": 4,
+              "2.5": 3,
+              "8.0": 3
+            }
+          },
+          "风向": {
+            "unique": 51,
+            "top": {
+              "000": 22,
+              "0": 14,
+              "360": 12,
+              "170": 8,
+              "130": 8,
+              "250": 8,
+              "280": 8
+            }
+          },
+          "风速": {
+            "unique": 23,
+            "min": 0.0,
+            "median": 7.0,
+            "max": 26.0
+          },
+          "出行季节": {
+            "unique": 4,
+            "top": {
+              "spring": 57,
+              "summer": 48,
+              "autumn": 47,
+              "winter": 43
+            }
+          },
+          "出行日期": {
+            "unique": 7,
+            "top": {
+              "Saturday": 36,
+              "Thursday": 33,
+              "Friday": 32,
+              "Sunday": 32,
+              "Monday": 27,
+              "Tuesday": 18,
+              "Wednesday": 17
+            }
+          },
+          "出行时段": {
+            "unique": 3,
+            "top": {
+              "other time": 135,
+              "nighttime": 39,
+              "night peak": 21
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 195
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 1493.0,
+            "median": 1493.0,
+            "max": 1493.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "US": 195
+            }
+          }
+        },
+        "distance_ge_10km": 2
+      },
+      {
+        "rows": 289,
+        "columns": [
+          "行程能耗",
+          "出行时间",
+          "行程时间",
+          "行程距离",
+          "行程平均速度",
+          "当前SOC",
+          "温度",
+          "空调功率",
+          "加热器功率",
+          "降雨",
+          "湿度",
+          "可见度",
+          "风向",
+          "风速",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点"
+        ],
+        "dtypes": {
+          "行程能耗": "float64",
+          "出行时间": "datetime64[ns]",
+          "行程时间": "float64",
+          "行程距离": "float64",
+          "行程平均速度": "float64",
+          "当前SOC": "float64",
+          "温度": "float64",
+          "空调功率": "float64",
+          "加热器功率": "float64",
+          "降雨": "object",
+          "湿度": "float64",
+          "可见度": "float64",
+          "风向": "object",
+          "风速": "float64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "int64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str"
+        },
+        "missing": {
+          "行程能耗": 0,
+          "出行时间": 0,
+          "行程时间": 0,
+          "行程距离": 0,
+          "行程平均速度": 0,
+          "当前SOC": 0,
+          "温度": 0,
+          "空调功率": 0,
+          "加热器功率": 0,
+          "降雨": 0,
+          "湿度": 0,
+          "可见度": 0,
+          "风向": 0,
+          "风速": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "行程能耗": {
+            "unique": 289,
+            "min": 0.0019872708333333444,
+            "median": 0.4719347916666667,
+            "max": 5.854905569444444
+          },
+          "出行时间": {
+            "unique": 289,
+            "min": "2017-11-05 16:45:00",
+            "max": "2018-11-05 17:37:00",
+            "midnight": 0
+          },
+          "行程时间": {
+            "unique": 283,
+            "min": 0.56,
+            "median": 6.483333333333333,
+            "max": 53.22
+          },
+          "行程距离": {
+            "unique": 289,
+            "min": 0.22408613339596736,
+            "median": 3.3836852547656697,
+            "max": 21.246643528121115
+          },
+          "行程平均速度": {
+            "unique": 289,
+            "min": 7.326053703849416,
+            "median": 42.399385508336955,
+            "max": 89.43149928006453
+          },
+          "当前SOC": {
+            "unique": 204,
+            "min": 14.8780498505,
+            "median": 70.7317123413,
+            "max": 100.0
+          },
+          "温度": {
+            "unique": 83,
+            "min": -15.0,
+            "median": 11.5,
+            "max": 34.0
+          },
+          "空调功率": {
+            "unique": 24,
+            "min": 0.0,
+            "median": 350.0,
+            "max": 1300.0
+          },
+          "加热器功率": {
+            "unique": 16,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 3750.0
+          },
+          "降雨": {
+            "unique": 9,
+            "top": {
+              "0.00": 182,
+              "0": 51,
+              "0.0": 38,
+              "0.01": 9,
+              "0.02": 3,
+              "0.03": 3,
+              "0.11": 2
+            }
+          },
+          "湿度": {
+            "unique": 65,
+            "min": 25.0,
+            "median": 70.0,
+            "max": 100.0
+          },
+          "可见度": {
+            "unique": 13,
+            "min": 0.0,
+            "median": 10.0,
+            "max": 10.0
+          },
+          "风向": {
+            "unique": 67,
+            "top": {
+              "0": 22,
+              "230": 15,
+              "270": 15,
+              "000": 14,
+              "180": 13,
+              "240": 11,
+              "280": 11
+            }
+          },
+          "风速": {
+            "unique": 21,
+            "min": 0.0,
+            "median": 8.0,
+            "max": 23.0
+          },
+          "出行季节": {
+            "unique": 4,
+            "top": {
+              "spring": 90,
+              "autumn": 76,
+              "winter": 63,
+              "summer": 60
+            }
+          },
+          "出行日期": {
+            "unique": 7,
+            "top": {
+              "Saturday": 50,
+              "Friday": 49,
+              "Sunday": 48,
+              "Monday": 47,
+              "Wednesday": 35,
+              "Thursday": 33,
+              "Tuesday": 27
+            }
+          },
+          "出行时段": {
+            "unique": 4,
+            "top": {
+              "other time": 167,
+              "night peak": 65,
+              "nighttime": 56,
+              "morning peak": 1
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 289
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 1493.0,
+            "median": 1493.0,
+            "max": 1493.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "US": 289
+            }
+          }
+        },
+        "distance_ge_10km": 45
+      },
+      {
+        "rows": 10,
+        "columns": [
+          "行程能耗",
+          "出行时间",
+          "行程时间",
+          "行程距离",
+          "行程平均速度",
+          "当前SOC",
+          "温度",
+          "空调功率",
+          "加热器功率",
+          "降雨",
+          "湿度",
+          "可见度",
+          "风向",
+          "风速",
+          "出行季节",
+          "出行日期",
+          "出行时段",
+          "电池能量",
+          "车辆类型",
+          "整备质量",
+          "地点"
+        ],
+        "dtypes": {
+          "行程能耗": "float64",
+          "出行时间": "datetime64[ns]",
+          "行程时间": "float64",
+          "行程距离": "float64",
+          "行程平均速度": "float64",
+          "当前SOC": "float64",
+          "温度": "float64",
+          "空调功率": "float64",
+          "加热器功率": "float64",
+          "降雨": "str",
+          "湿度": "float64",
+          "可见度": "float64",
+          "风向": "float64",
+          "风速": "float64",
+          "出行季节": "str",
+          "出行日期": "str",
+          "出行时段": "str",
+          "电池能量": "int64",
+          "车辆类型": "str",
+          "整备质量": "int64",
+          "地点": "str"
+        },
+        "missing": {
+          "行程能耗": 0,
+          "出行时间": 0,
+          "行程时间": 0,
+          "行程距离": 0,
+          "行程平均速度": 0,
+          "当前SOC": 0,
+          "温度": 0,
+          "空调功率": 0,
+          "加热器功率": 0,
+          "降雨": 0,
+          "湿度": 0,
+          "可见度": 0,
+          "风向": 0,
+          "风速": 0,
+          "出行季节": 0,
+          "出行日期": 0,
+          "出行时段": 0,
+          "电池能量": 0,
+          "车辆类型": 0,
+          "整备质量": 0,
+          "地点": 0
+        },
+        "duplicates": 0,
+        "fields": {
+          "行程能耗": {
+            "unique": 10,
+            "min": 0.1569566944444445,
+            "median": 0.3352319756944445,
+            "max": 1.3058943680555557
+          },
+          "出行时间": {
+            "unique": 10,
+            "min": "2018-03-02 21:52:00",
+            "max": "2018-05-28 23:46:00",
+            "midnight": 0
+          },
+          "行程时间": {
+            "unique": 10,
+            "min": 1.015,
+            "median": 4.336666666666667,
+            "max": 10.008333333333335
+          },
+          "行程距离": {
+            "unique": 10,
+            "min": 0.8699300312181263,
+            "median": 2.4881451487542643,
+            "max": 7.253846977991319
+          },
+          "行程平均速度": {
+            "unique": 10,
+            "min": 35.903986380416235,
+            "median": 51.62770592653543,
+            "max": 63.9603506229286
+          },
+          "当前SOC": {
+            "unique": 10,
+            "min": 37.3170776367,
+            "median": 67.68292999265,
+            "max": 79.2682952881
+          },
+          "温度": {
+            "unique": 8,
+            "min": -1.0,
+            "median": 8.25,
+            "max": 31.0
+          },
+          "空调功率": {
+            "unique": 2,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 1350.0
+          },
+          "加热器功率": {
+            "unique": 4,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 2000.0
+          },
+          "降雨": {
+            "unique": 1,
+            "top": {
+              "0.00": 10
+            }
+          },
+          "湿度": {
+            "unique": 8,
+            "min": 41.0,
+            "median": 67.0,
+            "max": 90.0
+          },
+          "可见度": {
+            "unique": 1,
+            "min": 10.0,
+            "median": 10.0,
+            "max": 10.0
+          },
+          "风向": {
+            "unique": 8,
+            "min": 0.0,
+            "median": 145.0,
+            "max": 310.0
+          },
+          "风速": {
+            "unique": 7,
+            "min": 0.0,
+            "median": 6.0,
+            "max": 10.0
+          },
+          "出行季节": {
+            "unique": 1,
+            "top": {
+              "spring": 10
+            }
+          },
+          "出行日期": {
+            "unique": 4,
+            "top": {
+              "Friday": 3,
+              "Tuesday": 3,
+              "Monday": 3,
+              "Sunday": 1
+            }
+          },
+          "出行时段": {
+            "unique": 3,
+            "top": {
+              "other time": 6,
+              "nighttime": 2,
+              "night peak": 2
+            }
+          },
+          "电池能量": {
+            "unique": 1,
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "车辆类型": {
+            "unique": 1,
+            "top": {
+              "Sedan": 10
+            }
+          },
+          "整备质量": {
+            "unique": 1,
+            "min": 1493.0,
+            "median": 1493.0,
+            "max": 1493.0
+          },
+          "地点": {
+            "unique": 1,
+            "top": {
+              "US": 10
+            }
+          }
+        },
+        "distance_ge_10km": 0
+      }
+    ],
+    "total_rows": 494
+  }
+}

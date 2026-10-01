@@ -1,0 +1,51 @@
+{
+  "runtime": {
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "python": "3.12.3",
+    "sklearn": "1.9.1",
+    "numpy": "2.3.2",
+    "pandas": "3.0.5",
+    "threads": 4,
+    "cpu_count": 128,
+    "started_at": "2026-09-30T12:02:00.333111+00:00",
+    "groups": {},
+    "runner_sha256": "6560d2ab80de82b6c561d9dd440f7bc1646d21ec2e83dbfa816694b4cdb156b7"
+  },
+  "frozen_files": {
+    "cohort_manifest.csv": "0e5c6e21640b7d928c58b3e1cc5e81e87489924e47a1fbdfa3e7b3c260a22f09",
+    "split_manifest.csv": "14e908bdaf3d96619e095719bc6b55b696d2780b0745aa4837b54de6a36fc5e6",
+    "features.csv": "43a56d8422a03d6fdb7581bb6adfc9f64964aa73b803244975d67aa8ec304488",
+    "route_audit.csv": "4df996c8c3224751bfe495e61ce0fff19cc4231d03c9a7a82eab96db811f85b2",
+    "state_provenance.csv": "29801eef885510bd8129870301d328c59440ee2ced666118619aa33538193e8e",
+    "prefix_audit.csv": "98a0d5b1ec9a001ffd875c61b68ef2fa0178518673da419057bfbc97e134ca3e",
+    "history_provenance.csv": "b168b11833f71592dc033977b1717ffe28949857a78c86e31fd2c3414edfaf00",
+    "thermal_provenance.csv": "21a8c8b5b576dfbeb12bc1a1f1ac1e524cc66dd76714de56045cfbce0027fed4",
+    "history_pool_manifest.csv": "b4749a94ad4b5561ea3d2fd123138899715898c00486ebc1ea94d06b55ef54df",
+    "feature_columns.json": "a3f2307f262336d958010f9f3abef97bf357628d02d57d06db72516116d0f2d4",
+    "feature_contract.json": "89cd40970e596cf6444a1ce7477f940bc7ebd9088f6bdce9c37367577e5abb86",
+    "preflight_checks.json": "61fdcd6291a219f368881d01aea96c54b1e9ee3dc00a5e51ebd7a15617a7bf84",
+    "input_manifest.json": "7a50549b9f2cdecdce7eac6e454b1525776857bf0b6079905e4fe1014bf54294",
+    "run_config.json": "6acbd88c8b06a185e610c2c9d9e864dbbfe50f37eaa9497920472ae219eef77d",
+    "protocol_frozen.md": "4ecb7300f8add5b77b3680dc5a0b7cda0c5d66a2c7f4a2a9462c40e8f9109202",
+    "preprocessing_manifest.json": "453c90ad5d449d1aa5bfa01df1ff881d89d3b63c0605bd1cc9611f962fdd8fdb"
+  },
+  "tree": {
+    "loss": "absolute_error",
+    "learning_rate": 0.05,
+    "max_iter": 500,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "planned_fits": 4,
+  "planned_groups": [
+    "B0",
+    "R",
+    "S",
+    "H",
+    "O"
+  ],
+  "future_evaluation_after_validation_lock": true
+}

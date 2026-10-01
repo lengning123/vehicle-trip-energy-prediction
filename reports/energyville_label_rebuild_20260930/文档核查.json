@@ -1,0 +1,27 @@
+{
+  "manager_summaries": {
+    "problem.md": {
+      "summary_chars": 173,
+      "under300": true
+    },
+    "hypotheses.md": {
+      "summary_chars": 173,
+      "under300": true
+    },
+    "experiments.md": {
+      "summary_chars": 173,
+      "under300": true
+    },
+    "decision_log.md": {
+      "summary_chars": 173,
+      "under300": true
+    },
+    "研究经理验收与方向.md": {
+      "summary_chars": 173,
+      "under300": true
+    }
+  },
+  "broken_links": [],
+  "unique_R05_D11": true,
+  "data_acceptance": "manager_acceptance.json"
+}

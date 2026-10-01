@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "name": "temperature_cut_remaining_net_candidates.csv",
+      "sha256": "9cb8aa27ee4875e512e340a24ead1b54e45d7c2a3da82848b7a05f4093f27d10",
+      "bytes": 8791943,
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/temperature_cut_remaining_net_candidates.csv"
+    },
+    {
+      "name": "recorded_session_master.csv",
+      "sha256": "5f3b78b6fb7f9b4b785f6bc5c048a4e0c7b4919f6956db03d91d958c087e33dd",
+      "bytes": 9648436,
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/recorded_session_master.csv"
+    },
+    {
+      "name": "driving_signal_views_1s.zip",
+      "sha256": "80d1c34d4901811eeb69dad1e254e111557d2f2978532af765631ece6db91120",
+      "bytes": 116843046,
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/driving_signal_views_1s.zip"
+    },
+    {
+      "name": "observed_thermal_history.csv.gz",
+      "sha256": "4ac1b062be80353f61663a4e9c4c9d4eca7c42d67ef2a393b7c8c53eb2cab706",
+      "bytes": 17605702,
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/observed_thermal_history.csv.gz"
+    },
+    {
+      "name": "integrated_dataset_summary.json",
+      "sha256": "df161c153f20ada77570da3cb41921ad86d7fbd422585062bb6faf18674be254",
+      "bytes": 5068,
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/integrated_dataset_summary.json"
+    }
+  ],
+  "artifact_manifest_sha256": "6df3765cd1423b826ec92d462758ae33203a89c630abf0533806b592625526ae",
+  "todo_sha256": "87b615d9661bf009449c8e4d539d17d766ffd409504224878a12d17615d590a6",
+  "preparation_code_sha256": "fcc55a648ee6f5e9e90eb4b9f3db09943c8a25b468861eddc7cac4a0a5665e72",
+  "input_schema": "R05 remaining counter+IV approximation; all1272 source IDs"
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "core_artifact_sha256_checks": 45,
+  "completion_sha256": "e13820b045c85d261c7ddf6a4e52ab9d6d44df9e2455ac0a9ed3cc653d45b04d",
+  "cloud_independent_verification_passed": true,
+  "causal_unit_tests_local_and_cloud": 3,
+  "plots_visually_checked": ["budget_mae.png", "history_error_structure.png"],
+  "new_local_fits": 0,
+  "new_cloud_fits": 3,
+  "calibration_terminal_targets_used": 0,
+  "E5": "shelved_not_started"
+}

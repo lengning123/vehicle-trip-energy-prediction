@@ -1,0 +1,9 @@
+# EV-B核心复现环境；原云端Python 3.12.3 / CPU4线程
+# 三个核心版本来自两轮runtime.json；其他依赖未记录精确版本，安装后保存pip freeze。
+numpy==2.3.2
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy
+joblib
+threadpoolctl
+matplotlib

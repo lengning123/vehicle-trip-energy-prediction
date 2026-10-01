@@ -1,0 +1,103 @@
+{
+  "release_definition": "published 1 s mean-resampled CSV sessions; not all raw CAN files",
+  "source_zip": "D:\\python\\homework\\POC\\reports\\public_dataset_audit_20260930\\sources\\energyville_V2.zip",
+  "source_zip_md5": "cc2d63758b411c0f8d4b61bdaa1fff1c",
+  "source_sessions": 2310,
+  "source_rows": 6722917,
+  "source_mode_counts": {
+    "driving sessions": 1396,
+    "parking sessions": 780,
+    "slow charging sessions": 109,
+    "fast charging sessions": 25
+  },
+  "source_read_errors": 0,
+  "driving_source_records_retained": 1396,
+  "driving_vehicles": {
+    "BEV2": 1014,
+    "BEV1": 382
+  },
+  "classification_counts": {
+    "moving_recorded_session": 1306,
+    "moving_with_charger_signal": 77,
+    "no_confirmed_movement": 13
+  },
+  "movement_evidence_records": 1383,
+  "external_charging_evidence_records": 86,
+  "own_external_charging_records": 77,
+  "observed_active_charging_mode_overlap_records": 18,
+  "overlapping_source_records": 28,
+  "exact_same_iv_mode_overlap_records": 13,
+  "conflicting_iv_mode_overlap_records": 5,
+  "long_gap_gt_2s_records": 85,
+  "long_gap_gt_60s_records": 18,
+  "route_candidates_unfiltered_by_label": 1380,
+  "route_ge_10km_records": 523,
+  "odometer_sentinel_records": 1120,
+  "temperature_first_bucket_records": 477,
+  "temperature_anywhere_records": 1396,
+  "temperature_missing_entire_records": 0,
+  "temperature_truncated_nonempty_records": 1396,
+  "temperature_delay_s_quantiles": {
+    "0": 0.0,
+    "0.05": 0.0,
+    "0.5": 1.0,
+    "0.95": 3.0,
+    "1": 6.0
+  },
+  "temperature_dropped_duration_s_quantiles": {
+    "0": 1.0,
+    "0.05": 1.0,
+    "0.5": 2.0,
+    "0.95": 4.0,
+    "1": 7.0
+  },
+  "temperature_dropped_gps_km_quantiles": {
+    "0": 0.0,
+    "0.05": 0.0,
+    "0.5": 0.0,
+    "0.95": 0.010702577902358637,
+    "1": 0.07151079083944303
+  },
+  "temperature_dropped_iv_net_kwh_quantiles": {
+    "0": -0.02079919467772194,
+    "0.05": 4.951362235277857e-05,
+    "0.5": 0.00029411573253304297,
+    "0.95": 0.0034589946429034245,
+    "1": 0.02455508550941549
+  },
+  "temperature_delay_le_2s_records": 1285,
+  "temperature_delay_le_5s_records": 1393,
+  "temperature_delay_gt_60s_records": 0,
+  "temperature_total_dropped_duration_s": 2832.0,
+  "temperature_total_dropped_gps_plausible_km": 2.2737858804806756,
+  "temperature_total_dropped_iv_observed_net_kwh": 0.9942453185630856,
+  "temperature_dropped_iv_is_partial_when_gaps": true,
+  "strict_start_previous_thermal_any_age_records": 1396,
+  "strict_start_previous_thermal_age_s_quantiles": {
+    "0": 0.0,
+    "0.05": 0.0,
+    "0.5": 2275.0,
+    "0.95": 67732.5,
+    "1": 1943688.0
+  },
+  "strict_start_previous_thermal_age_le_60s_records": 444,
+  "strict_start_previous_thermal_age_le_600s_records": 559,
+  "strict_start_previous_thermal_age_le_3600s_records": 780,
+  "overlapping_thermal_bucket_conflicts": 24,
+  "parameters": {
+    "gps_plausible_speed_max_kph": 200,
+    "moving_odometer_min_km": 0.1,
+    "moving_gps_min_km": 0.2,
+    "gps_motion_link_min_km": 0.01,
+    "speed_positive_threshold_unit_unspecified": 1,
+    "line_charge_power_min_kw": 0.5,
+    "line_charge_current_min_a": 0.5,
+    "line_charge_voltage_min_v": 50,
+    "temperature_min_C": -40,
+    "temperature_max_C": 100,
+    "iv_max_bridged_interval_s": 2,
+    "signal_bucket_availability_delay_s": 1
+  },
+  "label_qualification": "Independent audit required; observed IV sums and individual counter spans are diagnostics, not automatically whole-session labels.",
+  "external_charging_evidence_records_is_broad_signal_suspicion_not_confirmation": true
+}

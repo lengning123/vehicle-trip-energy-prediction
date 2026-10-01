@@ -1,0 +1,14 @@
+{
+  "source_rows": 1396,
+  "all_mode_rows": 2310,
+  "window_rows": 18480,
+  "counter_asof_samples_checked": 25964,
+  "strong_net_count": 1375,
+  "counter_plus_IV_count": 1335,
+  "raw_timestamp_seconds_reference": {
+    "file": "BEV1_2024-07-24_drive1.csv",
+    "duration_s": 2497.0,
+    "counter_net_kwh": 3.110000000000582
+  },
+  "pass": true
+}

@@ -1,0 +1,29 @@
+{
+  "locked_at": "2026-09-30T12:02:09.876410+00:00",
+  "decision_sha256": "100229789281271eada7e3936ff03529a488cc686c17ddc7193a94f95fd92d2c",
+  "model_hashes": {
+    "R": "762ea13da55f1009927ef3068d8d447cc180c6dd512d09dd1a4046e6c795c9a7",
+    "S": "79d377012386ff43729f84e6307f5f8415ed603ee3254bfff65fe65a008f8e7c",
+    "H": "406f3a0404b436d76e9d4f22af06e66e02d0466663cdd9bbc72b0b7ec56fc384",
+    "O": "c1312f1ad0941caa97b6e852aeeca3725c8ad5c9b31e7d3165f607d2262906f1"
+  },
+  "frozen_files": {
+    "cohort_manifest.csv": "0e5c6e21640b7d928c58b3e1cc5e81e87489924e47a1fbdfa3e7b3c260a22f09",
+    "split_manifest.csv": "14e908bdaf3d96619e095719bc6b55b696d2780b0745aa4837b54de6a36fc5e6",
+    "features.csv": "43a56d8422a03d6fdb7581bb6adfc9f64964aa73b803244975d67aa8ec304488",
+    "route_audit.csv": "4df996c8c3224751bfe495e61ce0fff19cc4231d03c9a7a82eab96db811f85b2",
+    "state_provenance.csv": "29801eef885510bd8129870301d328c59440ee2ced666118619aa33538193e8e",
+    "prefix_audit.csv": "98a0d5b1ec9a001ffd875c61b68ef2fa0178518673da419057bfbc97e134ca3e",
+    "history_provenance.csv": "b168b11833f71592dc033977b1717ffe28949857a78c86e31fd2c3414edfaf00",
+    "thermal_provenance.csv": "21a8c8b5b576dfbeb12bc1a1f1ac1e524cc66dd76714de56045cfbce0027fed4",
+    "history_pool_manifest.csv": "b4749a94ad4b5561ea3d2fd123138899715898c00486ebc1ea94d06b55ef54df",
+    "feature_columns.json": "a3f2307f262336d958010f9f3abef97bf357628d02d57d06db72516116d0f2d4",
+    "feature_contract.json": "89cd40970e596cf6444a1ce7477f940bc7ebd9088f6bdce9c37367577e5abb86",
+    "preflight_checks.json": "61fdcd6291a219f368881d01aea96c54b1e9ee3dc00a5e51ebd7a15617a7bf84",
+    "input_manifest.json": "7a50549b9f2cdecdce7eac6e454b1525776857bf0b6079905e4fe1014bf54294",
+    "run_config.json": "6acbd88c8b06a185e610c2c9d9e864dbbfe50f37eaa9497920472ae219eef77d",
+    "protocol_frozen.md": "4ecb7300f8add5b77b3680dc5a0b7cda0c5d66a2c7f4a2a9462c40e8f9109202",
+    "preprocessing_manifest.json": "453c90ad5d449d1aa5bfa01df1ff881d89d3b63c0605bd1cc9611f962fdd8fdb"
+  },
+  "runner_sha256": "6560d2ab80de82b6c561d9dd440f7bc1646d21ec2e83dbfa816694b4cdb156b7"
+}

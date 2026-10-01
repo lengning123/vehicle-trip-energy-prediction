@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "checked_files": 68,
+  "delivery_manifest_sha256": "b88e67106c5b56f7c121e1b4f0ba24a18fa5274e39236cd58b063b03362ec612",
+  "mode": "final local/cloud delivery byte-identical; no fit or label queries"
+}

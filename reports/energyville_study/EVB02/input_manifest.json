@@ -1,0 +1,102 @@
+{
+  "inputs": [
+    {
+      "name": "cohort_manifest.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/cohort_manifest.csv",
+      "sha256": "0e5c6e21640b7d928c58b3e1cc5e81e87489924e47a1fbdfa3e7b3c260a22f09"
+    },
+    {
+      "name": "features.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/features.csv",
+      "sha256": "43a56d8422a03d6fdb7581bb6adfc9f64964aa73b803244975d67aa8ec304488"
+    },
+    {
+      "name": "split_manifest.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/split_manifest.csv",
+      "sha256": "14e908bdaf3d96619e095719bc6b55b696d2780b0745aa4837b54de6a36fc5e6"
+    },
+    {
+      "name": "feature_columns.json",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/feature_columns.json",
+      "sha256": "a3f2307f262336d958010f9f3abef97bf357628d02d57d06db72516116d0f2d4"
+    },
+    {
+      "name": "feature_contract.json",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/feature_contract.json",
+      "sha256": "89cd40970e596cf6444a1ce7477f940bc7ebd9088f6bdce9c37367577e5abb86"
+    },
+    {
+      "name": "preprocessing_manifest.json",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/preprocessing_manifest.json",
+      "sha256": "453c90ad5d449d1aa5bfa01df1ff881d89d3b63c0605bd1cc9611f962fdd8fdb"
+    },
+    {
+      "name": "model_S.joblib",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/model_S.joblib",
+      "sha256": "79d377012386ff43729f84e6307f5f8415ed603ee3254bfff65fe65a008f8e7c"
+    },
+    {
+      "name": "model_H.joblib",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/model_H.joblib",
+      "sha256": "406f3a0404b436d76e9d4f22af06e66e02d0466663cdd9bbc72b0b7ec56fc384"
+    },
+    {
+      "name": "model_O.joblib",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/model_O.joblib",
+      "sha256": "c1312f1ad0941caa97b6e852aeeca3725c8ad5c9b31e7d3165f607d2262906f1"
+    },
+    {
+      "name": "predictions_train.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/predictions_train.csv",
+      "sha256": "876bdfc543385941f352e3292a15b7dffb03554685cae5eb2fc82dc0eb90fe96"
+    },
+    {
+      "name": "predictions_validation.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/predictions_validation.csv",
+      "sha256": "a4fadab3e08f7d97fc1b43d1fc9e1cfb52c14e7430bc956d41d655c2bce01491"
+    },
+    {
+      "name": "predictions_future.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/predictions_future.csv",
+      "sha256": "2aab65209a753350b35dd5a5840f31b1dd462d845ae9595f07192246a9d22058"
+    },
+    {
+      "name": "route_audit.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/route_audit.csv",
+      "sha256": "4df996c8c3224751bfe495e61ce0fff19cc4231d03c9a7a82eab96db811f85b2"
+    },
+    {
+      "name": "prefix_audit.csv",
+      "path": "/root/autodl-tmp/reports/energyville_study/EVB01/prefix_audit.csv",
+      "sha256": "98a0d5b1ec9a001ffd875c61b68ef2fa0178518673da419057bfbc97e134ca3e"
+    },
+    {
+      "name": "temperature_cut_remaining_net_candidates.csv",
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/temperature_cut_remaining_net_candidates.csv",
+      "sha256": "9cb8aa27ee4875e512e340a24ead1b54e45d7c2a3da82848b7a05f4093f27d10"
+    },
+    {
+      "name": "recorded_session_master.csv",
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/recorded_session_master.csv",
+      "sha256": "5f3b78b6fb7f9b4b785f6bc5c048a4e0c7b4919f6956db03d91d958c087e33dd"
+    },
+    {
+      "name": "driving_signal_views_1s.zip",
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/driving_signal_views_1s.zip",
+      "sha256": "80d1c34d4901811eeb69dad1e254e111557d2f2978532af765631ece6db91120"
+    },
+    {
+      "name": "observed_thermal_history.csv.gz",
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/observed_thermal_history.csv.gz",
+      "sha256": "4ac1b062be80353f61663a4e9c4c9d4eca7c42d67ef2a393b7c8c53eb2cab706"
+    },
+    {
+      "name": "integrated_dataset_summary.json",
+      "path": "/root/autodl-tmp/data/energyville_evb01_r05/integrated_dataset_summary.json",
+      "sha256": "df161c153f20ada77570da3cb41921ad86d7fbd422585062bb6faf18674be254"
+    }
+  ],
+  "todo_sha256": "c7b85483205dd073596242c3fe6f3fdb83205fabdfba7c14075245dc0515c1f6",
+  "code_sha256": "7d80365d9d6bf519797d80d67853d3b30c658d6a5b91bc6db1d5a2188bc34322",
+  "prior": "EV-B01 frozen artifacts; unchanged"
+}

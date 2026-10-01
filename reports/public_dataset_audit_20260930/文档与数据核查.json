@@ -1,0 +1,19 @@
+{
+  "local_links_missing": [],
+  "manager_summary_character_counts": {
+    "problem.md": 188,
+    "hypotheses.md": 154,
+    "experiments.md": 163,
+    "decision_log.md": 160,
+    "电动汽车全程行程能耗预测_近三年文献调研报告.md": 176,
+    "公开数据路线与UPECT验收.md": 215
+  },
+  "unique_paper_entries": 28,
+  "upect_rows": 5294,
+  "energyville_all_sessions": 2310,
+  "energyville_driving_candidates": 1396,
+  "provisional_common_subset": 436,
+  "subset_ge_10km": 194,
+  "new_model_training": false,
+  "strict_predeparture_and_boundaries_accepted": false
+}

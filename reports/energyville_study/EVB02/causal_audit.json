@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "history_rows": 11360,
+  "self_in_history": 0,
+  "wrong_vehicle": 0,
+  "late_sources": 0,
+  "calibration_sources": 0,
+  "mutated_file": "BEV2_2025-03-12_drive1.csv",
+  "mutated_completed_label_delta_kwh": 1000.0,
+  "source_duration_s": 7004.0,
+  "source_available_ns": 1741766689000000000,
+  "earlier_queries_identical_features_and_same_saved_H_predictions": 1029,
+  "later_queries_with_changed_history": 13,
+  "conclusion": "unended target mutation cannot affect earlier features/predictions; only subsequent eligible queries can change"
+}

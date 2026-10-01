@@ -1,0 +1,32 @@
+[
+  {
+    "file": "BHD.pkl",
+    "matches_github_blob": true,
+    "git_blob_sha": "457d0f512958a2b7f148faec4bf11596c6938dd7",
+    "sha256": "df06d5b6441d95f951a6ee5149d6d4defd1987be0f6b489a64ade4c934be56bb"
+  },
+  {
+    "file": "ChargeCar.pkl",
+    "matches_github_blob": true,
+    "git_blob_sha": "676d3345a8cffa7a4b2c589e9c657d9a8f661b4b",
+    "sha256": "927b2cd4caa624f3a1f816a1a0ac041261f9d4fb95757a8bb9264e9c724bf756"
+  },
+  {
+    "file": "SpritMonitor.pkl",
+    "matches_github_blob": true,
+    "git_blob_sha": "1a8eb6b95944dc9e26b2e9d899bc921502ed9016",
+    "sha256": "8c95eff464944577f744de8bd8cc46fc647e4a133068588ff97af1ba90bfe9fe"
+  },
+  {
+    "file": "VED.pkl",
+    "matches_github_blob": true,
+    "git_blob_sha": "ab1977e9ce4e65beb5cd942de50e09306edb6471",
+    "sha256": "abcd8b9519a28edf860ac169ce45d24d0ff06fee0bf11449cf5e164f8694b866"
+  },
+  {
+    "energyville_zip_md5_matches_repository": true,
+    "candidate_rows": 1396,
+    "common_provisional_rows": 436,
+    "common_subset_no_overlaps_or_long_gaps": true
+  }
+]
