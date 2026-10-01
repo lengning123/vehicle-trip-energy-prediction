@@ -3,7 +3,7 @@
   "research_state": "D14 / R07; EV-B01 and EV-B02 complete",
   "scope": "EV-B code, longitudinal research Markdown, contracts, predictions, figures and necessary source attribution; unrelated tracked edits excluded",
   "included_file_count_without_manifest": 263,
-  "bytes_without_manifest": 27870951,
+  "bytes_without_manifest": 27871504,
   "excluded": [
     "local credentials",
     "raw ZIP/GZ",
@@ -50,8 +50,8 @@
     },
     {
       "path": "docs/evb/REPRODUCTION.md",
-      "bytes": 4848,
-      "sha256": "7015fd671c27efd8c89e8d3faf370918748ca145e140c7dbec2f474a22977f34"
+      "bytes": 5353,
+      "sha256": "6864e1c138411a0b0f2842a2ee9bb4afb51bb2e4c5619136cc9b37a5ce10fdf7"
     },
     {
       "path": "docs/history/README_before_EVB_20261001.md",
@@ -855,8 +855,8 @@
     },
     {
       "path": "reports/energyville_study/README.md",
-      "bytes": 4024,
-      "sha256": "33db5e48ac83073d85e92183236117b283ca225324bd0a8cc3841f82c7301614"
+      "bytes": 4072,
+      "sha256": "2d46d695db054834e94f0e21ad3791e92c75e91108fac621c192eb7f6d3b6c54"
     },
     {
       "path": "reports/enhanced_reproduction/source_data/ablation_comparison.md",
@@ -1328,5 +1328,6 @@
       "bytes": 13600,
       "sha256": "71466a35829484cf3e3688b970a75782abdcdb2d18de19e939af8bb2c802d886"
     }
-  ]
+  ],
+  "hash_basis": "Source working-copy bytes at export time; frozen paths use -text and retain identical Git blob bytes. Other text paths can use Git LF normalization."
 }
