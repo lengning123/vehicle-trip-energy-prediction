@@ -1,0 +1,22 @@
+{
+  "schema": "trip_preds/seg_preds v1",
+  "info_condition": "plan-time",
+  "target_caliber": "y_full",
+  "phi_label": "full",
+  "units": {
+    "y_wh": "Wh",
+    "pred_wh": "Wh"
+  },
+  "y_basis": "seg_features.y_full(kWh, float32 量化) × 1000 = Wh",
+  "model": "SePT-70_v1.0",
+  "n": 1147,
+  "generated_by": "lib/{paths,schema,registry,eval_trip,trainer,infer}.py",
+  "extra": {
+    "key_sha16": "416e365dad7575ae",
+    "units_declared": {
+      "y_wh": "Wh",
+      "pred_wh": "Wh"
+    }
+  },
+  "key_sha16": "416e365dad7575ae"
+}

@@ -1,0 +1,19 @@
+{
+  "arm": "P14",
+  "paper_ref": "P14（物理功率模型；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "P14_M100_base.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/P14_repro/ (out_design/preds_design.csv)",
+  "headline_published": [
+    12.7379,
+    21.2378
+  ],
+  "unfixable": [],
+  "demote_unit_violation": true,
+  "notes": "**唯一精确复现臂**（源树逐位一致：val Δ=+0.0000 / dev Δ=−0.0000）。★ 单位门降级为记录：本臂是**纯物理功率模型**，Σp/Σy ≈ 0.335（系统性低估约 3 倍，val bias −260.7 Wh）—— 那是物理模型的局限，不是量纲错误。降级留痕见 `train_manifest.json` 的 warnings。",
+  "frozen_sha16": "cc68448b2e87ddea",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

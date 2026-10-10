@@ -1,0 +1,5 @@
+﻿# DSH_release —— 依赖（CPU 即可；无需 GPU / 网络 / API key）
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3        # models/ours_tree（HGBR）+ framework/nn_train.py 的冻结树基线
+torch>=2.0               # 仅神经臂：ours_personal / itransformer / timexer

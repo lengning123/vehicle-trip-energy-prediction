@@ -1,0 +1,34 @@
+{
+  "arm": "A1",
+  "name": "paper__A1",
+  "paper_ref": "A1（1D-CNN 车窗 + BDT 二级；realized）",
+  "info_condition": "realized",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "",
+  "val_wmape": 8.337122416384943,
+  "dev_wmape": 7.8711049616114925,
+  "pooled_wmape": 8.104993545210819,
+  "val_mae_wh": 293.7106731086992,
+  "val_bias_wh": -2.79514262519255,
+  "val_rmse_wh": 638.8251129220835,
+  "val_mape_ge1kwh": 8.645374861523582,
+  "unit_ratio_val": 0.9992065849704803,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    7.5991,
+    6.1874
+  ],
+  "delta_vs_published": [
+    0.7380224163849434,
+    1.6837049616114923
+  ],
+  "unfixable": [
+    "辅助通道语义：论文 wind speed 用 Gradient 替代、缺列记 0（结构性替代，偏乐观）",
+    "训练预算：论文 3000 epochs / 10 Hz → 源树 60 epochs / 1 Hz；BDT 用 20 万行 bootstrap"
+  ],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__A1/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

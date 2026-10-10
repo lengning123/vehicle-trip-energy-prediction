@@ -1,0 +1,22 @@
+{
+  "arm": "A12",
+  "paper_ref": "A12（物理仿真 + 残差 MLP；plan-time 变体）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "A12_calib_phys_plan.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/X_papercomp/x_papercomp_10_routes.py",
+  "headline_published": [
+    13.9384,
+    20.0308
+  ],
+  "unfixable": [
+    "原始标签是**合成同源**（同一物理模型 + 人工噪声）⇒ 其 kWh 与真实能耗不同义",
+    "⇒ 源树已把 A12 从交叉比较中**排除**；本目录同样只登记、不参与「谁领先」的结论"
+  ],
+  "demote_unit_violation": false,
+  "notes": "这里登记的是 plan-time 物理标定变体（`A12_calib_phys_plan`），不是合成标签那一支。",
+  "frozen_sha16": "e13d7e98e1db7e32",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

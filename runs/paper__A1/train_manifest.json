@@ -1,0 +1,58 @@
+{
+  "model": "paper__A1",
+  "seed": 42,
+  "mode": "native",
+  "verdict": "PASS",
+  "n_params": null,
+  "best_ckpt": "/root/autodl-tmp/DSH_release/runs/paper__A1/ckpt/best_val.pt",
+  "log_csv": "/root/autodl-tmp/DSH_release/runs/paper__A1/train_log.csv",
+  "unit_ratio": {
+    "holdout": 0.9928001066849066,
+    "val": 0.9992065849704803,
+    "dev": 1.0441119142565929
+  },
+  "branch": {},
+  "protocol": {
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "warmup_frac": 0.05,
+    "cos_steps": 0,
+    "max_steps": 9000,
+    "steps_per_epoch": 200,
+    "batch": 512,
+    "grad_clip": 1.0,
+    "patience_epochs": 8,
+    "min_delta": 0.0001,
+    "eval_every": 250,
+    "n_epochs_max": 60,
+    "unit_lo": 0.5,
+    "unit_hi": 2.0,
+    "collapse_grace_frac": 0.25,
+    "ckpt_keep_last": 5,
+    "holdout_stride": 7,
+    "holdout_n": 110,
+    "seed": 42,
+    "seed_policy": "unified-v1",
+    "seed_base": 42,
+    "seed_offset": 1013
+  },
+  "warnings": [],
+  "elapsed_s": 0.013073205947875977,
+  "repro": null,
+  "meta": {
+    "caliber": {
+      "info_condition": "realized",
+      "target_caliber": "y_full"
+    },
+    "gate": null,
+    "ckpt": {
+      "ckpt_dir": "/root/autodl-tmp/DSH_release/runs/paper__A1/ckpt",
+      "best_val_pt": "/root/autodl-tmp/DSH_release/runs/paper__A1/ckpt/best_val.pt",
+      "best_val": null,
+      "best_step": -1,
+      "last": [],
+      "log_csv": "/root/autodl-tmp/DSH_release/runs/paper__A1/train_log.csv",
+      "n_log_rows": 1
+    }
+  }
+}

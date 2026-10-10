@@ -1,0 +1,34 @@
+{
+  "arm": "A2",
+  "name": "paper__A2",
+  "paper_ref": "A2（7 通道 CNN：协方差/GAF/特征向量；realized）",
+  "info_condition": "realized",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "",
+  "val_wmape": 43.37681078386515,
+  "dev_wmape": 48.057559357135,
+  "pooled_wmape": 45.708347663940216,
+  "val_mae_wh": 1528.1330483524318,
+  "val_bias_wh": -455.65242305065954,
+  "val_rmse_wh": 2946.6858619465775,
+  "val_mape_ge1kwh": 45.078721973943054,
+  "unit_ratio_val": 0.870660810855523,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    38.7938,
+    41.9033
+  ],
+  "delta_vs_published": [
+    4.583010783865156,
+    6.154259357134997
+  ],
+  "unfixable": [
+    "10 Hz 原生数据不可得：100 点输出由 10 点线性上采样 ⇒ 量纲对齐而非数据对齐",
+    "只跑协方差一种编码（论文三种）× 3000 步（论文 2000 epochs）"
+  ],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__A2/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

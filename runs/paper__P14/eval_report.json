@@ -1,0 +1,31 @@
+{
+  "arm": "P14",
+  "name": "paper__P14",
+  "paper_ref": "P14（物理功率模型；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "",
+  "val_wmape": 12.737923478084177,
+  "dev_wmape": 21.237776638501494,
+  "pooled_wmape": 16.971802057230214,
+  "val_mae_wh": 448.74764839754556,
+  "val_bias_wh": -260.66686970366084,
+  "val_rmse_wh": 888.5112265061574,
+  "val_mape_ge1kwh": 15.509747505140517,
+  "unit_ratio_val": 0.9260084225195659,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    12.7379,
+    21.2378
+  ],
+  "delta_vs_published": [
+    2.3478084177241954e-05,
+    -2.3361498506346834e-05
+  ],
+  "unfixable": [],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__P14/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

@@ -1,0 +1,33 @@
+{
+  "arm": "G04",
+  "name": "paper__G04",
+  "paper_ref": "G04（反向能量物理层 + BiLSTM→速度；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "structural",
+  "frozen": "",
+  "val_wmape": 13.89258306597822,
+  "dev_wmape": 17.4778187596168,
+  "pooled_wmape": 15.67843187042285,
+  "val_mae_wh": 489.4254539801132,
+  "val_bias_wh": -292.16692253652155,
+  "val_rmse_wh": 1155.9137979893576,
+  "val_mape_ge1kwh": 15.039470613709767,
+  "unit_ratio_val": 0.917066977055207,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    13.8926,
+    17.4778
+  ],
+  "delta_vs_published": [
+    -1.6934021779491104e-05,
+    1.8759616800423373e-05
+  ],
+  "unfixable": [
+    "论文 1 m 原始分辨率**不可得**（我们是 100 m 段）⇒ 代理方向是 structural 而非 proxy"
+  ],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__G04/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

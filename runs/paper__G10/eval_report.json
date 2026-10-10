@@ -1,0 +1,33 @@
+{
+  "arm": "G10",
+  "name": "paper__G10",
+  "paper_ref": "G10（两阶段：物理 → GBR；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "",
+  "val_wmape": 14.817307690722165,
+  "dev_wmape": 17.604298184390377,
+  "pooled_wmape": 16.205541008254695,
+  "val_mae_wh": 522.0028204153182,
+  "val_bias_wh": -153.28110525360418,
+  "val_rmse_wh": 1205.2583162819024,
+  "val_mape_ge1kwh": 13.451311089755885,
+  "unit_ratio_val": 0.9564904017585656,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    14.8735,
+    17.2564
+  ],
+  "delta_vs_published": [
+    -0.056192309277834696,
+    0.34789818439037745
+  ],
+  "unfixable": [
+    "F4（坡度）是否整流**论文未公开**；signed 为主口径，rectified 仅作敏感性变体（proxy 下整流后 20.2411 / 26.3905，两侧都显著更差）"
+  ],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__G10/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

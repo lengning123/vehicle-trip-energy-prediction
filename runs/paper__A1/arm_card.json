@@ -1,0 +1,22 @@
+{
+  "arm": "A1",
+  "paper_ref": "A1（1D-CNN 车窗 + BDT 二级；realized）",
+  "info_condition": "realized",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "A1_cnn_bdt.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/X_papercomp/x_papercomp_20_windows.py",
+  "headline_published": [
+    7.5991,
+    6.1874
+  ],
+  "unfixable": [
+    "辅助通道语义：论文 wind speed 用 Gradient 替代、缺列记 0（结构性替代，偏乐观）",
+    "训练预算：论文 3000 epochs / 10 Hz → 源树 60 epochs / 1 Hz；BDT 用 20 万行 bootstrap"
+  ],
+  "demote_unit_violation": false,
+  "notes": "realized 口径（车窗内实测速度/加速度）。与 plan-time 臂**不可比**。",
+  "frozen_sha16": "8913382c00eb0df0",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

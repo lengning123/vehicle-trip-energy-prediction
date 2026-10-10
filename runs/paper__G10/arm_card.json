@@ -1,0 +1,21 @@
+{
+  "arm": "G10",
+  "paper_ref": "G10（两阶段：物理 → GBR；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "G10_two_stage_plan.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/X_papercomp/x_papercomp_10_routes.py",
+  "headline_published": [
+    14.8735,
+    17.2564
+  ],
+  "unfixable": [
+    "F4（坡度）是否整流**论文未公开**；signed 为主口径，rectified 仅作敏感性变体（proxy 下整流后 20.2411 / 26.3905，两侧都显著更差）"
+  ],
+  "demote_unit_violation": false,
+  "notes": "源树公布以 proxy 版为准（14.8735/17.2564）。",
+  "frozen_sha16": "5444bf7553c6c6ad",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

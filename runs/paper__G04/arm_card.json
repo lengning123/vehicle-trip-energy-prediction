@@ -1,0 +1,21 @@
+{
+  "arm": "G04",
+  "paper_ref": "G04（反向能量物理层 + BiLSTM→速度；plan-time）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "structural",
+  "frozen": "G04_phys_plan.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/X2_papercomp/x2_papercomp_30_routes.py（代理版；X1 无该列）",
+  "headline_published": [
+    13.8926,
+    17.4778
+  ],
+  "unfixable": [
+    "论文 1 m 原始分辨率**不可得**（我们是 100 m 段）⇒ 代理方向是 structural 而非 proxy"
+  ],
+  "demote_unit_violation": false,
+  "notes": "冻结列 `pred__G04x_phys_plan_speed_proxy`（X2 逐 fold 重标定的公平口径）。X1 的 `pred__G04_phys_plan` 列**不存在**；X1 对应列叫 `pred__G04_phys_plan_speed_plan`，已另存为对照件 `G04_phys_plan_upstream.npz`。",
+  "frozen_sha16": "146dfb60b6f3416a",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

@@ -1,0 +1,47 @@
+{
+  "model": "SePT-70_v1.0",
+  "family": "tree",
+  "seed": 42,
+  "info_condition": "plan-time",
+  "target_caliber": "y_full",
+  "y_basis": "seg_features.y_full(kWh, float32 量化) × 1000 = Wh",
+  "n_seg": 201271,
+  "n_trips": 1147,
+  "n_feat": 70,
+  "trip_by_split": {
+    "train": 766,
+    "validation": 188,
+    "future": 193
+  },
+  "val_wmape": 10.060503003124914,
+  "dev_wmape": 8.551399087500657,
+  "pooled_wmape": 9.308800282915419,
+  "val_mae_wh": 354.4240999811505,
+  "val_bias_wh": -163.5266514824403,
+  "val_rmse_wh": 858.0191648968082,
+  "val_mape_ge1kwh": 10.114521585568381,
+  "unit_ratio_val": 0.9535821528948639,
+  "anchor": {
+    "val": 10.0605030031,
+    "dev": 8.5513990875
+  },
+  "anchor_tol": 3e-06,
+  "abs_diff": {
+    "val": 2.4915181029427913e-11,
+    "dev": 6.572520305780927e-13
+  },
+  "upstream_published": {
+    "val": 10.060503003124914,
+    "dev": 8.551399087500657
+  },
+  "verdict": "PASS",
+  "npz": "/root/autodl-tmp/DSH_release/runs/SePT-70_v1.0/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "registry → trainer(native) → infer → eval_trip",
+  "n_params": null,
+  "unit_ratio_train": {
+    "holdout": 0.9025561741603642,
+    "val": 0.9535821528948639,
+    "dev": 1.03315678701547
+  }
+}

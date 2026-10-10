@@ -1,0 +1,22 @@
+{
+  "arm": "A2",
+  "paper_ref": "A2（7 通道 CNN：协方差/GAF/特征向量；realized）",
+  "info_condition": "realized",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "A2_cnn7_cov.npz",
+  "frozen_key": "pred_wh",
+  "source_py": "models/X_papercomp/x_papercomp_20_windows.py",
+  "headline_published": [
+    38.7938,
+    41.9033
+  ],
+  "unfixable": [
+    "10 Hz 原生数据不可得：100 点输出由 10 点线性上采样 ⇒ 量纲对齐而非数据对齐",
+    "只跑协方差一种编码（论文三种）× 3000 步（论文 2000 epochs）"
+  ],
+  "demote_unit_violation": false,
+  "notes": "**不得**用它论证「图像编码 CNN 不可行」—— 输入被降采样过。",
+  "frozen_sha16": "a80e31cd077b8aa9",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip（同口径重算）"
+}

@@ -1,0 +1,34 @@
+{
+  "arm": "A12",
+  "name": "paper__A12",
+  "paper_ref": "A12（物理仿真 + 残差 MLP；plan-time 变体）",
+  "info_condition": "physics-calibrated",
+  "target_caliber": "y_full",
+  "input_version": "proxy",
+  "frozen": "",
+  "val_wmape": 13.938377778790642,
+  "dev_wmape": 20.030804985476536,
+  "pooled_wmape": 16.97308868009373,
+  "val_mae_wh": 491.038767933441,
+  "val_bias_wh": -218.9857226093257,
+  "val_rmse_wh": 1092.5601611018158,
+  "val_mape_ge1kwh": 14.449468301367578,
+  "unit_ratio_val": 0.9378398218385892,
+  "unit_gate": "bypassed（见下）",
+  "headline_published": [
+    13.9384,
+    20.0308
+  ],
+  "delta_vs_published": [
+    -2.2221209357908833e-05,
+    4.985476536489841e-06
+  ],
+  "unfixable": [
+    "原始标签是**合成同源**（同一物理模型 + 人工噪声）⇒ 其 kWh 与真实能耗不同义",
+    "⇒ 源树已把 A12 从交叉比较中**排除**；本目录同样只登记、不参与「谁领先」的结论"
+  ],
+  "npz": "/root/autodl-tmp/DSH_release/runs/paper__A12/trip_preds.npz",
+  "key_sha16": "416e365dad7575ae",
+  "pipeline": "frozen preds → registry → trainer(native) → infer → eval_trip",
+  "verdict": "PASS"
+}

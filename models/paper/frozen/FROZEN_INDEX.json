@@ -1,0 +1,113 @@
+{
+  "n_trips": 1147,
+  "key_order": "canonical：data_v3/segments_100m.csv.gz 里 file 首次出现的顺序",
+  "split_counts": {
+    "train": 766,
+    "validation": 188,
+    "future": 193
+  },
+  "key_note": "npz 键名用 file_（savez 的形参叫 file，不能重名）",
+  "artifacts": [
+    {
+      "arm": "A1_cnn_bdt",
+      "file": "A1_cnn_bdt.npz",
+      "src_file": "models/X_papercomp/PRED_windows.csv",
+      "src_col": "pred__A1_cnn_bdt",
+      "note": "A1 主结果（CNN + BDT 二级）",
+      "n": 1147,
+      "bytes": 13858,
+      "sha16": "8913382c00eb0df0"
+    },
+    {
+      "arm": "A1_cnn",
+      "file": "A1_cnn.npz",
+      "src_file": "models/X_papercomp/PRED_windows.csv",
+      "src_col": "pred__A1_cnn",
+      "note": "A1 第一级（CNN）对照",
+      "n": 1147,
+      "bytes": 13836,
+      "sha16": "08a34209693aa227"
+    },
+    {
+      "arm": "A2_cnn7_cov",
+      "file": "A2_cnn7_cov.npz",
+      "src_file": "models/X_papercomp/PRED_windows.csv",
+      "src_col": "pred__A2_cnn7_cov",
+      "note": "A2 主结果（7 通道协方差编码）",
+      "n": 1147,
+      "bytes": 13857,
+      "sha16": "a80e31cd077b8aa9"
+    },
+    {
+      "arm": "A12_calib_phys_plan",
+      "file": "A12_calib_phys_plan.npz",
+      "src_file": "models/X_papercomp/PRED_routes.csv",
+      "src_col": "pred__A12_calib_phys_plan",
+      "note": "A12 plan-time 物理标定变体（合成标签那一支已排除）",
+      "n": 1147,
+      "bytes": 13911,
+      "sha16": "e13d7e98e1db7e32"
+    },
+    {
+      "arm": "G10_two_stage_plan",
+      "file": "G10_two_stage_plan.npz",
+      "src_file": "models/X_papercomp/PRED_routes.csv",
+      "src_col": "pred__G10_two_stage_plan",
+      "note": "G10 论文主路径（两阶段）",
+      "n": 1147,
+      "bytes": 13867,
+      "sha16": "5444bf7553c6c6ad"
+    },
+    {
+      "arm": "G04_phys_plan",
+      "file": "G04_phys_plan.npz",
+      "src_file": "models/X2_papercomp/PRED_routes_x2.csv",
+      "src_col": "pred__G04x_phys_plan_speed_proxy",
+      "note": "G04 公平口径（X2 代理版，逐 fold 重标定）",
+      "n": 1147,
+      "bytes": 13804,
+      "sha16": "146dfb60b6f3416a"
+    },
+    {
+      "arm": "G04_phys_plan_upstream",
+      "file": "G04_phys_plan_upstream.npz",
+      "src_file": "models/X_papercomp/PRED_routes.csv",
+      "src_col": "pred__G04_phys_plan_speed_plan",
+      "note": "G04 X1 对应列（对照；X1 无 pred__G04_phys_plan）",
+      "n": 1147,
+      "bytes": 13788,
+      "sha16": "e43f134c3c03aa59"
+    },
+    {
+      "arm": "P14_M100_base",
+      "file": "P14_M100_base.npz",
+      "src_file": "models/X_papercomp/PRED_p14.csv",
+      "src_col": "pred__P14_M100_base",
+      "note": "P14 唯一精确复现臂",
+      "n": 1147,
+      "bytes": 8106,
+      "sha16": "cc68448b2e87ddea"
+    },
+    {
+      "arm": "A1x_cnn_bdt",
+      "file": "A1x_cnn_bdt.npz",
+      "src_file": "models/X2_papercomp/PRED_windows_x2.csv",
+      "src_col": "pred__A1x_cnn_bdt",
+      "note": "A1 X2 代理版（对照）",
+      "n": 1147,
+      "bytes": 13861,
+      "sha16": "8a7f8ec761bfb6fd"
+    },
+    {
+      "arm": "G10x_two_stage_plan",
+      "file": "G10x_two_stage_plan.npz",
+      "src_file": "models/X2_papercomp/PRED_routes_x2.csv",
+      "src_col": "pred__G10x_two_stage_plan_proxy",
+      "note": "G10 X2 代理版（对照）",
+      "n": 1147,
+      "bytes": 13875,
+      "sha16": "e896724efd5efb6b"
+    }
+  ],
+  "skipped": []
+}
